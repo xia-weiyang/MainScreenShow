@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jiusg.mainscreenshow"
+    android:versionCode="24"
+    android:versionName="1.4.5">
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="23" />
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.package_usage_stats" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name = "android.permission.SET_WALLPAPER"/>
+    <uses-permission xmlns:tools="http://schemas.android.com/tools"
+        android:name="android.permission.PACKAGE_USAGE_STATS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.BATTERY_STATS" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+
+
+
+    <application
+        android:name="com.jiusg.mainscreenshow.base.BaseApplication"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        >
+        <meta-data
+            android:name="Channel ID"
+            android:value="Wandoujia" />
+
+
+
+        <activity
+            android:name="com.jiusg.mainscreenshow.ui.Welcome"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <service
+            android:name=".service.MSSLiveWallpaper"
+            android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService" />
+            </intent-filter>
+            <meta-data
+                android:name="android.service.wallpaper"
+                android:resource="@xml/livewallpaper" />
+        </service>
+
+        <activity
+            android:name="com.jiusg.mainscreenshow.ui.MSS"
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name="com.jiusg.mainscreenshow.ui.MSSEvent"
+            android:label="@string/action_MSSEvent"></activity>
+        <activity
+            android:name="com.jiusg.mainscreenshow.ui.MSSPreview"
+            android:label="@string/action_MSSPreview"></activity>
+        <activity
+            android:name="com.jiusg.mainscreenshow.ui.DesktopSet"
+            android:icon="@drawable/mss_screen"
+            android:label="@string/action_Desktop"></activity>
+        <activity
+            android:name="com.jiusg.mainscreenshow.ui.LockScreenSet"
+            android:icon="@drawable/mss_lockscreen"
+            android:label="@string/action_LockScreen"></activity>
+        <activity
+            android:name="com.jiusg.mainscreenshow.ui.CallSet"
+            android:icon="@drawable/mss_call"
+            android:label="@string/action_call"></activity>
+        <activity
+            android:name="com.jiusg.mainscreenshow.ui.SMSSet"
+            android:icon="@drawable/mss_sms"
+            android:label="@string/action_SMS"></activity>
+        <activity
+            android:name="com.jiusg.mainscreenshow.ui.CharingSet"
+            android:icon="@drawable/mss_charging"
+            android:label="@string/action_Charing"></activity>
+        <activity android:name="com.jiusg.mainscreenshow.ui.PreviewAnimation"></activity>
+        <activity
+            android:name="com.jiusg.mainscreenshow.ui.Setting"
+            android:icon="@drawable/ic_setting"
+            android:label="@string/action_Setting"></activity>
+        <activity
+            android:name="com.jiusg.mainscreenshow.ui.SettingApp"
+            android:label="@string/action_SettingApp"></activity>
+        <activity
+            android:name="com.jiusg.mainscreenshow.ui.SettingMore"
+            android:icon="@drawable/ic_setting"
+            android:label="@string/action_SettingMore"></activity>
+        <activity
+            android:name="com.jiusg.mainscreenshow.ui.PictureWallChoose"
+            android:icon="@drawable/ic_add"
+            android:label="@string/action_picture"></activity>
+        <activity
+            android:name="com.jiusg.mainscreenshow.ui.Help"
+            android:icon="@drawable/ic_help"
+            android:label="@string/setting_Help"></activity>
+
+        <activity
+            android:name="com.jiusg.mainscreenshow.ui.FeedBack"
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/setting_FeedBack"></activity>
+
+        <service android:name="com.jiusg.mainscreenshow.service.MSSService" />
+
+        <activity
+            android:name="net.youmi.android.AdBrowser"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Light.NoTitleBar"></activity>
+
+
+        <service
+            android:name="net.youmi.android.AdService"
+            android:exported="false"></service>
+        <service
+            android:name="net.youmi.android.ExpService"
+            android:exported="false"></service>
+
+        <receiver android:name="net.youmi.android.AdReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="com.jiusg.mainscreenshow.receiver.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.jiusg.mainscreenshow.receiver.PhoneReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE" />
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.jiusg.mainscreenshow.receiver.SMSReceiver">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.jiusg.mainscreenshow.receiver.NetworkReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.jiusg.mainscreenshow.receiver.BatteryReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_CHANGED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

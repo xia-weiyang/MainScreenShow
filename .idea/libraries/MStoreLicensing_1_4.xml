@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="MStoreLicensing_1.4">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/MStoreLicensing_1.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

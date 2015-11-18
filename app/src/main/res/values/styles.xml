@@ -1,0 +1,35 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme for API 14+. This theme completely replaces
+        AppBaseTheme from BOTH res/values/styles.xml and
+        res/values-v11/styles.xml on API 14+ devices.
+
+    -->
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="@android:style/Theme.DeviceDefault.Light">
+       <item name="android:actionBarStyle">@style/CustomActionBar0</item>
+      <!--   <item name="android:actionOverflowButtonStyle">@style/CustomActionButtonOverflow_nomeizu</item> -->
+    </style>
+    
+        <style name="AppTheme_Meizu" parent="@android:style/Theme.DeviceDefault.Light">
+        <item name="android:actionBarStyle">@style/CustomActionBar</item>
+         <item name="android:actionOverflowButtonStyle">@style/CustomActionButtonOverflow</item>
+    </style>
+    
+    <style name="CustomActionBar" parent="@android:style/Widget.DeviceDefault.ActionBar">
+        <item name="android:background">#ffffff</item>
+        <item name="android:backgroundSplit">#ffffff</item>
+    </style>
+
+    <style name="CustomActionBar0" parent="android:Widget.Holo.ActionBar">
+        <item name="android:background">#ffffff</item>
+        <item name="android:backgroundSplit">#ffffff</item>
+    </style>
+
+    <style name="CustomActionButtonOverflow" parent="@android:style/Widget.DeviceDefault.Light.ActionButton.Overflow">
+		<item name="android:src">@drawable/ic_menu</item>
+	</style>
+	<style name="CustomActionButtonOverflow_nomeizu" parent="@android:style/Widget.DeviceDefault.Light.ActionButton.Overflow">
+	</style>
+</resources>

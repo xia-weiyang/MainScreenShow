@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:background="#f0f0f0" >
+
+    <ListView
+        android:id="@+id/list_mss"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:divider="#00000000"
+        android:dividerHeight="1dp"
+        android:scrollbarStyle="outsideOverlay" />
+
+</RelativeLayout>
+<!-- From: file:/D:/MainScreenShow/MainScreenShow/app/src/main/res/layout/activity_mssevent.xml -->

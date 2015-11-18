@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Frame">
+        <item>无限制</item>
+        <item>最高60fps</item>
+        <item>最高50fps</item>
+        <item>最高40fps</item>
+        <item>最高30fps</item>
+        <item>最高20fps</item>
+    </string-array>
+    
+    <string-array name ="Frame_Value">
+        <item>70</item>
+        <item>60</item>
+        <item>50</item>
+        <item>40</item>
+        <item>30</item>
+        <item>20</item>
+    </string-array>
+    
+    <string-array name="RAMLimit">
+        <item>无限制</item>
+        <item>标准限制</item>
+        <item>较高限制</item>
+    </string-array>
+    
+    <string-array name="RAMLimit_VALUE">
+        <item>30</item>
+        <item>10</item>
+        <item>5</item>
+    </string-array>
+</resources>

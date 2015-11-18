@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:orientation="vertical" >
+    
+    
+    <EditText 
+        android:id="@+id/edit_fb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="20dp"
+        android:hint="@string/setting_FeedBack_Content"
+        />
+    
+    <EditText 
+        android:id="@+id/edit_fb_qq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="20dp"
+        android:inputType="number"
+        android:hint="@string/setting_FeedBack_QQ"
+        />
+
+</LinearLayout>
+<!-- From: file:/D:/MainScreenShow/MainScreenShow/app/src/main/res/layout/activity_feedback.xml -->

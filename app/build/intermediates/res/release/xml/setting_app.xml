@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+	<PreferenceCategory android:title="@string/setting_title_app" >
+                <PreferenceScreen
+                    android:key="LockHelper"
+                    android:summary="在锁屏界面你可以方便，快速的启动预先设定好的应用"
+                    android:title="@string/setting_LockHelper" />
+                <PreferenceScreen
+                    android:key="FlashLight"
+                    android:summary="一款精美，极致的手电筒"
+                    android:title="@string/setting_FlashLight" />
+            </PreferenceCategory>
+    
+</PreferenceScreen>
+<!-- From: file:/D:/MainScreenShow/MainScreenShow/app/src/main/res/xml/setting_app.xml -->

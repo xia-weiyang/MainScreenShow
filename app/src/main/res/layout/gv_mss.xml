@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    >
+    
+    <ImageView 
+        android:id="@+id/img_gv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop" />
+
+    <Button
+        android:id="@+id/bt_gv"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:background="@drawable/preview_title_green"
+        android:layout_alignRight="@+id/img_gv"
+        android:layout_alignBottom="@+id/img_gv"
+        android:paddingLeft="0dp"
+        android:paddingTop="0dp"
+        android:paddingRight="1dp"
+        android:paddingBottom="1dp"
+        android:gravity="bottom|right"
+        android:textSize="12sp"
+        />
+
+</RelativeLayout>

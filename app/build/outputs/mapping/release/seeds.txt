@@ -1,0 +1,834 @@
+android.support.v4.app.BackStackState: android.os.Parcelable$Creator CREATOR
+android.support.v4.app.Fragment$SavedState: android.os.Parcelable$Creator CREATOR
+android.support.v4.app.FragmentActivity
+android.support.v4.app.FragmentActivity: FragmentActivity()
+android.support.v4.app.FragmentManagerState: android.os.Parcelable$Creator CREATOR
+android.support.v4.app.FragmentState: android.os.Parcelable$Creator CREATOR
+android.support.v4.app.FragmentTabHost: void setOnTabChangedListener(android.widget.TabHost$OnTabChangeListener)
+android.support.v4.app.FragmentTabHost$SavedState: android.os.Parcelable$Creator CREATOR
+android.support.v4.app.NotificationCompatSideChannelService
+android.support.v4.content.FileProvider
+android.support.v4.content.ModernAsyncTask$Status: android.support.v4.content.ModernAsyncTask$Status[] values()
+android.support.v4.content.ModernAsyncTask$Status: android.support.v4.content.ModernAsyncTask$Status valueOf(java.lang.String)
+android.support.v4.content.WakefulBroadcastReceiver
+android.support.v4.media.MediaDescriptionCompat: android.os.Parcelable$Creator CREATOR
+android.support.v4.media.MediaMetadataCompat: android.os.Parcelable$Creator CREATOR
+android.support.v4.media.RatingCompat: android.os.Parcelable$Creator CREATOR
+android.support.v4.media.session.MediaSessionCompat$QueueItem: android.os.Parcelable$Creator CREATOR
+android.support.v4.media.session.MediaSessionCompat$ResultReceiverWrapper: android.os.Parcelable$Creator CREATOR
+android.support.v4.media.session.MediaSessionCompat$Token: android.os.Parcelable$Creator CREATOR
+android.support.v4.media.session.ParcelableVolumeInfo: android.os.Parcelable$Creator CREATOR
+android.support.v4.media.session.PlaybackStateCompat: android.os.Parcelable$Creator CREATOR
+android.support.v4.media.session.PlaybackStateCompat$CustomAction: android.os.Parcelable$Creator CREATOR
+android.support.v4.view.PagerTabStrip: void setTabIndicatorColor(int)
+android.support.v4.view.PagerTabStrip: void setTabIndicatorColorResource(int)
+android.support.v4.view.PagerTabStrip: int getTabIndicatorColor()
+android.support.v4.view.PagerTabStrip: void setTextSpacing(int)
+android.support.v4.view.PagerTabStrip: void setBackgroundDrawable(android.graphics.drawable.Drawable)
+android.support.v4.view.PagerTabStrip: void setBackgroundColor(int)
+android.support.v4.view.PagerTabStrip: void setBackgroundResource(int)
+android.support.v4.view.PagerTabStrip: void setDrawFullUnderline(boolean)
+android.support.v4.view.PagerTabStrip: boolean getDrawFullUnderline()
+android.support.v4.view.PagerTabStrip: int getMinHeight()
+android.support.v4.view.PagerTitleStrip: void setSingleLineAllCaps(android.widget.TextView)
+android.support.v4.view.PagerTitleStrip: void setTextSpacing(int)
+android.support.v4.view.PagerTitleStrip: int getTextSpacing()
+android.support.v4.view.PagerTitleStrip: void setNonPrimaryAlpha(float)
+android.support.v4.view.PagerTitleStrip: void setTextColor(int)
+android.support.v4.view.PagerTitleStrip: void setGravity(int)
+android.support.v4.view.PagerTitleStrip: int getMinHeight()
+android.support.v4.view.ViewPager
+android.support.v4.view.ViewPager: ViewPager(android.content.Context)
+android.support.v4.view.ViewPager: ViewPager(android.content.Context,android.util.AttributeSet)
+android.support.v4.view.ViewPager: void setScrollState(int)
+android.support.v4.view.ViewPager: void setAdapter(android.support.v4.view.PagerAdapter)
+android.support.v4.view.ViewPager: android.support.v4.view.PagerAdapter getAdapter()
+android.support.v4.view.ViewPager: void setOnAdapterChangeListener(android.support.v4.view.ViewPager$OnAdapterChangeListener)
+android.support.v4.view.ViewPager: int getClientWidth()
+android.support.v4.view.ViewPager: void setCurrentItem(int)
+android.support.v4.view.ViewPager: int getCurrentItem()
+android.support.v4.view.ViewPager: void setOnPageChangeListener(android.support.v4.view.ViewPager$OnPageChangeListener)
+android.support.v4.view.ViewPager: void setChildrenDrawingOrderEnabledCompat(boolean)
+android.support.v4.view.ViewPager: int getOffscreenPageLimit()
+android.support.v4.view.ViewPager: void setOffscreenPageLimit(int)
+android.support.v4.view.ViewPager: void setPageMargin(int)
+android.support.v4.view.ViewPager: int getPageMargin()
+android.support.v4.view.ViewPager: void setPageMarginDrawable(android.graphics.drawable.Drawable)
+android.support.v4.view.ViewPager: void setPageMarginDrawable(int)
+android.support.v4.view.ViewPager: void setScrollingCacheEnabled(boolean)
+android.support.v4.view.ViewPager$SavedState: android.os.Parcelable$Creator CREATOR
+android.support.v4.widget.DrawerLayout: void setScrimColor(int)
+android.support.v4.widget.DrawerLayout: void setDrawerListener(android.support.v4.widget.DrawerLayout$DrawerListener)
+android.support.v4.widget.DrawerLayout: void setDrawerLockMode(int)
+android.support.v4.widget.DrawerLayout: void setStatusBarBackground(android.graphics.drawable.Drawable)
+android.support.v4.widget.DrawerLayout: android.graphics.drawable.Drawable getStatusBarBackgroundDrawable()
+android.support.v4.widget.DrawerLayout: void setStatusBarBackground(int)
+android.support.v4.widget.DrawerLayout: void setStatusBarBackgroundColor(int)
+android.support.v4.widget.DrawerLayout$SavedState: android.os.Parcelable$Creator CREATOR
+android.support.v4.widget.SlidingPaneLayout: void setParallaxDistance(int)
+android.support.v4.widget.SlidingPaneLayout: int getParallaxDistance()
+android.support.v4.widget.SlidingPaneLayout: void setSliderFadeColor(int)
+android.support.v4.widget.SlidingPaneLayout: int getSliderFadeColor()
+android.support.v4.widget.SlidingPaneLayout: void setCoveredFadeColor(int)
+android.support.v4.widget.SlidingPaneLayout: int getCoveredFadeColor()
+android.support.v4.widget.SlidingPaneLayout: void setPanelSlideListener(android.support.v4.widget.SlidingPaneLayout$PanelSlideListener)
+android.support.v4.widget.SlidingPaneLayout: void setShadowDrawable(android.graphics.drawable.Drawable)
+android.support.v4.widget.SlidingPaneLayout: void setShadowDrawableLeft(android.graphics.drawable.Drawable)
+android.support.v4.widget.SlidingPaneLayout: void setShadowDrawableRight(android.graphics.drawable.Drawable)
+android.support.v4.widget.SlidingPaneLayout: void setShadowResource(int)
+android.support.v4.widget.SlidingPaneLayout: void setShadowResourceLeft(int)
+android.support.v4.widget.SlidingPaneLayout: void setShadowResourceRight(int)
+android.support.v4.widget.SlidingPaneLayout$SavedState: android.os.Parcelable$Creator CREATOR
+android.support.v4.widget.SwipeRefreshLayout: void setColorViewAlpha(int)
+android.support.v4.widget.SwipeRefreshLayout: void setSize(int)
+android.support.v4.widget.SwipeRefreshLayout: void setOnRefreshListener(android.support.v4.widget.SwipeRefreshLayout$OnRefreshListener)
+android.support.v4.widget.SwipeRefreshLayout: void setRefreshing(boolean)
+android.support.v4.widget.SwipeRefreshLayout: void setAnimationProgress(float)
+android.support.v4.widget.SwipeRefreshLayout: void setProgressBackgroundColor(int)
+android.support.v4.widget.SwipeRefreshLayout: void setProgressBackgroundColorSchemeResource(int)
+android.support.v4.widget.SwipeRefreshLayout: void setProgressBackgroundColorSchemeColor(int)
+android.support.v4.widget.SwipeRefreshLayout: void setColorScheme(int[])
+android.support.v4.widget.SwipeRefreshLayout: void setColorSchemeResources(int[])
+android.support.v4.widget.SwipeRefreshLayout: void setColorSchemeColors(int[])
+android.support.v4.widget.SwipeRefreshLayout: void setDistanceToTriggerSync(int)
+android.support.v4.widget.SwipeRefreshLayout: int getProgressCircleDiameter()
+com.alibaba.fastjson.parser.Feature: com.alibaba.fastjson.parser.Feature[] values()
+com.alibaba.fastjson.parser.Feature: com.alibaba.fastjson.parser.Feature valueOf(java.lang.String)
+com.alibaba.fastjson.serializer.SerializerFeature: com.alibaba.fastjson.serializer.SerializerFeature[] values()
+com.alibaba.fastjson.serializer.SerializerFeature: com.alibaba.fastjson.serializer.SerializerFeature valueOf(java.lang.String)
+com.avos.avoscloud.AVDuration: android.os.Parcelable$Creator CREATOR
+com.avos.avoscloud.AVOSCloud$StorageType: com.avos.avoscloud.AVOSCloud$StorageType[] values()
+com.avos.avoscloud.AVOSCloud$StorageType: com.avos.avoscloud.AVOSCloud$StorageType valueOf(java.lang.String)
+com.avos.avoscloud.AVOSServices: com.avos.avoscloud.AVOSServices[] values()
+com.avos.avoscloud.AVOSServices: com.avos.avoscloud.AVOSServices valueOf(java.lang.String)
+com.avos.avoscloud.AVOperationType: com.avos.avoscloud.AVOperationType[] values()
+com.avos.avoscloud.AVOperationType: com.avos.avoscloud.AVOperationType valueOf(java.lang.String)
+com.avos.avoscloud.AVQuery$CachePolicy: com.avos.avoscloud.AVQuery$CachePolicy[] values()
+com.avos.avoscloud.AVQuery$CachePolicy: com.avos.avoscloud.AVQuery$CachePolicy valueOf(java.lang.String)
+com.avos.avoscloud.AVStatus$INBOX_TYPE: com.avos.avoscloud.AVStatus$INBOX_TYPE[] values()
+com.avos.avoscloud.AVStatus$INBOX_TYPE: com.avos.avoscloud.AVStatus$INBOX_TYPE valueOf(java.lang.String)
+com.avos.avoscloud.AnalyticsActivity: android.os.Parcelable$Creator CREATOR
+com.avos.avoscloud.AnalyticsEvent: android.os.Parcelable$Creator CREATOR
+com.avos.avoscloud.AnalyticsSession: android.os.Parcelable$Creator CREATOR
+com.avos.avoscloud.R$raw: int avoscloud_us_ssl
+com.avos.avoscloud.ReportPolicy: com.avos.avoscloud.ReportPolicy[] values()
+com.avos.avoscloud.ReportPolicy: com.avos.avoscloud.ReportPolicy valueOf(java.lang.String)
+com.avos.avoscloud.ops.AVOp$OpType: com.avos.avoscloud.ops.AVOp$OpType[] values()
+com.avos.avoscloud.ops.AVOp$OpType: com.avos.avoscloud.ops.AVOp$OpType valueOf(java.lang.String)
+com.avos.avosstatistics.R$layout: int activity_main
+com.avos.avosstatistics.R$raw: int avoscloud_us_ssl
+com.avos.avosstatistics.R$string: int app_name
+com.baidu.appsearch.security.md5.MD5
+com.baidu.appsearch.security.md5.MD5: void Transform_native(int[],byte[],int,int)
+com.baidu.down.a.a.a.k: com.baidu.down.a.a.a.k[] values()
+com.baidu.down.a.a.a.k: com.baidu.down.a.a.a.k valueOf(java.lang.String)
+com.baidu.ops.appunion.sdk.a.a.b.a.b: com.baidu.ops.appunion.sdk.a.a.b.a.b[] values()
+com.baidu.ops.appunion.sdk.a.a.b.a.b: com.baidu.ops.appunion.sdk.a.a.b.a.b valueOf(java.lang.String)
+com.baidu.ops.appunion.sdk.a.a.b.a.e: com.baidu.ops.appunion.sdk.a.a.b.a.e[] values()
+com.baidu.ops.appunion.sdk.a.a.b.a.e: com.baidu.ops.appunion.sdk.a.a.b.a.e valueOf(java.lang.String)
+com.baidu.ops.appunion.sdk.activity.AppListActivity
+com.baidu.ops.appunion.sdk.activity.WebActivity
+com.baidu.ops.appunion.sdk.banner.BaiduBanner: void setBannerType(com.baidu.ops.appunion.sdk.banner.BannerType)
+com.baidu.ops.appunion.sdk.banner.BaiduBannerView: void setBannerType(com.baidu.ops.appunion.sdk.banner.BannerType)
+com.baidu.ops.appunion.sdk.banner.BaiduBannerView: com.baidu.ops.appunion.sdk.banner.BannerType getBannerType()
+com.baidu.ops.appunion.sdk.banner.BaiduBannerView: java.lang.String getParams()
+com.baidu.ops.appunion.sdk.banner.BannerType: com.baidu.ops.appunion.sdk.banner.BannerType[] values()
+com.baidu.ops.appunion.sdk.banner.BannerType: com.baidu.ops.appunion.sdk.banner.BannerType valueOf(java.lang.String)
+com.baidu.ops.appunion.sdk.banner.BaseBanner: void setBannerInterval(int)
+com.baidu.ops.appunion.sdk.download.DownloadState: com.baidu.ops.appunion.sdk.download.DownloadState[] values()
+com.baidu.ops.appunion.sdk.download.DownloadState: com.baidu.ops.appunion.sdk.download.DownloadState valueOf(java.lang.String)
+com.baidu.ops.appunion.sdk.service.AppUnionService
+com.baidu.util.Base64Encoder
+com.baidu.util.Base64Encoder: byte[] nativeB64Encode(byte[])
+com.baidu.util.Base64Encoder: byte[] nativeB64Decode(byte[])
+com.baidu.util.Base64Encoder: int nativeB64GetVersion()
+com.jiusg.mainscreenshow.R$array: int Frame
+com.jiusg.mainscreenshow.R$array: int Frame_Value
+com.jiusg.mainscreenshow.R$array: int RAMLimit
+com.jiusg.mainscreenshow.R$array: int RAMLimit_VALUE
+com.jiusg.mainscreenshow.R$color: int allAlpha
+com.jiusg.mainscreenshow.R$color: int blue
+com.jiusg.mainscreenshow.R$color: int button_press
+com.jiusg.mainscreenshow.R$color: int button_unpress
+com.jiusg.mainscreenshow.R$color: int white
+com.jiusg.mainscreenshow.R$dimen: int activity_horizontal_margin
+com.jiusg.mainscreenshow.R$dimen: int activity_vertical_margin
+com.jiusg.mainscreenshow.R$drawable: int bubble_background
+com.jiusg.mainscreenshow.R$drawable: int bubble_blue
+com.jiusg.mainscreenshow.R$drawable: int bubble_chunblue
+com.jiusg.mainscreenshow.R$drawable: int bubble_green
+com.jiusg.mainscreenshow.R$drawable: int bubble_grey
+com.jiusg.mainscreenshow.R$drawable: int bubble_pink
+com.jiusg.mainscreenshow.R$drawable: int bubble_purple
+com.jiusg.mainscreenshow.R$drawable: int bubble_qianblue
+com.jiusg.mainscreenshow.R$drawable: int bubble_qianpink
+com.jiusg.mainscreenshow.R$drawable: int bubble_qing
+com.jiusg.mainscreenshow.R$drawable: int bubble_red
+com.jiusg.mainscreenshow.R$drawable: int bubble_yellow
+com.jiusg.mainscreenshow.R$drawable: int button
+com.jiusg.mainscreenshow.R$drawable: int button_press
+com.jiusg.mainscreenshow.R$drawable: int button_press_
+com.jiusg.mainscreenshow.R$drawable: int button_unpress
+com.jiusg.mainscreenshow.R$drawable: int button_unpress_
+com.jiusg.mainscreenshow.R$drawable: int circle_selected
+com.jiusg.mainscreenshow.R$drawable: int circle_unselected
+com.jiusg.mainscreenshow.R$drawable: int delete
+com.jiusg.mainscreenshow.R$drawable: int event
+com.jiusg.mainscreenshow.R$drawable: int ic_add
+com.jiusg.mainscreenshow.R$drawable: int ic_back
+com.jiusg.mainscreenshow.R$drawable: int ic_clear
+com.jiusg.mainscreenshow.R$drawable: int ic_delete
+com.jiusg.mainscreenshow.R$drawable: int ic_event
+com.jiusg.mainscreenshow.R$drawable: int ic_event_press
+com.jiusg.mainscreenshow.R$drawable: int ic_help
+com.jiusg.mainscreenshow.R$drawable: int ic_launcher
+com.jiusg.mainscreenshow.R$drawable: int ic_menu
+com.jiusg.mainscreenshow.R$drawable: int ic_preview
+com.jiusg.mainscreenshow.R$drawable: int ic_preview_press
+com.jiusg.mainscreenshow.R$drawable: int ic_save
+com.jiusg.mainscreenshow.R$drawable: int ic_separate
+com.jiusg.mainscreenshow.R$drawable: int ic_setting
+com.jiusg.mainscreenshow.R$drawable: int ic_setting_press
+com.jiusg.mainscreenshow.R$drawable: int ic_show
+com.jiusg.mainscreenshow.R$drawable: int ic_tab_event
+com.jiusg.mainscreenshow.R$drawable: int ic_tab_preview
+com.jiusg.mainscreenshow.R$drawable: int ic_tab_selected_event
+com.jiusg.mainscreenshow.R$drawable: int ic_tab_selected_preview
+com.jiusg.mainscreenshow.R$drawable: int ic_tab_unselected_event
+com.jiusg.mainscreenshow.R$drawable: int ic_tab_unselected_preview
+com.jiusg.mainscreenshow.R$drawable: int list
+com.jiusg.mainscreenshow.R$drawable: int list_mss_close
+com.jiusg.mainscreenshow.R$drawable: int list_mss_open
+com.jiusg.mainscreenshow.R$drawable: int mms_music
+com.jiusg.mainscreenshow.R$drawable: int mss_call
+com.jiusg.mainscreenshow.R$drawable: int mss_charging
+com.jiusg.mainscreenshow.R$drawable: int mss_lockscreen
+com.jiusg.mainscreenshow.R$drawable: int mss_screen
+com.jiusg.mainscreenshow.R$drawable: int mss_sms
+com.jiusg.mainscreenshow.R$drawable: int mssb
+com.jiusg.mainscreenshow.R$drawable: int mssb_background
+com.jiusg.mainscreenshow.R$drawable: int mssb_call
+com.jiusg.mainscreenshow.R$drawable: int mssb_chargin
+com.jiusg.mainscreenshow.R$drawable: int mssb_desktop
+com.jiusg.mainscreenshow.R$drawable: int mssb_lockscreen
+com.jiusg.mainscreenshow.R$drawable: int mssb_sms
+com.jiusg.mainscreenshow.R$drawable: int picturewall_0
+com.jiusg.mainscreenshow.R$drawable: int picturewall_1
+com.jiusg.mainscreenshow.R$drawable: int preview
+com.jiusg.mainscreenshow.R$drawable: int preview_bubble
+com.jiusg.mainscreenshow.R$drawable: int preview_bubble_background
+com.jiusg.mainscreenshow.R$drawable: int preview_picturewall
+com.jiusg.mainscreenshow.R$drawable: int preview_rain
+com.jiusg.mainscreenshow.R$drawable: int preview_rain_background
+com.jiusg.mainscreenshow.R$drawable: int preview_starshine
+com.jiusg.mainscreenshow.R$drawable: int preview_starshine_background
+com.jiusg.mainscreenshow.R$drawable: int preview_title_green
+com.jiusg.mainscreenshow.R$drawable: int qq
+com.jiusg.mainscreenshow.R$drawable: int qq_
+com.jiusg.mainscreenshow.R$drawable: int qq_press
+com.jiusg.mainscreenshow.R$drawable: int rain_1
+com.jiusg.mainscreenshow.R$drawable: int rain_2
+com.jiusg.mainscreenshow.R$drawable: int rain_3
+com.jiusg.mainscreenshow.R$drawable: int rain_4
+com.jiusg.mainscreenshow.R$drawable: int setting
+com.jiusg.mainscreenshow.R$drawable: int starshine
+com.jiusg.mainscreenshow.R$drawable: int starshine_1
+com.jiusg.mainscreenshow.R$drawable: int starshine_2
+com.jiusg.mainscreenshow.R$drawable: int starshine_3
+com.jiusg.mainscreenshow.R$drawable: int starshine_4
+com.jiusg.mainscreenshow.R$drawable: int starshine_5
+com.jiusg.mainscreenshow.R$drawable: int starshine_6
+com.jiusg.mainscreenshow.R$drawable: int starshine_7
+com.jiusg.mainscreenshow.R$drawable: int starshine_meteor
+com.jiusg.mainscreenshow.R$drawable: int starshine_meteor_1
+com.jiusg.mainscreenshow.R$drawable: int vp_button
+com.jiusg.mainscreenshow.R$drawable: int vp_button_
+com.jiusg.mainscreenshow.R$drawable: int welcome
+com.jiusg.mainscreenshow.R$drawable: int welcome_1
+com.jiusg.mainscreenshow.R$drawable: int welcome_2
+com.jiusg.mainscreenshow.R$drawable: int welcome_3
+com.jiusg.mainscreenshow.R$drawable: int welcome_4
+com.jiusg.mainscreenshow.R$drawable: int welcome_rain
+com.jiusg.mainscreenshow.R$drawable: int welcome_rain_text
+com.jiusg.mainscreenshow.R$id: int action_add
+com.jiusg.mainscreenshow.R$id: int action_clear
+com.jiusg.mainscreenshow.R$id: int action_delete
+com.jiusg.mainscreenshow.R$id: int action_help
+com.jiusg.mainscreenshow.R$id: int actionbar_event
+com.jiusg.mainscreenshow.R$id: int actionbar_preview
+com.jiusg.mainscreenshow.R$id: int actionbar_separate
+com.jiusg.mainscreenshow.R$id: int actionbar_setting
+com.jiusg.mainscreenshow.R$id: int actionbar_title
+com.jiusg.mainscreenshow.R$id: int bt_gv
+com.jiusg.mainscreenshow.R$id: int bt_previewA
+com.jiusg.mainscreenshow.R$id: int button_vp
+com.jiusg.mainscreenshow.R$id: int edit_fb
+com.jiusg.mainscreenshow.R$id: int edit_fb_qq
+com.jiusg.mainscreenshow.R$id: int gv_mss
+com.jiusg.mainscreenshow.R$id: int gv_pwc
+com.jiusg.mainscreenshow.R$id: int img_gv
+com.jiusg.mainscreenshow.R$id: int img_gv_pwc
+com.jiusg.mainscreenshow.R$id: int img_gv_pwc_del
+com.jiusg.mainscreenshow.R$id: int img_mss
+com.jiusg.mainscreenshow.R$id: int img_previewA
+com.jiusg.mainscreenshow.R$id: int img_rain
+com.jiusg.mainscreenshow.R$id: int img_vp
+com.jiusg.mainscreenshow.R$id: int img_vp_page1
+com.jiusg.mainscreenshow.R$id: int img_vp_page2
+com.jiusg.mainscreenshow.R$id: int img_vp_page3
+com.jiusg.mainscreenshow.R$id: int img_vp_page4
+com.jiusg.mainscreenshow.R$id: int iv_mssevent
+com.jiusg.mainscreenshow.R$id: int iv_mssevent_oc
+com.jiusg.mainscreenshow.R$id: int list_help
+com.jiusg.mainscreenshow.R$id: int list_mss
+com.jiusg.mainscreenshow.R$id: int menu_exit
+com.jiusg.mainscreenshow.R$id: int menu_feedback_submit
+com.jiusg.mainscreenshow.R$id: int menu_preview
+com.jiusg.mainscreenshow.R$id: int menu_settings
+com.jiusg.mainscreenshow.R$id: int mss_vp
+com.jiusg.mainscreenshow.R$id: int qq
+com.jiusg.mainscreenshow.R$id: int sw_msseventset
+com.jiusg.mainscreenshow.R$id: int tv_alpha_title
+com.jiusg.mainscreenshow.R$id: int tv_help
+com.jiusg.mainscreenshow.R$id: int tv_help_
+com.jiusg.mainscreenshow.R$id: int tv_help_answer
+com.jiusg.mainscreenshow.R$id: int tv_help_question
+com.jiusg.mainscreenshow.R$id: int tv_mssevent
+com.jiusg.mainscreenshow.R$id: int tv_mssevent_oc
+com.jiusg.mainscreenshow.R$id: int tv_msseventset_seekbar
+com.jiusg.mainscreenshow.R$id: int tv_msseventset_setting
+com.jiusg.mainscreenshow.R$id: int tv_msseventset_setting_
+com.jiusg.mainscreenshow.R$id: int tv_msseventset_tip
+com.jiusg.mainscreenshow.R$id: int tv_msseventset_title
+com.jiusg.mainscreenshow.R$id: int tv_msseventset_title_
+com.jiusg.mainscreenshow.R$id: int tv_previewA
+com.jiusg.mainscreenshow.R$id: int tv_vp
+com.jiusg.mainscreenshow.R$id: int viewpager
+com.jiusg.mainscreenshow.R$layout: int actionbar_mss
+com.jiusg.mainscreenshow.R$layout: int activity_feedback
+com.jiusg.mainscreenshow.R$layout: int activity_help
+com.jiusg.mainscreenshow.R$layout: int activity_mss
+com.jiusg.mainscreenshow.R$layout: int activity_mssevent
+com.jiusg.mainscreenshow.R$layout: int activity_msspreview
+com.jiusg.mainscreenshow.R$layout: int activity_picturewallchoose
+com.jiusg.mainscreenshow.R$layout: int activity_previewanimation
+com.jiusg.mainscreenshow.R$layout: int activity_welcome
+com.jiusg.mainscreenshow.R$layout: int activity_welcome_
+com.jiusg.mainscreenshow.R$layout: int activity_welcome__
+com.jiusg.mainscreenshow.R$layout: int fragment_mssevent
+com.jiusg.mainscreenshow.R$layout: int fragment_msspreview
+com.jiusg.mainscreenshow.R$layout: int gv_mss
+com.jiusg.mainscreenshow.R$layout: int gv_pwc
+com.jiusg.mainscreenshow.R$layout: int list_alpha
+com.jiusg.mainscreenshow.R$layout: int list_help
+com.jiusg.mainscreenshow.R$layout: int list_mssevent
+com.jiusg.mainscreenshow.R$layout: int list_msseventset
+com.jiusg.mainscreenshow.R$layout: int tab_content
+com.jiusg.mainscreenshow.R$layout: int viewpage1
+com.jiusg.mainscreenshow.R$layout: int viewpage2
+com.jiusg.mainscreenshow.R$layout: int viewpage3
+com.jiusg.mainscreenshow.R$layout: int viewpage4
+com.jiusg.mainscreenshow.R$menu: int action_bar_mssevent_set
+com.jiusg.mainscreenshow.R$menu: int action_bar_picturewallchoose
+com.jiusg.mainscreenshow.R$menu: int menu_feedback
+com.jiusg.mainscreenshow.R$menu: int menu_setting_nomeizu
+com.jiusg.mainscreenshow.R$menu: int menu_settings
+com.jiusg.mainscreenshow.R$string: int Ver_1_0_0
+com.jiusg.mainscreenshow.R$string: int Ver_1_0_2
+com.jiusg.mainscreenshow.R$string: int Ver_1_0_6
+com.jiusg.mainscreenshow.R$string: int Ver_1_0_9
+com.jiusg.mainscreenshow.R$string: int Ver_1_1_2
+com.jiusg.mainscreenshow.R$string: int Ver_1_1_4
+com.jiusg.mainscreenshow.R$string: int Ver_1_1_5
+com.jiusg.mainscreenshow.R$string: int Ver_1_2_0
+com.jiusg.mainscreenshow.R$string: int Ver_1_2_1
+com.jiusg.mainscreenshow.R$string: int Ver_1_2_3
+com.jiusg.mainscreenshow.R$string: int Ver_1_2_5
+com.jiusg.mainscreenshow.R$string: int Ver_1_3_0
+com.jiusg.mainscreenshow.R$string: int Ver_1_3_2
+com.jiusg.mainscreenshow.R$string: int Ver_1_3_3
+com.jiusg.mainscreenshow.R$string: int Ver_1_3_4
+com.jiusg.mainscreenshow.R$string: int Ver_1_3_7
+com.jiusg.mainscreenshow.R$string: int Ver_1_3_8
+com.jiusg.mainscreenshow.R$string: int Ver_1_3_9
+com.jiusg.mainscreenshow.R$string: int Ver_1_4_0
+com.jiusg.mainscreenshow.R$string: int Ver_1_4_5
+com.jiusg.mainscreenshow.R$string: int action_Charing
+com.jiusg.mainscreenshow.R$string: int action_ChoosePlease
+com.jiusg.mainscreenshow.R$string: int action_Desktop
+com.jiusg.mainscreenshow.R$string: int action_LockScreen
+com.jiusg.mainscreenshow.R$string: int action_MSSEvent
+com.jiusg.mainscreenshow.R$string: int action_MSSPreview
+com.jiusg.mainscreenshow.R$string: int action_SMS
+com.jiusg.mainscreenshow.R$string: int action_Setting
+com.jiusg.mainscreenshow.R$string: int action_SettingApp
+com.jiusg.mainscreenshow.R$string: int action_SettingMore
+com.jiusg.mainscreenshow.R$string: int action_WaitSay
+com.jiusg.mainscreenshow.R$string: int action_activated
+com.jiusg.mainscreenshow.R$string: int action_add
+com.jiusg.mainscreenshow.R$string: int action_advice
+com.jiusg.mainscreenshow.R$string: int action_adviceOnline
+com.jiusg.mainscreenshow.R$string: int action_alread
+com.jiusg.mainscreenshow.R$string: int action_call
+com.jiusg.mainscreenshow.R$string: int action_cancel
+com.jiusg.mainscreenshow.R$string: int action_checking
+com.jiusg.mainscreenshow.R$string: int action_clear
+com.jiusg.mainscreenshow.R$string: int action_delete
+com.jiusg.mainscreenshow.R$string: int action_deleting
+com.jiusg.mainscreenshow.R$string: int action_e_mail
+com.jiusg.mainscreenshow.R$string: int action_help
+com.jiusg.mainscreenshow.R$string: int action_jc
+com.jiusg.mainscreenshow.R$string: int action_loading
+com.jiusg.mainscreenshow.R$string: int action_look
+com.jiusg.mainscreenshow.R$string: int action_notip
+com.jiusg.mainscreenshow.R$string: int action_ok
+com.jiusg.mainscreenshow.R$string: int action_picture
+com.jiusg.mainscreenshow.R$string: int action_pleaseWait
+com.jiusg.mainscreenshow.R$string: int action_start
+com.jiusg.mainscreenshow.R$string: int action_started
+com.jiusg.mainscreenshow.R$string: int action_stop
+com.jiusg.mainscreenshow.R$string: int action_stoped
+com.jiusg.mainscreenshow.R$string: int action_submiting
+com.jiusg.mainscreenshow.R$string: int action_updateBackground
+com.jiusg.mainscreenshow.R$string: int action_updateNow
+com.jiusg.mainscreenshow.R$string: int action_updateRecord
+com.jiusg.mainscreenshow.R$string: int action_updating
+com.jiusg.mainscreenshow.R$string: int action_warn
+com.jiusg.mainscreenshow.R$string: int animation
+com.jiusg.mainscreenshow.R$string: int app_name
+com.jiusg.mainscreenshow.R$string: int bubble_size_big
+com.jiusg.mainscreenshow.R$string: int bubble_size_muchBig
+com.jiusg.mainscreenshow.R$string: int bubble_size_muchSmall
+com.jiusg.mainscreenshow.R$string: int bubble_size_random
+com.jiusg.mainscreenshow.R$string: int bubble_size_small
+com.jiusg.mainscreenshow.R$string: int event_call
+com.jiusg.mainscreenshow.R$string: int event_charing
+com.jiusg.mainscreenshow.R$string: int event_desktop
+com.jiusg.mainscreenshow.R$string: int event_lockScreen
+com.jiusg.mainscreenshow.R$string: int event_sms
+com.jiusg.mainscreenshow.R$string: int help_answer1
+com.jiusg.mainscreenshow.R$string: int help_answer2
+com.jiusg.mainscreenshow.R$string: int help_answer3
+com.jiusg.mainscreenshow.R$string: int help_answer4
+com.jiusg.mainscreenshow.R$string: int help_bubble
+com.jiusg.mainscreenshow.R$string: int help_call
+com.jiusg.mainscreenshow.R$string: int help_charing
+com.jiusg.mainscreenshow.R$string: int help_desktop
+com.jiusg.mainscreenshow.R$string: int help_info
+com.jiusg.mainscreenshow.R$string: int help_info_
+com.jiusg.mainscreenshow.R$string: int help_lockscreen
+com.jiusg.mainscreenshow.R$string: int help_picturewall
+com.jiusg.mainscreenshow.R$string: int help_question1
+com.jiusg.mainscreenshow.R$string: int help_question2
+com.jiusg.mainscreenshow.R$string: int help_question3
+com.jiusg.mainscreenshow.R$string: int help_question4
+com.jiusg.mainscreenshow.R$string: int help_rain
+com.jiusg.mainscreenshow.R$string: int help_sms
+com.jiusg.mainscreenshow.R$string: int help_starshine
+com.jiusg.mainscreenshow.R$string: int menu_exit
+com.jiusg.mainscreenshow.R$string: int menu_feedback_submit
+com.jiusg.mainscreenshow.R$string: int menu_setting
+com.jiusg.mainscreenshow.R$string: int pictureWall_play_order
+com.jiusg.mainscreenshow.R$string: int pictureWall_play_order_
+com.jiusg.mainscreenshow.R$string: int pictureWall_play_random
+com.jiusg.mainscreenshow.R$string: int rain_amount_general
+com.jiusg.mainscreenshow.R$string: int rain_amount_less
+com.jiusg.mainscreenshow.R$string: int rain_amount_munch
+com.jiusg.mainscreenshow.R$string: int rain_amount_very_munch
+com.jiusg.mainscreenshow.R$string: int rain_style_1
+com.jiusg.mainscreenshow.R$string: int rain_style_2
+com.jiusg.mainscreenshow.R$string: int second
+com.jiusg.mainscreenshow.R$string: int setting_Advice
+com.jiusg.mainscreenshow.R$string: int setting_App
+com.jiusg.mainscreenshow.R$string: int setting_CheckUpdate
+com.jiusg.mainscreenshow.R$string: int setting_Debug
+com.jiusg.mainscreenshow.R$string: int setting_ErrorTip
+com.jiusg.mainscreenshow.R$string: int setting_Exit
+com.jiusg.mainscreenshow.R$string: int setting_FeedBack
+com.jiusg.mainscreenshow.R$string: int setting_FeedBack_Content
+com.jiusg.mainscreenshow.R$string: int setting_FeedBack_QQ
+com.jiusg.mainscreenshow.R$string: int setting_FlashLight
+com.jiusg.mainscreenshow.R$string: int setting_Frame
+com.jiusg.mainscreenshow.R$string: int setting_Help
+com.jiusg.mainscreenshow.R$string: int setting_LockHelper
+com.jiusg.mainscreenshow.R$string: int setting_MoreSet
+com.jiusg.mainscreenshow.R$string: int setting_PowerBoot
+com.jiusg.mainscreenshow.R$string: int setting_PowerSaving
+com.jiusg.mainscreenshow.R$string: int setting_RAMLimit
+com.jiusg.mainscreenshow.R$string: int setting_ResumeSet
+com.jiusg.mainscreenshow.R$string: int setting_ResumeTip
+com.jiusg.mainscreenshow.R$string: int setting_Update
+com.jiusg.mainscreenshow.R$string: int setting_Version
+com.jiusg.mainscreenshow.R$string: int setting_Welcome
+com.jiusg.mainscreenshow.R$string: int setting_animation
+com.jiusg.mainscreenshow.R$string: int setting_bubble_alpha
+com.jiusg.mainscreenshow.R$string: int setting_bubble_changeColor
+com.jiusg.mainscreenshow.R$string: int setting_bubble_number
+com.jiusg.mainscreenshow.R$string: int setting_bubble_shadow
+com.jiusg.mainscreenshow.R$string: int setting_bubble_size
+com.jiusg.mainscreenshow.R$string: int setting_bubble_speed
+com.jiusg.mainscreenshow.R$string: int setting_charing_run
+com.jiusg.mainscreenshow.R$string: int setting_charing_run_1
+com.jiusg.mainscreenshow.R$string: int setting_desktop_time
+com.jiusg.mainscreenshow.R$string: int setting_pictureWall_alpha
+com.jiusg.mainscreenshow.R$string: int setting_pictureWall_choose
+com.jiusg.mainscreenshow.R$string: int setting_pictureWall_onlyOne
+com.jiusg.mainscreenshow.R$string: int setting_pictureWall_period
+com.jiusg.mainscreenshow.R$string: int setting_pictureWall_play
+com.jiusg.mainscreenshow.R$string: int setting_pictureWall_zoomIn
+com.jiusg.mainscreenshow.R$string: int setting_rain_alpha
+com.jiusg.mainscreenshow.R$string: int setting_rain_amount
+com.jiusg.mainscreenshow.R$string: int setting_rain_speed
+com.jiusg.mainscreenshow.R$string: int setting_rain_style
+com.jiusg.mainscreenshow.R$string: int setting_starShine_meteor
+com.jiusg.mainscreenshow.R$string: int setting_starShine_meteorNum
+com.jiusg.mainscreenshow.R$string: int setting_starShine_starNum
+com.jiusg.mainscreenshow.R$string: int setting_starShine_style
+com.jiusg.mainscreenshow.R$string: int setting_stop
+com.jiusg.mainscreenshow.R$string: int setting_title_about
+com.jiusg.mainscreenshow.R$string: int setting_title_app
+com.jiusg.mainscreenshow.R$string: int setting_title_base
+com.jiusg.mainscreenshow.R$string: int setting_title_more
+com.jiusg.mainscreenshow.R$string: int starShine_num_general
+com.jiusg.mainscreenshow.R$string: int starShine_num_less
+com.jiusg.mainscreenshow.R$string: int starShine_num_much
+com.jiusg.mainscreenshow.R$string: int starShine_style_classical
+com.jiusg.mainscreenshow.R$string: int starShine_style_stars
+com.jiusg.mainscreenshow.R$string: int tip
+com.jiusg.mainscreenshow.R$string: int tip_bubble_alpha
+com.jiusg.mainscreenshow.R$string: int tip_bubble_color
+com.jiusg.mainscreenshow.R$string: int tip_bubble_number
+com.jiusg.mainscreenshow.R$string: int tip_bubble_size
+com.jiusg.mainscreenshow.R$string: int tip_bubble_speed
+com.jiusg.mainscreenshow.R$string: int tip_charing_run
+com.jiusg.mainscreenshow.R$string: int tip_desktop_time
+com.jiusg.mainscreenshow.R$string: int tip_downloadComplete
+com.jiusg.mainscreenshow.R$string: int tip_downloadFailed
+com.jiusg.mainscreenshow.R$string: int tip_downloadFailed_
+com.jiusg.mainscreenshow.R$string: int tip_download_
+com.jiusg.mainscreenshow.R$string: int tip_download_size
+com.jiusg.mainscreenshow.R$string: int tip_end
+com.jiusg.mainscreenshow.R$string: int tip_error
+com.jiusg.mainscreenshow.R$string: int tip_exit
+com.jiusg.mainscreenshow.R$string: int tip_msg_
+com.jiusg.mainscreenshow.R$string: int tip_msg_advice
+com.jiusg.mainscreenshow.R$string: int tip_msg_cancel
+com.jiusg.mainscreenshow.R$string: int tip_msg_feedback
+com.jiusg.mainscreenshow.R$string: int tip_msg_feedbackFailed
+com.jiusg.mainscreenshow.R$string: int tip_msg_getData
+com.jiusg.mainscreenshow.R$string: int tip_msg_help
+com.jiusg.mainscreenshow.R$string: int tip_msg_mail
+com.jiusg.mainscreenshow.R$string: int tip_msg_noNull
+com.jiusg.mainscreenshow.R$string: int tip_msg_picture
+com.jiusg.mainscreenshow.R$string: int tip_msg_pictureWallChoose
+com.jiusg.mainscreenshow.R$string: int tip_msg_sd
+com.jiusg.mainscreenshow.R$string: int tip_newVersion
+com.jiusg.mainscreenshow.R$string: int tip_newVersion_
+com.jiusg.mainscreenshow.R$string: int tip_newVersion_no
+com.jiusg.mainscreenshow.R$string: int tip_picturewall_alpha
+com.jiusg.mainscreenshow.R$string: int tip_picturewall_onlyone
+com.jiusg.mainscreenshow.R$string: int tip_picturewall_period
+com.jiusg.mainscreenshow.R$string: int tip_picturewall_picture
+com.jiusg.mainscreenshow.R$string: int tip_picturewall_zoomin
+com.jiusg.mainscreenshow.R$string: int tip_rain_alpha
+com.jiusg.mainscreenshow.R$string: int tip_rain_amount
+com.jiusg.mainscreenshow.R$string: int tip_rain_speed
+com.jiusg.mainscreenshow.R$string: int tip_rain_style
+com.jiusg.mainscreenshow.R$string: int tip_starshine_starmeteorswitch
+com.jiusg.mainscreenshow.R$string: int title_anomation
+com.jiusg.mainscreenshow.R$string: int title_base
+com.jiusg.mainscreenshow.R$string: int unknown
+com.jiusg.mainscreenshow.R$string: int version_Official
+com.jiusg.mainscreenshow.R$string: int version_Trial
+com.jiusg.mainscreenshow.R$string: int version_TrialOver
+com.jiusg.mainscreenshow.R$string: int version_free
+com.jiusg.mainscreenshow.R$string: int version_unKnow
+com.jiusg.mainscreenshow.R$string: int welcome
+com.jiusg.mainscreenshow.R$string: int welcome_1
+com.jiusg.mainscreenshow.R$string: int welcome_2
+com.jiusg.mainscreenshow.R$string: int welcome_3
+com.jiusg.mainscreenshow.R$string: int welcome_4
+com.jiusg.mainscreenshow.R$style: int AppTheme
+com.jiusg.mainscreenshow.R$style: int AppTheme_Meizu
+com.jiusg.mainscreenshow.R$style: int CustomActionBar
+com.jiusg.mainscreenshow.R$style: int CustomActionBar0
+com.jiusg.mainscreenshow.R$style: int CustomActionButtonOverflow
+com.jiusg.mainscreenshow.R$style: int CustomActionButtonOverflow_nomeizu
+com.jiusg.mainscreenshow.R$xml: int livewallpaper
+com.jiusg.mainscreenshow.R$xml: int setting
+com.jiusg.mainscreenshow.R$xml: int setting_app
+com.jiusg.mainscreenshow.R$xml: int setting_more
+com.jiusg.mainscreenshow.animation.BubbleView: java.lang.String getRandomSize()
+com.jiusg.mainscreenshow.animation.BubbleView: void getPX()
+com.jiusg.mainscreenshow.animation.PictureWallView: int getFrame()
+com.jiusg.mainscreenshow.animation.bubble.BubbleView: java.lang.String getRandomSize()
+com.jiusg.mainscreenshow.animation.bubble.BubbleView: void getPX()
+com.jiusg.mainscreenshow.animation.picturewall.PictureWallView: int getFrame()
+com.jiusg.mainscreenshow.base.BaseApplication
+com.jiusg.mainscreenshow.base.BaseApplication: BaseApplication()
+com.jiusg.mainscreenshow.base.CrashApplication
+com.jiusg.mainscreenshow.receiver.BatteryReceiver
+com.jiusg.mainscreenshow.receiver.BatteryReceiver: BatteryReceiver()
+com.jiusg.mainscreenshow.receiver.BatteryReceiver: BatteryReceiver(com.jiusg.mainscreenshow.service.MSSService)
+com.jiusg.mainscreenshow.receiver.BootReceiver
+com.jiusg.mainscreenshow.receiver.BootReceiver: BootReceiver()
+com.jiusg.mainscreenshow.receiver.NetworkReceiver
+com.jiusg.mainscreenshow.receiver.NetworkReceiver: NetworkReceiver()
+com.jiusg.mainscreenshow.receiver.PhoneReceiver
+com.jiusg.mainscreenshow.receiver.PhoneReceiver: PhoneReceiver()
+com.jiusg.mainscreenshow.receiver.SMSReceiver
+com.jiusg.mainscreenshow.receiver.SMSReceiver: SMSReceiver()
+com.jiusg.mainscreenshow.service.MSSLiveWallpaper
+com.jiusg.mainscreenshow.service.MSSLiveWallpaper: int animation
+com.jiusg.mainscreenshow.service.MSSLiveWallpaper: com.jiusg.mainscreenshow.service.MSSLiveWallpaper$MSSEngine engine
+com.jiusg.mainscreenshow.service.MSSLiveWallpaper: int ANIMATION
+com.jiusg.mainscreenshow.service.MSSLiveWallpaper: java.lang.String TAG
+com.jiusg.mainscreenshow.service.MSSLiveWallpaper: MSSLiveWallpaper()
+com.jiusg.mainscreenshow.service.MSSLiveWallpaper: android.service.wallpaper.WallpaperService$Engine onCreateEngine()
+com.jiusg.mainscreenshow.service.MSSLiveWallpaper: void onCreate()
+com.jiusg.mainscreenshow.service.MSSLiveWallpaper: void onDestroy()
+com.jiusg.mainscreenshow.service.MSSLiveWallpaper: int onStartCommand(android.content.Intent,int,int)
+com.jiusg.mainscreenshow.service.MSSLiveWallpaper$MSSEngine
+com.jiusg.mainscreenshow.service.MSSLiveWallpaper$MSSEngine: com.jiusg.mainscreenshow.animation.anim.Animation animation
+com.jiusg.mainscreenshow.service.MSSLiveWallpaper$MSSEngine: int frame
+com.jiusg.mainscreenshow.service.MSSLiveWallpaper$MSSEngine: int speed
+com.jiusg.mainscreenshow.service.MSSLiveWallpaper$MSSEngine: com.jiusg.mainscreenshow.service.MSSLiveWallpaper$MSSEngine$DrawThread drawThread
+com.jiusg.mainscreenshow.service.MSSLiveWallpaper$MSSEngine: com.jiusg.mainscreenshow.service.MSSLiveWallpaper$MSSEngine$CountThread countThread
+com.jiusg.mainscreenshow.service.MSSLiveWallpaper$MSSEngine: boolean isLoopDraw
+com.jiusg.mainscreenshow.service.MSSLiveWallpaper$MSSEngine: boolean isLoopCount
+com.jiusg.mainscreenshow.service.MSSLiveWallpaper$MSSEngine: boolean isVisible
+com.jiusg.mainscreenshow.service.MSSLiveWallpaper$MSSEngine: boolean isReset
+com.jiusg.mainscreenshow.service.MSSLiveWallpaper$MSSEngine: com.jiusg.mainscreenshow.service.MSSLiveWallpaper this$0
+com.jiusg.mainscreenshow.service.MSSLiveWallpaper$MSSEngine: MSSLiveWallpaper$MSSEngine(com.jiusg.mainscreenshow.service.MSSLiveWallpaper)
+com.jiusg.mainscreenshow.service.MSSLiveWallpaper$MSSEngine: void init()
+com.jiusg.mainscreenshow.service.MSSLiveWallpaper$MSSEngine: com.jiusg.mainscreenshow.animation.anim.Animation instanceAnimation(int)
+com.jiusg.mainscreenshow.service.MSSLiveWallpaper$MSSEngine: int loadSettingAnimation()
+com.jiusg.mainscreenshow.service.MSSLiveWallpaper$MSSEngine: void startAnimation()
+com.jiusg.mainscreenshow.service.MSSLiveWallpaper$MSSEngine: void reset()
+com.jiusg.mainscreenshow.service.MSSLiveWallpaper$MSSEngine: void stopAnimation()
+com.jiusg.mainscreenshow.service.MSSLiveWallpaper$MSSEngine: void onVisibilityChanged(boolean)
+com.jiusg.mainscreenshow.service.MSSLiveWallpaper$MSSEngine: void onCreate(android.view.SurfaceHolder)
+com.jiusg.mainscreenshow.service.MSSLiveWallpaper$MSSEngine: void onDestroy()
+com.jiusg.mainscreenshow.service.MSSLiveWallpaper$MSSEngine: void onSurfaceChanged(android.view.SurfaceHolder,int,int,int)
+com.jiusg.mainscreenshow.service.MSSLiveWallpaper$MSSEngine: void onSurfaceCreated(android.view.SurfaceHolder)
+com.jiusg.mainscreenshow.service.MSSLiveWallpaper$MSSEngine: void onSurfaceDestroyed(android.view.SurfaceHolder)
+com.jiusg.mainscreenshow.service.MSSLiveWallpaper$MSSEngine: void access$000(com.jiusg.mainscreenshow.service.MSSLiveWallpaper$MSSEngine)
+com.jiusg.mainscreenshow.service.MSSLiveWallpaper$MSSEngine: boolean access$100(com.jiusg.mainscreenshow.service.MSSLiveWallpaper$MSSEngine)
+com.jiusg.mainscreenshow.service.MSSLiveWallpaper$MSSEngine: com.jiusg.mainscreenshow.animation.anim.Animation access$200(com.jiusg.mainscreenshow.service.MSSLiveWallpaper$MSSEngine)
+com.jiusg.mainscreenshow.service.MSSLiveWallpaper$MSSEngine: int access$300(com.jiusg.mainscreenshow.service.MSSLiveWallpaper$MSSEngine)
+com.jiusg.mainscreenshow.service.MSSLiveWallpaper$MSSEngine: boolean access$400(com.jiusg.mainscreenshow.service.MSSLiveWallpaper$MSSEngine)
+com.jiusg.mainscreenshow.service.MSSLiveWallpaper$MSSEngine: int access$500(com.jiusg.mainscreenshow.service.MSSLiveWallpaper$MSSEngine)
+com.jiusg.mainscreenshow.service.MSSLiveWallpaper$MSSEngine$CountThread
+com.jiusg.mainscreenshow.service.MSSLiveWallpaper$MSSEngine$CountThread: com.jiusg.mainscreenshow.service.MSSLiveWallpaper$MSSEngine this$1
+com.jiusg.mainscreenshow.service.MSSLiveWallpaper$MSSEngine$CountThread: MSSLiveWallpaper$MSSEngine$CountThread(com.jiusg.mainscreenshow.service.MSSLiveWallpaper$MSSEngine)
+com.jiusg.mainscreenshow.service.MSSLiveWallpaper$MSSEngine$CountThread: void run()
+com.jiusg.mainscreenshow.service.MSSLiveWallpaper$MSSEngine$DrawThread
+com.jiusg.mainscreenshow.service.MSSLiveWallpaper$MSSEngine$DrawThread: android.graphics.Canvas canvas
+com.jiusg.mainscreenshow.service.MSSLiveWallpaper$MSSEngine$DrawThread: android.view.SurfaceHolder holder
+com.jiusg.mainscreenshow.service.MSSLiveWallpaper$MSSEngine$DrawThread: com.jiusg.mainscreenshow.service.MSSLiveWallpaper$MSSEngine this$1
+com.jiusg.mainscreenshow.service.MSSLiveWallpaper$MSSEngine$DrawThread: MSSLiveWallpaper$MSSEngine$DrawThread(com.jiusg.mainscreenshow.service.MSSLiveWallpaper$MSSEngine)
+com.jiusg.mainscreenshow.service.MSSLiveWallpaper$MSSEngine$DrawThread: void run()
+com.jiusg.mainscreenshow.service.MSSService
+com.jiusg.mainscreenshow.service.MSSService: int FLAGS
+com.jiusg.mainscreenshow.service.MSSService: android.view.WindowManager Wm
+com.jiusg.mainscreenshow.service.MSSService: android.view.WindowManager Wm_control
+com.jiusg.mainscreenshow.service.MSSService: android.view.WindowManager$LayoutParams wmParams
+com.jiusg.mainscreenshow.service.MSSService: android.view.WindowManager$LayoutParams wmParams_control
+com.jiusg.mainscreenshow.service.MSSService: android.app.ActivityManager mActivityManager
+com.jiusg.mainscreenshow.service.MSSService: android.view.View win_control
+com.jiusg.mainscreenshow.service.MSSService: android.content.SharedPreferences sp
+com.jiusg.mainscreenshow.service.MSSService: android.content.SharedPreferences sp_setting
+com.jiusg.mainscreenshow.service.MSSService: com.jiusg.mainscreenshow.service.MSSService$ScreenReceiver sr
+com.jiusg.mainscreenshow.service.MSSService: java.lang.String TAG
+com.jiusg.mainscreenshow.service.MSSService: com.jiusg.mainscreenshow.service.MSSService$MSSReceiver mssr
+com.jiusg.mainscreenshow.service.MSSService: com.jiusg.mainscreenshow.receiver.BatteryReceiver br
+com.jiusg.mainscreenshow.service.MSSService: android.content.SharedPreferences sp_userinfo
+com.jiusg.mainscreenshow.service.MSSService: android.util.SparseBooleanArray sa_IsEvent
+com.jiusg.mainscreenshow.service.MSSService: android.util.SparseArray sa_Animation
+com.jiusg.mainscreenshow.service.MSSService: com.jiusg.mainscreenshow.animation.anim.AnimationManage animManage
+com.jiusg.mainscreenshow.service.MSSService: boolean isView
+com.jiusg.mainscreenshow.service.MSSService: boolean isCharing
+com.jiusg.mainscreenshow.service.MSSService: boolean isWifi
+com.jiusg.mainscreenshow.service.MSSService: com.jiusg.mainscreenshow.service.MSSService$MssHandler mHandler
+com.jiusg.mainscreenshow.service.MSSService: int HANDLER_ISWIFI
+com.jiusg.mainscreenshow.service.MSSService: int HANDLER_TIMER
+com.jiusg.mainscreenshow.service.MSSService: android.app.NotificationManager nm
+com.jiusg.mainscreenshow.service.MSSService: int NOTIFY_ID
+com.jiusg.mainscreenshow.service.MSSService: com.jiusg.mainscreenshow.tools.ImageCache imageCache
+com.jiusg.mainscreenshow.service.MSSService: int imageCacheFlag
+com.jiusg.mainscreenshow.service.MSSService: boolean isExit
+com.jiusg.mainscreenshow.service.MSSService: MSSService()
+com.jiusg.mainscreenshow.service.MSSService: android.os.IBinder onBind(android.content.Intent)
+com.jiusg.mainscreenshow.service.MSSService: void onCreate()
+com.jiusg.mainscreenshow.service.MSSService: void onDestroy()
+com.jiusg.mainscreenshow.service.MSSService: int onStartCommand(android.content.Intent,int,int)
+com.jiusg.mainscreenshow.service.MSSService: java.util.List getHomes()
+com.jiusg.mainscreenshow.service.MSSService: boolean isHome()
+com.jiusg.mainscreenshow.service.MSSService: java.lang.String getTopPackNameOld()
+com.jiusg.mainscreenshow.service.MSSService: java.lang.String getTopPackNameNew()
+com.jiusg.mainscreenshow.service.MSSService: boolean isScreenLocked(android.content.Context)
+com.jiusg.mainscreenshow.service.MSSService: boolean onTouch(android.view.View,android.view.MotionEvent)
+com.jiusg.mainscreenshow.service.MSSService: void loadEvent()
+com.jiusg.mainscreenshow.service.MSSService: void startAnimation(int,int)
+com.jiusg.mainscreenshow.service.MSSService: void stopAnimation()
+com.jiusg.mainscreenshow.service.MSSService: java.lang.String GetAnimationClassName(java.lang.String)
+com.jiusg.mainscreenshow.service.MSSService: com.jiusg.mainscreenshow.process.AnimationProcess instanceAnimation(java.lang.String,int)
+com.jiusg.mainscreenshow.service.MSSService: int convertAnimation(java.lang.String)
+com.jiusg.mainscreenshow.service.MSSService: void previewStartA(int)
+com.jiusg.mainscreenshow.service.MSSService: void previewStopA()
+com.jiusg.mainscreenshow.service.MSSService: void registerBattery()
+com.jiusg.mainscreenshow.service.MSSService: void unregisterBattery()
+com.jiusg.mainscreenshow.service.MSSService: void runCharing()
+com.jiusg.mainscreenshow.service.MSSService: void disposeWifi()
+com.jiusg.mainscreenshow.service.MSSService: void disposeLaunchImage()
+com.jiusg.mainscreenshow.service.MSSService: void checkUpdate()
+com.jiusg.mainscreenshow.service.MSSService: void notifyVersion(java.lang.String,java.lang.String)
+com.jiusg.mainscreenshow.service.MSSService: void canclaNotify()
+com.jiusg.mainscreenshow.service.MSSService: android.util.SparseBooleanArray access$000(com.jiusg.mainscreenshow.service.MSSService)
+com.jiusg.mainscreenshow.service.MSSService: android.util.SparseArray access$100(com.jiusg.mainscreenshow.service.MSSService)
+com.jiusg.mainscreenshow.service.MSSService: boolean access$200(com.jiusg.mainscreenshow.service.MSSService)
+com.jiusg.mainscreenshow.service.MSSService: boolean access$300(com.jiusg.mainscreenshow.service.MSSService)
+com.jiusg.mainscreenshow.service.MSSService: boolean access$302(com.jiusg.mainscreenshow.service.MSSService,boolean)
+com.jiusg.mainscreenshow.service.MSSService: com.jiusg.mainscreenshow.service.MSSService$MssHandler access$400(com.jiusg.mainscreenshow.service.MSSService)
+com.jiusg.mainscreenshow.service.MSSService: void access$500(com.jiusg.mainscreenshow.service.MSSService,java.lang.String,java.lang.String)
+com.jiusg.mainscreenshow.service.MSSService: void <clinit>()
+com.jiusg.mainscreenshow.service.MSSService$1
+com.jiusg.mainscreenshow.service.MSSService$1: com.jiusg.mainscreenshow.tools.UpdateVersion val$updateVersion
+com.jiusg.mainscreenshow.service.MSSService$1: com.jiusg.mainscreenshow.service.MSSService this$0
+com.jiusg.mainscreenshow.service.MSSService$1: MSSService$1(com.jiusg.mainscreenshow.service.MSSService,com.jiusg.mainscreenshow.tools.UpdateVersion,com.jiusg.mainscreenshow.tools.UpdateVersion)
+com.jiusg.mainscreenshow.service.MSSService$1: void done(java.lang.String,java.lang.String,java.lang.String)
+com.jiusg.mainscreenshow.service.MSSService$2
+com.jiusg.mainscreenshow.service.MSSService$2: com.jiusg.mainscreenshow.service.MSSService this$0
+com.jiusg.mainscreenshow.service.MSSService$2: MSSService$2(com.jiusg.mainscreenshow.service.MSSService)
+com.jiusg.mainscreenshow.service.MSSService$2: void run()
+com.jiusg.mainscreenshow.service.MSSService$3
+com.jiusg.mainscreenshow.service.MSSService$3: com.jiusg.mainscreenshow.tools.UpdateVersion val$updateVersion
+com.jiusg.mainscreenshow.service.MSSService$3: com.jiusg.mainscreenshow.service.MSSService this$0
+com.jiusg.mainscreenshow.service.MSSService$3: MSSService$3(com.jiusg.mainscreenshow.service.MSSService,com.jiusg.mainscreenshow.tools.UpdateVersion,com.jiusg.mainscreenshow.tools.UpdateVersion)
+com.jiusg.mainscreenshow.service.MSSService$3: void done(java.lang.String,java.lang.String,java.lang.String)
+com.jiusg.mainscreenshow.service.MSSService$Event
+com.jiusg.mainscreenshow.service.MSSService$Event: int EVENT_NO
+com.jiusg.mainscreenshow.service.MSSService$Event: int EVENT_CALL
+com.jiusg.mainscreenshow.service.MSSService$Event: int EVENT_DESKTOP
+com.jiusg.mainscreenshow.service.MSSService$Event: int EVENT_LOCKSCREEN
+com.jiusg.mainscreenshow.service.MSSService$Event: int EVENT_SMS
+com.jiusg.mainscreenshow.service.MSSService$Event: int EVENT_CHARGING
+com.jiusg.mainscreenshow.service.MSSService$Event: int EVENT_PREVIEW
+com.jiusg.mainscreenshow.service.MSSService$Event: com.jiusg.mainscreenshow.service.MSSService this$0
+com.jiusg.mainscreenshow.service.MSSService$Event: MSSService$Event(com.jiusg.mainscreenshow.service.MSSService)
+com.jiusg.mainscreenshow.service.MSSService$MSSReceiver
+com.jiusg.mainscreenshow.service.MSSService$MSSReceiver: com.jiusg.mainscreenshow.service.MSSService this$0
+com.jiusg.mainscreenshow.service.MSSService$MSSReceiver: MSSService$MSSReceiver(com.jiusg.mainscreenshow.service.MSSService)
+com.jiusg.mainscreenshow.service.MSSService$MSSReceiver: void onReceive(android.content.Context,android.content.Intent)
+com.jiusg.mainscreenshow.service.MSSService$MSSSBinder
+com.jiusg.mainscreenshow.service.MSSService$MSSSBinder: com.jiusg.mainscreenshow.service.MSSService this$0
+com.jiusg.mainscreenshow.service.MSSService$MSSSBinder: MSSService$MSSSBinder(com.jiusg.mainscreenshow.service.MSSService)
+com.jiusg.mainscreenshow.service.MSSService$MSSSBinder: com.jiusg.mainscreenshow.service.MSSService getMSSService()
+com.jiusg.mainscreenshow.service.MSSService$MssHandler
+com.jiusg.mainscreenshow.service.MSSService$MssHandler: com.jiusg.mainscreenshow.service.MSSService this$0
+com.jiusg.mainscreenshow.service.MSSService$MssHandler: MSSService$MssHandler(com.jiusg.mainscreenshow.service.MSSService)
+com.jiusg.mainscreenshow.service.MSSService$MssHandler: void handleMessage(android.os.Message)
+com.jiusg.mainscreenshow.service.MSSService$ScreenReceiver
+com.jiusg.mainscreenshow.service.MSSService$ScreenReceiver: boolean isRegisterReceiver
+com.jiusg.mainscreenshow.service.MSSService$ScreenReceiver: com.jiusg.mainscreenshow.service.MSSService this$0
+com.jiusg.mainscreenshow.service.MSSService$ScreenReceiver: MSSService$ScreenReceiver(com.jiusg.mainscreenshow.service.MSSService)
+com.jiusg.mainscreenshow.service.MSSService$ScreenReceiver: void onReceive(android.content.Context,android.content.Intent)
+com.jiusg.mainscreenshow.service.MSSService$ScreenReceiver: void registerScreenActionReceiver(android.content.Context)
+com.jiusg.mainscreenshow.service.MSSService$ScreenReceiver: void unRegisterScreenActionReceiver(android.content.Context)
+com.jiusg.mainscreenshow.service.MSSService_animation
+com.jiusg.mainscreenshow.service.MSSService_animation: com.jiusg.mainscreenshow.process.AnimationProcess animationP
+com.jiusg.mainscreenshow.service.MSSService_animation: int eventId
+com.jiusg.mainscreenshow.service.MSSService_animation: MSSService_animation()
+com.jiusg.mainscreenshow.service.MSSService_animation: com.jiusg.mainscreenshow.process.AnimationProcess getAnimationP()
+com.jiusg.mainscreenshow.service.MSSService_animation: void setAnimationP(com.jiusg.mainscreenshow.process.AnimationProcess)
+com.jiusg.mainscreenshow.service.MSSService_animation: int getEventId()
+com.jiusg.mainscreenshow.service.MSSService_animation: void setEventId(int)
+com.jiusg.mainscreenshow.service.MSSService_eventStack
+com.jiusg.mainscreenshow.service.MSSService_eventStack: int[] Eventing
+com.jiusg.mainscreenshow.service.MSSService_eventStack: java.lang.String TAG
+com.jiusg.mainscreenshow.service.MSSService_eventStack: MSSService_eventStack()
+com.jiusg.mainscreenshow.service.MSSService_eventStack: void intoEvent(int)
+com.jiusg.mainscreenshow.service.MSSService_eventStack: void into(int)
+com.jiusg.mainscreenshow.service.MSSService_eventStack: int getEvent()
+com.jiusg.mainscreenshow.service.MSSService_eventStack: void popEvent(int)
+com.jiusg.mainscreenshow.service.MSSService_eventStack: boolean delEvent(int)
+com.jiusg.mainscreenshow.service.MSSService_eventStack: int getPriority(int)
+com.jiusg.mainscreenshow.service.MSSService_eventStack: void clearEvent()
+com.jiusg.mainscreenshow.service.MSSService_eventStack: void printlEvent()
+com.jiusg.mainscreenshow.tools.UpdateVersion$CallBack: com.jiusg.mainscreenshow.tools.UpdateVersion this$0
+com.jiusg.mainscreenshow.tools.UpdateVersion$CallBack: UpdateVersion$CallBack(com.jiusg.mainscreenshow.tools.UpdateVersion)
+com.jiusg.mainscreenshow.tools.UpdateVersion$CallBack: void done(java.lang.String,java.lang.String,java.lang.String)
+com.jiusg.mainscreenshow.ui.BaseSet
+com.jiusg.mainscreenshow.ui.BaseSet: BaseSet()
+com.jiusg.mainscreenshow.ui.CallSet
+com.jiusg.mainscreenshow.ui.CallSet: CallSet()
+com.jiusg.mainscreenshow.ui.CharingSet
+com.jiusg.mainscreenshow.ui.CharingSet: CharingSet()
+com.jiusg.mainscreenshow.ui.DesktopSet
+com.jiusg.mainscreenshow.ui.DesktopSet: DesktopSet()
+com.jiusg.mainscreenshow.ui.FeedBack
+com.jiusg.mainscreenshow.ui.FeedBack: FeedBack()
+com.jiusg.mainscreenshow.ui.Help
+com.jiusg.mainscreenshow.ui.Help: Help()
+com.jiusg.mainscreenshow.ui.LockScreenSet
+com.jiusg.mainscreenshow.ui.LockScreenSet: LockScreenSet()
+com.jiusg.mainscreenshow.ui.MSS
+com.jiusg.mainscreenshow.ui.MSS: MSS()
+com.jiusg.mainscreenshow.ui.MSS: void onClick(android.view.View)
+com.jiusg.mainscreenshow.ui.MSSEvent
+com.jiusg.mainscreenshow.ui.MSSEvent: MSSEvent()
+com.jiusg.mainscreenshow.ui.MSSPreview
+com.jiusg.mainscreenshow.ui.MSSPreview: MSSPreview()
+com.jiusg.mainscreenshow.ui.PictureWallChoose
+com.jiusg.mainscreenshow.ui.PictureWallChoose: PictureWallChoose()
+com.jiusg.mainscreenshow.ui.PreviewAnimation
+com.jiusg.mainscreenshow.ui.PreviewAnimation: PreviewAnimation()
+com.jiusg.mainscreenshow.ui.SMSSet
+com.jiusg.mainscreenshow.ui.SMSSet: SMSSet()
+com.jiusg.mainscreenshow.ui.Setting
+com.jiusg.mainscreenshow.ui.Setting: Setting()
+com.jiusg.mainscreenshow.ui.SettingApp
+com.jiusg.mainscreenshow.ui.SettingApp: SettingApp()
+com.jiusg.mainscreenshow.ui.SettingMore
+com.jiusg.mainscreenshow.ui.SettingMore: SettingMore()
+com.jiusg.mainscreenshow.ui.Welcome
+com.jiusg.mainscreenshow.ui.Welcome: Welcome()
+com.meizu.mstore.license.LicenseResult: android.os.Parcelable$Creator CREATOR
+com.meizu.mstore.license.SubProduct: android.os.Parcelable$Creator CREATOR
+net.youmi.android.AdBrowser
+net.youmi.android.AdBrowser: AdBrowser()
+net.youmi.android.AdReceiver
+net.youmi.android.AdReceiver: AdReceiver()
+net.youmi.android.AdService
+net.youmi.android.AdService: AdService()
+net.youmi.android.ExpService
+net.youmi.android.ExpService: ExpService()
+net.youmi.android.a.a.e.a: net.youmi.android.a.a.e.a[] values()
+net.youmi.android.a.a.e.a: net.youmi.android.a.a.e.a valueOf(java.lang.String)
+net.youmi.android.a.a.g.d.g
+net.youmi.android.a.a.j.a.g: void setEnableOffersJsCodeLoader(boolean)
+net.youmi.android.a.a.j.a.g: void setEnableOffersJsFileLoader(boolean)
+net.youmi.android.a.a.j.a.g: android.view.View getCurrentView()
+net.youmi.android.a.a.j.a.g: void setUserAgentString(java.lang.String)
+net.youmi.android.a.a.j.a.g: java.lang.String getUserAgentString()
+net.youmi.android.a.a.k.b: void setBackEnable(boolean)
+net.youmi.android.a.a.k.b: void setForwardEnable(boolean)
+net.youmi.android.a.a.k.b.c: net.youmi.android.a.a.k.b.c[] values()
+net.youmi.android.a.a.k.b.c: net.youmi.android.a.a.k.b.c valueOf(java.lang.String)
+net.youmi.android.a.a.k.b.d: void setState(net.youmi.android.a.a.k.b.c)
+net.youmi.android.a.a.k.b.d: net.youmi.android.a.a.k.b.c getState()
+net.youmi.android.a.a.k.b.d: net.youmi.android.a.a.k.b.c getPreState()
+net.youmi.android.a.a.k.b.f: void setOnRefreshListener(net.youmi.android.a.a.k.b.l)
+net.youmi.android.a.a.k.b.f: android.view.View getRefreshableView()
+net.youmi.android.a.a.k.b.f: net.youmi.android.a.a.k.b.d getHeaderLoadingLayout()
+net.youmi.android.a.a.k.d: void setLogoVisibility(int)
+net.youmi.android.a.a.k.d: void setPointsLayoutVisibility(int)
+net.youmi.android.a.a.k.d: void setBackBtnVisibiity(int)
+net.youmi.android.a.a.k.d: void setTitle(java.lang.CharSequence)
+net.youmi.android.a.a.k.d: void setPointsUnit(java.lang.CharSequence)
+net.youmi.android.a.a.k.d: void setPoints(java.lang.String)
+net.youmi.android.a.a.k.d: void setTitleBackgroundColor(int)
+net.youmi.android.offers.PointsReceiver
+net.youmi.android.offers.e
+org.apache.http.entity.mime.HttpMultipartMode: org.apache.http.entity.mime.HttpMultipartMode[] values()
+org.apache.http.entity.mime.HttpMultipartMode: org.apache.http.entity.mime.HttpMultipartMode valueOf(java.lang.String)

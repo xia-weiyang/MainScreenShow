@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="bdappunion_2.0_log_enabled">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/bdappunion_2.0_log_enabled.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

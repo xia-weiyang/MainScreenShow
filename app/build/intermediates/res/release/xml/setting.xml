@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/setting_title_base" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="PowerBoot"
+            android:summaryOff=""
+            android:summaryOn="需安装在手机内存中"
+            android:title="@string/setting_PowerBoot" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="PowerSaving"
+            android:summaryOff=""
+            android:summaryOn="在电池电量不足20%时停止所有动画"
+            android:title="@string/setting_PowerSaving" />
+
+        <ListPreference
+            android:defaultValue="60"
+            android:dialogTitle="降低帧数可以有效的节省电量"
+            android:entries="@array/Frame"
+            android:entryValues="@array/Frame_Value"
+            android:key="Frame"
+            android:summary=""
+            android:title="@string/setting_Frame" />
+        <PreferenceScreen
+            android:key="MoreSet"
+            android:title="@string/setting_MoreSet" >
+        </PreferenceScreen>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/setting_title_about" >
+        <PreferenceScreen
+            android:key="Welcome"
+            android:title="@string/setting_Welcome" />
+        <PreferenceScreen
+            android:key="Help"
+            android:title="@string/setting_Help" />
+        <PreferenceScreen
+            android:key="Version"
+            android:title="@string/setting_Version" />
+        <PreferenceScreen
+            android:key="CheckUpdate"
+            android:title="@string/setting_CheckUpdate" />
+        <PreferenceScreen
+            android:key="App"
+            android:title="@string/setting_App" />
+        <PreferenceScreen
+            android:key="Update"
+            android:title="@string/setting_Update" />
+        <PreferenceScreen
+        android:key="Advice"
+        android:title="@string/setting_Advice" />
+        <PreferenceScreen
+            android:key="Exit"
+            android:title="@string/setting_Exit" />
+    </PreferenceCategory>
+
+</PreferenceScreen><!-- From: file:/D:/MainScreenShow/MainScreenShow/app/src/main/res/xml/setting.xml -->

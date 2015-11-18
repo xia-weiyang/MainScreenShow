@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <item android:drawable="@drawable/ic_tab_selected_preview" android:state_pressed="false" android:state_selected="true"/>
+    <item android:drawable="@drawable/ic_tab_unselected_preview"/>
+
+</selector>
+<!-- From: file:/D:/MainScreenShow/MainScreenShow/app/src/main/res/drawable/ic_tab_preview.xml -->

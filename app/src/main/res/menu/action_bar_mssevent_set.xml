@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_clear"
+        android:icon="@drawable/ic_clear"
+        android:showAsAction="always"
+        android:title="@string/action_clear"/>
+    <item
+        android:id="@+id/action_help"
+        android:icon="@drawable/ic_help"
+        android:showAsAction="always"
+        android:title="@string/action_help"/>
+
+</menu>

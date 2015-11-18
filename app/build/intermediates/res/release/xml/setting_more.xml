@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+	<PreferenceCategory android:title="@string/setting_title_more" >
+	    <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="ErrorTip"
+            android:summaryOff="程序出错后会弹出提示消息,并在稍后重新启动"
+            android:summaryOn="关闭后程序出错将不会弹出提示,但程序仍就会稍后自启"
+            android:title="@string/setting_ErrorTip" />
+		<CheckBoxPreference
+			android:defaultValue="false"
+			android:key="Debug"
+			android:title="@string/setting_Debug" />
+
+	    <PreferenceScreen 
+	        android:key="ResumeTip"
+	        android:title="@string/setting_ResumeTip"
+	        android:summary="恢复所有点击了不再提示的消息">
+	    </PreferenceScreen>
+	</PreferenceCategory>
+</PreferenceScreen>
+<!-- From: file:/D:/MainScreenShow/MainScreenShow/app/src/main/res/xml/setting_more.xml -->

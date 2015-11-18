@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:layout_marginTop="0dp" >
+
+    <GridView
+        android:id="@+id/gv_mss"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#00000000"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:gravity="fill"
+        android:numColumns="auto_fit"
+        android:horizontalSpacing="1dp"
+        android:verticalSpacing="1dp"
+        android:scrollbarStyle="outsideOverlay" >
+    </GridView>
+
+</RelativeLayout><!-- From: file:/D:/MainScreenShow/MainScreenShow/app/src/main/res/layout/activity_msspreview.xml -->

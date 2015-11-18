@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list" >
+
+    <TextView
+        android:id="@+id/tv_mssevent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="12dp"
+        android:layout_toRightOf="@+id/iv_mssevent"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:textColor="#222222"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/iv_mssevent"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_mssevent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/tv_mssevent"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/app_name"
+        android:paddingLeft="12dp" />
+
+    <TextView 
+        android:id="@+id/tv_mssevent_oc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:textSize="13sp"
+        android:layout_marginRight="15dp"
+        android:text="@string/unknown"/>
+    
+    <ImageView
+        android:id="@+id/iv_mssevent_oc"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/app_name"
+        android:layout_toLeftOf="@+id/tv_mssevent_oc"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/list_mss_close"/>
+
+</RelativeLayout>

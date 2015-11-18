@@ -1,0 +1,37 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        applicationId "com.jiusg.mainscreenshow"
+        minSdkVersion 14
+        targetSdkVersion 22
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+    sourceSets { main { res.srcDirs = ['src/main/res', 'src/main/res/mipmap'] } }
+}
+
+dependencies {
+    compile 'com.android.support:support-v4:22.0.0'
+    compile files('libs/android-async-http-1.4.6.jar')
+    compile files('libs/avoscloud-sdk-v3.3.2.jar')
+    compile files('libs/avoscloud-statistics-v3.3.2.jar')
+    compile files('libs/fastjson.jar')
+    compile files('libs/httpmime-4.2.4.jar')
+    compile files('libs/MStoreLicensing_1.4.jar')
+    compile files('libs/bdappunion_2.0_log_enabled.jar')
+    compile files('libs/YoumiSdk_v5.3.1_2015-08-31.jar')
+}

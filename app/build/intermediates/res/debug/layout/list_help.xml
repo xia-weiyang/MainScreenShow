@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_help_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:paddingLeft="5dp"
+        android:background="#ffffff"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_help_answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+</LinearLayout><!-- From: file:/D:/MainScreenShow/MainScreenShow/app/src/main/res/layout/list_help.xml -->
