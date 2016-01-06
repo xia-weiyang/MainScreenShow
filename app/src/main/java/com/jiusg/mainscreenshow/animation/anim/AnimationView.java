@@ -10,6 +10,7 @@ import android.view.SurfaceView;
 import com.jiusg.mainscreenshow.animation.bubble.BubbleAnimation;
 import com.jiusg.mainscreenshow.animation.picturewall.PictureWallAnimation;
 import com.jiusg.mainscreenshow.animation.rain.RainAnimation;
+import com.jiusg.mainscreenshow.animation.snow.SnowAnimation;
 import com.jiusg.mainscreenshow.animation.starshine.StarshineAnimation;
 import com.jiusg.mainscreenshow.base.C;
 
@@ -70,7 +71,7 @@ public class AnimationView extends SurfaceView implements SurfaceHolder.Callback
             case C.ANIMATION_RAIN:
                 return new RainAnimation(context, event);
             case C.ANIMATION_SNOW:
-                return new RainAnimation(context,event);
+                return new SnowAnimation(context,event);
             default:
                 break;
         }

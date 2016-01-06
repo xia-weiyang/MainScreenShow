@@ -39,6 +39,7 @@ import android.view.WindowManager;
 import com.avos.avoscloud.AVAnalytics;
 import com.jiusg.mainscreenshow.R;
 import com.jiusg.mainscreenshow.animation.anim.AnimationManage;
+import com.jiusg.mainscreenshow.base.AnimationConvert;
 import com.jiusg.mainscreenshow.base.C;
 import com.jiusg.mainscreenshow.process.AnimationProcess;
 import com.jiusg.mainscreenshow.process.impl.BubbleAnimationProcess;
@@ -141,11 +142,11 @@ public class MSSService extends Service implements OnTouchListener {
         sr.registerScreenActionReceiver(MSSService.this);
         registerBattery();
 
-//        // 注册自己程序的广播
-//        IntentFilter inf = new IntentFilter();
-//        inf.addAction("com.jiusg.mainscreenshow");
-//        mssr = new MSSReceiver();
-//        registerReceiver(mssr, inf);
+        // 注册自己程序的广播
+        IntentFilter inf = new IntentFilter();
+        inf.addAction("com.jiusg.mainscreenshow");
+        mssr = new MSSReceiver();
+        registerReceiver(mssr, inf);
 
         sa_IsEvent = new SparseBooleanArray();
         sa_Animation = new SparseArray<Integer>();
@@ -515,7 +516,7 @@ public class MSSService extends Service implements OnTouchListener {
 
                 sa_IsEvent.put(C.EVENT_CALL, true);
                 sa_Animation.put(C.EVENT_CALL,
-                        convertAnimation(sp.getString("animation" + C.EVENT_CALL, "")));
+                        AnimationConvert.convertAnimation(sp.getString("animation" + C.EVENT_CALL, ""), getApplicationContext()));
             } else {
 
                 sa_IsEvent.put(C.EVENT_CALL, false);
@@ -531,7 +532,7 @@ public class MSSService extends Service implements OnTouchListener {
 
                 sa_IsEvent.put(C.EVENT_LOCKSCREEN, true);
                 sa_Animation.put(C.EVENT_LOCKSCREEN,
-                        convertAnimation(sp.getString("animation" + C.EVENT_LOCKSCREEN, "")));
+                        AnimationConvert.convertAnimation(sp.getString("animation" + C.EVENT_LOCKSCREEN, ""), getApplicationContext()));
             } else {
 
                 sa_IsEvent.put(C.EVENT_LOCKSCREEN, false);
@@ -546,7 +547,7 @@ public class MSSService extends Service implements OnTouchListener {
 
                 sa_IsEvent.put(C.EVENT_SMS, true);
                 sa_Animation.put(C.EVENT_SMS,
-                        convertAnimation(sp.getString("animation" + C.EVENT_SMS, "")));
+                        AnimationConvert.convertAnimation(sp.getString("animation" + C.EVENT_SMS, ""), getApplicationContext()));
             } else {
 
                 sa_IsEvent.put(C.EVENT_SMS, false);
@@ -561,7 +562,7 @@ public class MSSService extends Service implements OnTouchListener {
                     getString(R.string.action_started))) {
                 sa_IsEvent.put(C.EVENT_CHARGING, true);
                 sa_Animation.put(C.EVENT_CHARGING,
-                        convertAnimation(sp.getString("animation" + C.EVENT_CHARGING, "")));
+                        AnimationConvert.convertAnimation(sp.getString("animation" + C.EVENT_CHARGING, ""), getApplicationContext()));
 
             } else {
                 sa_IsEvent.put(C.EVENT_CHARGING, false);
@@ -628,6 +629,7 @@ public class MSSService extends Service implements OnTouchListener {
      *
      * @param name
      * @return 类名
+     *
      * @deprecated
      */
     private String GetAnimationClassName(String name) {
@@ -726,30 +728,7 @@ public class MSSService extends Service implements OnTouchListener {
 
     }
 
-    public int convertAnimation(String anim) {
-        if (anim.equals(PropertiesUtils.getAnimationInfo(this)[C.ANIMATION_BUBBLE])) {
 
-            return C.ANIMATION_BUBBLE;
-
-        } else if (anim
-                .equals(PropertiesUtils.getAnimationInfo(this)[C.ANIMATION_STARSHINE])) {
-
-            return C.ANIMATION_STARSHINE;
-
-        } else if (anim
-                .equals(PropertiesUtils.getAnimationInfo(this)[C.ANIMATION_PICTUREWALL])) {
-            return C.ANIMATION_PICTUREWALL;
-        } else if (anim
-                .equals(PropertiesUtils.getAnimationInfo(this)[C.ANIMATION_RAIN])) {
-
-            return C.ANIMATION_RAIN;
-        }else if (anim
-                .equals(PropertiesUtils.getAnimationInfo(this)[C.ANIMATION_SNOW])) {
-
-            return C.ANIMATION_SNOW;
-        }
-        return C.ANIMATION_BUBBLE;
-    }
 
 
     /**

@@ -39,7 +39,6 @@ public class AnimationManage {
             animationView = instanceAnimationView(anim, event);
         }
         animView = animationView;
-        animView = null;
         windowManager.addView(animView, wmParams);
     }
 

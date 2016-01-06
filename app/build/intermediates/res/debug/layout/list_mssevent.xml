@@ -47,4 +47,4 @@
         android:layout_marginRight="5dp"
         android:src="@drawable/list_mss_close"/>
 
-</RelativeLayout><!-- From: file:/D:/MainScreenShow/MainScreenShow/app/src/main/res/layout/list_mssevent.xml -->
+</RelativeLayout><!-- From: file:/D:/MSS/MainScreenShow/app/src/main/res/layout/list_mssevent.xml -->

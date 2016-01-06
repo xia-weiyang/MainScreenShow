@@ -15,6 +15,8 @@ public class RainSetting {
     public final int AMOUNT_LESS = 100;
     public final int STYLE_1 = 1;
     public final int STYLE_2 = 2;
+    public final int STYLE_3 = 3;
+    public final int STYLE_4 = 4;
 
     public int getStyle() {
         return style;

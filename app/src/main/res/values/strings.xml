@@ -6,6 +6,7 @@
     <string name="second">秒</string>
     <string name="unknown">未知</string>
     <string name="action_activated">已激活</string>
+    <string name="action_no_activated">未激活</string>
     <string name="action_MSSEvent">事件</string>
     <string name="action_MSSPreview">预览动画</string>
     <string name="action_Desktop">桌面</string>
@@ -131,6 +132,13 @@
     <string name="rain_style_1">细雨</string>
     <string name="rain_style_2">雨滴</string>
     <string name="rain_amount_less">少</string>
+    <string name="snow_amount_less">少</string>
+    <string name="snow_amount_munch">多</string>
+    <string name="snow_amount_general">一般</string>
+    <string name="snow_style_1">样式一</string>
+    <string name="snow_style_2">样式二</string>
+    <string name="snow_style_3">样式三</string>
+    <string name="snow_style_4">样式四</string>
     <string name="welcome_1">动态壁纸</string>
     <string name="welcome_2">锁屏动画</string>
     <string name="welcome_3">来电秀</string>
@@ -216,4 +224,5 @@
     <string name="Ver_1_3_9">\r\nV 1.3.9\r\n\r\n修复部分Bug\r\n</string>
     <string name="Ver_1_4_0">\r\nV 1.4.0\r\n\r\n1.更新应用推荐\r\n2.优化预览动画\r\n3.修复部分bug\r\n</string>
     <string name="Ver_1_4_5">\r\nV 1.4.5\r\n\r\n1.全新的界面!\r\n2.全新的桌面动画\r\n3.优化动画效果\r\n</string>
+    <string name="Ver_1_4_8">\r\nV 1.4.8\r\n\r\n1.新增动画*雪*(需要激活)!\r\n2.修复部分bug\r\n</string>
 </resources>

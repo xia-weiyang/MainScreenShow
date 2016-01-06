@@ -48,6 +48,8 @@ public class MSSEventFragment extends Fragment implements View.OnTouchListener {
         sp_userinfo = getActivity().getSharedPreferences("userinfo", 0);
         hd = new MSSEventHandler();
         initData();
+
+
     }
 
     @Override

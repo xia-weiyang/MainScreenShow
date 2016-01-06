@@ -72,11 +72,13 @@ public class LockScreenSet extends BaseSet {
                         break;
                     case 6:
                         showRain_Style();
+                        showSnow_Style();
                         break;
                     case 7:
                         showStarShine_Style();
                         showPictureWall_ChoosePicture();
                         showRain_Amount();
+                        showSnow_Amount();
                         break;
                     case 8:
                         showBubble_Size();
@@ -156,24 +158,28 @@ public class LockScreenSet extends BaseSet {
                         showStarsShine_StaemeteorSwitch(convertView);
                         showPictureWall_LockScreen(convertView);
                         showRain_StyleInfo(convertView);
+                        showSnow_StyleInfo(convertView);
                         break;
                     case 7:
                         showBubble_Shadow(convertView);
                         showStarShine_StyleInfo(convertView);
                         showPictureWall_ChoosePictureTitle(convertView);
                         showRain_AmountInfo(convertView);
+                        showSnow_AmountInfo(convertView);
                         break;
                     case 8:
                         showBubble_SizeInfo(convertView);
                         showStarsShine_SharsInfo(convertView);
                         showPictureWall_PlayOrderInfo(convertView);
                         showRain_Speed(convertView);
+                        showSnow_Speed(convertView);
                         break;
                     case 9:
                         showBubble_Number(convertView);
                         showStarsShine_StarmeteorsInfo(convertView);
                         showPictureWall_Period(convertView);
                         showRain_Alpha(convertView);
+                        showSnow_Alpha(convertView);
                         break;
                     case 10:
                         showBubble_Alpha(convertView);

@@ -9,13 +9,13 @@
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
         android:contentDescription="@string/app_name"
-        android:src="@drawable/welcome_rain"/>
+        android:src="@drawable/preview_snow_background"/>
 
     <ImageView
         android:id="@+id/img_rain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/welcome_rain_text"
+        android:src="@drawable/welcome_snow_text"
         android:layout_alignParentRight="true"
         android:visibility="invisible"
         android:layout_marginTop="80dp"

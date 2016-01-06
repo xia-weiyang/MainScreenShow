@@ -4,4 +4,4 @@
         android:state_pressed="true"></item>
 <item android:drawable="@drawable/ic_setting"></item>
 </selector>
-<!-- From: file:/D:/MainScreenShow/MainScreenShow/app/src/main/res/drawable/setting.xml -->
+<!-- From: file:/D:/MSS/MainScreenShow/app/src/main/res/drawable/setting.xml -->

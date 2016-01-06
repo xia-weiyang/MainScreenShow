@@ -459,6 +459,7 @@ public class Setting extends Activity implements PointsChangeNotify {
     public static String getUpdateInfo(Context mContext) {
 
         String update = "";
+        update = update + mContext.getString(R.string.Ver_1_4_8);
         update = update + mContext.getString(R.string.Ver_1_4_5);
         update = update + mContext.getString(R.string.Ver_1_4_0);
         update = update + mContext.getString(R.string.Ver_1_3_9);

@@ -26,7 +26,7 @@ public class MssPreviewFragment extends Fragment {
     private RelativeLayout main = null;
     private GridView gv;
     private MSSPreviewAdapter mssPA = null;
-    private final int gvLenght = 4;
+    private final int gvLenght = 5;
     private final String TAG = "MSSPreview";
 
     @Override
@@ -82,57 +82,64 @@ public class MssPreviewFragment extends Fragment {
         @Override
         public View getView(final int position, View convertView, ViewGroup parent) {
             LayoutInflater inflater = LayoutInflater.from(getActivity());
-                convertView = inflater.inflate(R.layout.gv_mss, parent, false);
-                ImageView img = (ImageView) convertView
-                        .findViewById(R.id.img_gv);
-                Button button = (Button) convertView.findViewById(R.id.bt_gv);
-                switch (position) {
-                    case 0:
-                        button.setText(PropertiesUtils.getAnimationInfo(getActivity())[C.ANIMATION_BUBBLE]);
-                        img.setImageResource(R.drawable.preview_bubble);
-                        break;
-                    case 1:
-                        button.setText(PropertiesUtils.getAnimationInfo(getActivity())[C.ANIMATION_STARSHINE]);
-                        img.setImageResource(R.drawable.preview_starshine);
-                        break;
-                    case 2:
-                        button.setText(PropertiesUtils.getAnimationInfo(getActivity())[C.ANIMATION_PICTUREWALL]);
-                        img.setImageResource(R.drawable.preview_picturewall);
-                        break;
-                    case 3:
-                        button.setText(PropertiesUtils.getAnimationInfo(getActivity())[C.ANIMATION_RAIN]);
-                        img.setImageResource(R.drawable.preview_rain);
-                        break;
-                    default:
-                        break;
-                }
-                img.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        Intent it = new Intent();
-                        Bundle b = new Bundle();
-                        switch (position) {
-                            case 0:
-                                b.putInt("animation", C.ANIMATION_BUBBLE);
-                                break;
-                            case 1:
-                                b.putInt("animation", C.ANIMATION_STARSHINE);
-                                break;
-                            case 2:
-                                b.putInt("animation", C.ANIMATION_PICTUREWALL);
-                                break;
-                            case 3:
-                                b.putInt("animation", C.ANIMATION_RAIN);
-                                break;
-                            default:
-                                break;
-                        }
-                        Log.i(TAG, "" + position);
-                        it.putExtras(b);
-                        it.setClass(getActivity(), PreviewAnimation.class);
-                        getActivity().startActivity(it);
+            convertView = inflater.inflate(R.layout.gv_mss, parent, false);
+            ImageView img = (ImageView) convertView
+                    .findViewById(R.id.img_gv);
+            Button button = (Button) convertView.findViewById(R.id.bt_gv);
+            switch (position) {
+                case 0:
+                    button.setText(PropertiesUtils.getAnimationInfo(getActivity())[C.ANIMATION_BUBBLE]);
+                    img.setImageResource(R.drawable.preview_bubble);
+                    break;
+                case 1:
+                    button.setText(PropertiesUtils.getAnimationInfo(getActivity())[C.ANIMATION_STARSHINE]);
+                    img.setImageResource(R.drawable.preview_starshine);
+                    break;
+                case 2:
+                    button.setText(PropertiesUtils.getAnimationInfo(getActivity())[C.ANIMATION_PICTUREWALL]);
+                    img.setImageResource(R.drawable.preview_picturewall);
+                    break;
+                case 3:
+                    button.setText(PropertiesUtils.getAnimationInfo(getActivity())[C.ANIMATION_RAIN]);
+                    img.setImageResource(R.drawable.preview_rain);
+                    break;
+                case 4:
+                    button.setText(PropertiesUtils.getAnimationInfo(getActivity())[C.ANIMATION_SNOW]);
+                    img.setImageResource(R.drawable.preview_snow);
+                    break;
+                default:
+                    break;
+            }
+            img.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent it = new Intent();
+                    Bundle b = new Bundle();
+                    switch (position) {
+                        case 0:
+                            b.putInt("animation", C.ANIMATION_BUBBLE);
+                            break;
+                        case 1:
+                            b.putInt("animation", C.ANIMATION_STARSHINE);
+                            break;
+                        case 2:
+                            b.putInt("animation", C.ANIMATION_PICTUREWALL);
+                            break;
+                        case 3:
+                            b.putInt("animation", C.ANIMATION_RAIN);
+                            break;
+                        case 4:
+                            b.putInt("animation", C.ANIMATION_SNOW);
+                            break;
+                        default:
+                            break;
                     }
-                });
+                    Log.i(TAG, "" + position);
+                    it.putExtras(b);
+                    it.setClass(getActivity(), PreviewAnimation.class);
+                    getActivity().startActivity(it);
+                }
+            });
 
             return convertView;
         }

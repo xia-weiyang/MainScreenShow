@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/D:/MainScreenShow/MainScreenShow/app/src/main/res/values/array.xml -->
+    <!-- From: file:/D:/MSS/MainScreenShow/app/src/main/res/values/array.xml -->
     <eat-comment/>
     <string-array name="Frame">
         <item>无限制</item>
@@ -28,18 +28,18 @@
         <item>10</item>
         <item>5</item>
     </string-array>
-    <!-- From: file:/D:/MainScreenShow/MainScreenShow/app/src/main/res/values/color.xml -->
+    <!-- From: file:/D:/MSS/MainScreenShow/app/src/main/res/values/color.xml -->
     <eat-comment/>
     <color name="allAlpha">#00000000</color>
     <color name="blue">#83c8ef</color>
     <color name="button_press">#999999</color>
     <color name="button_unpress">#cccccc</color>
     <color name="white">#ffffff</color>
-    <!-- From: file:/D:/MainScreenShow/MainScreenShow/app/src/main/res/values/dimens.xml -->
+    <!-- From: file:/D:/MSS/MainScreenShow/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="activity_horizontal_margin">20dp</dimen>
     <dimen name="activity_vertical_margin">20dp</dimen>
-    <!-- From: file:/D:/MainScreenShow/MainScreenShow/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/MSS/MainScreenShow/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="Ver_1_0_0">\r\nV 1.0.0\r\n\r\n实现程序基本功能\r\n</string>
     <string name="Ver_1_0_2">\r\nV 1.0.2\r\n\r\n1.现在动画能全屏显示了！\r\n2.修复版本信息不能点开\r\n3.修复开机后耗电异常\r\n4.修复桌面延迟时间的Bug\r\n5.优化触发动画事件间的逻辑\r\n6.优化设置界面\r\n7.优化了软件的启动\r\n</string>
@@ -61,6 +61,7 @@
     <string name="Ver_1_3_9">\r\nV 1.3.9\r\n\r\n修复部分Bug\r\n</string>
     <string name="Ver_1_4_0">\r\nV 1.4.0\r\n\r\n1.更新应用推荐\r\n2.优化预览动画\r\n3.修复部分bug\r\n</string>
     <string name="Ver_1_4_5">\r\nV 1.4.5\r\n\r\n1.全新的界面!\r\n2.全新的桌面动画\r\n3.优化动画效果\r\n</string>
+    <string name="Ver_1_4_8">\r\nV 1.4.8\r\n\r\n1.新增动画*雪*(需要激活)!\r\n2.修复部分bug\r\n</string>
     <string name="action_Charing">充电</string>
     <string name="action_ChoosePlease">请选择</string>
     <string name="action_Desktop">桌面</string>
@@ -88,6 +89,7 @@
     <string name="action_jc">教程</string>
     <string name="action_loading">正在加载中..</string>
     <string name="action_look">去看看</string>
+    <string name="action_no_activated">未激活</string>
     <string name="action_notip">不在提醒</string>
     <string name="action_ok">确定</string>
     <string name="action_picture">图片选择</string>
@@ -197,6 +199,13 @@
     <string name="setting_title_app">作者其他应用</string>
     <string name="setting_title_base">基本设置</string>
     <string name="setting_title_more">高级设置</string>
+    <string name="snow_amount_general">一般</string>
+    <string name="snow_amount_less">少</string>
+    <string name="snow_amount_munch">多</string>
+    <string name="snow_style_1">样式一</string>
+    <string name="snow_style_2">样式二</string>
+    <string name="snow_style_3">样式三</string>
+    <string name="snow_style_4">样式四</string>
     <string name="starShine_num_general">一般</string>
     <string name="starShine_num_less">少</string>
     <string name="starShine_num_much">多</string>
@@ -256,7 +265,7 @@
     <string name="welcome_2">锁屏动画</string>
     <string name="welcome_3">来电秀</string>
     <string name="welcome_4">桌面秀,不仅仅是这些!</string>
-    <!-- From: file:/D:/MainScreenShow/MainScreenShow/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/D:/MSS/MainScreenShow/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="AppTheme" parent="@android:style/Theme.DeviceDefault.Light">
        <item name="android:actionBarStyle">@style/CustomActionBar0</item>

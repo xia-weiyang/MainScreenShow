@@ -4,4 +4,4 @@
         android:state_pressed="true"></item>
 <item android:drawable="@drawable/button_press_"></item>
 </selector>
-<!-- From: file:/D:/MainScreenShow/MainScreenShow/app/src/main/res/drawable/vp_button_.xml -->
+<!-- From: file:/D:/MSS/MainScreenShow/app/src/main/res/drawable/vp_button_.xml -->

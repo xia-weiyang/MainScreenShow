@@ -99,11 +99,13 @@ public class DesktopSet extends BaseSet {
                     case 6:
                         showPictureWall_ChoosePicture();
                         showRain_Style();
+                        showSnow_Style();
                         break;
                     case 7:
                         showStarShine_Style();
                         showPictureWall_PlayOrder();
                         showRain_Amount();
+                        showSnow_Amount();
                         break;
                     case 8:
                         showBubble_Size();
@@ -184,24 +186,28 @@ public class DesktopSet extends BaseSet {
                         showStarsShine_StaemeteorSwitch(convertView);
                         showPictureWall_ChoosePictureTitle(convertView);
                         showRain_StyleInfo(convertView);
+                        showSnow_StyleInfo(convertView);
                         break;
                     case 7:
                         showBubble_Shadow(convertView);
                         showStarShine_StyleInfo(convertView);
                         showPictureWall_PlayOrderInfo(convertView);
                         showRain_AmountInfo(convertView);
+                        showSnow_AmountInfo(convertView);
                         break;
                     case 8:
                         showBubble_SizeInfo(convertView);
                         showStarsShine_SharsInfo(convertView);
                         showPictureWall_Period(convertView);
                         showRain_Speed(convertView);
+                        showSnow_Speed(convertView);
                         break;
                     case 9:
                         showBubble_Number(convertView);
                         showStarsShine_StarmeteorsInfo(convertView);
                         showPictureWall_Alpha(convertView);
                         showRain_Alpha(convertView);
+                        showSnow_Alpha(convertView);
                         break;
                     case 10:
                         showBubble_Alpha(convertView);

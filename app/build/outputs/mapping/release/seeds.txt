@@ -220,6 +220,8 @@ com.jiusg.mainscreenshow.R$drawable: int preview_bubble_background
 com.jiusg.mainscreenshow.R$drawable: int preview_picturewall
 com.jiusg.mainscreenshow.R$drawable: int preview_rain
 com.jiusg.mainscreenshow.R$drawable: int preview_rain_background
+com.jiusg.mainscreenshow.R$drawable: int preview_snow
+com.jiusg.mainscreenshow.R$drawable: int preview_snow_background
 com.jiusg.mainscreenshow.R$drawable: int preview_starshine
 com.jiusg.mainscreenshow.R$drawable: int preview_starshine_background
 com.jiusg.mainscreenshow.R$drawable: int preview_title_green
@@ -231,6 +233,10 @@ com.jiusg.mainscreenshow.R$drawable: int rain_2
 com.jiusg.mainscreenshow.R$drawable: int rain_3
 com.jiusg.mainscreenshow.R$drawable: int rain_4
 com.jiusg.mainscreenshow.R$drawable: int setting
+com.jiusg.mainscreenshow.R$drawable: int snow_1
+com.jiusg.mainscreenshow.R$drawable: int snow_2
+com.jiusg.mainscreenshow.R$drawable: int snow_3
+com.jiusg.mainscreenshow.R$drawable: int snow_4
 com.jiusg.mainscreenshow.R$drawable: int starshine
 com.jiusg.mainscreenshow.R$drawable: int starshine_1
 com.jiusg.mainscreenshow.R$drawable: int starshine_2
@@ -250,6 +256,7 @@ com.jiusg.mainscreenshow.R$drawable: int welcome_3
 com.jiusg.mainscreenshow.R$drawable: int welcome_4
 com.jiusg.mainscreenshow.R$drawable: int welcome_rain
 com.jiusg.mainscreenshow.R$drawable: int welcome_rain_text
+com.jiusg.mainscreenshow.R$drawable: int welcome_snow_text
 com.jiusg.mainscreenshow.R$id: int action_add
 com.jiusg.mainscreenshow.R$id: int action_clear
 com.jiusg.mainscreenshow.R$id: int action_delete
@@ -353,6 +360,7 @@ com.jiusg.mainscreenshow.R$string: int Ver_1_3_8
 com.jiusg.mainscreenshow.R$string: int Ver_1_3_9
 com.jiusg.mainscreenshow.R$string: int Ver_1_4_0
 com.jiusg.mainscreenshow.R$string: int Ver_1_4_5
+com.jiusg.mainscreenshow.R$string: int Ver_1_4_8
 com.jiusg.mainscreenshow.R$string: int action_Charing
 com.jiusg.mainscreenshow.R$string: int action_ChoosePlease
 com.jiusg.mainscreenshow.R$string: int action_Desktop
@@ -380,6 +388,7 @@ com.jiusg.mainscreenshow.R$string: int action_help
 com.jiusg.mainscreenshow.R$string: int action_jc
 com.jiusg.mainscreenshow.R$string: int action_loading
 com.jiusg.mainscreenshow.R$string: int action_look
+com.jiusg.mainscreenshow.R$string: int action_no_activated
 com.jiusg.mainscreenshow.R$string: int action_notip
 com.jiusg.mainscreenshow.R$string: int action_ok
 com.jiusg.mainscreenshow.R$string: int action_picture
@@ -489,6 +498,13 @@ com.jiusg.mainscreenshow.R$string: int setting_title_about
 com.jiusg.mainscreenshow.R$string: int setting_title_app
 com.jiusg.mainscreenshow.R$string: int setting_title_base
 com.jiusg.mainscreenshow.R$string: int setting_title_more
+com.jiusg.mainscreenshow.R$string: int snow_amount_general
+com.jiusg.mainscreenshow.R$string: int snow_amount_less
+com.jiusg.mainscreenshow.R$string: int snow_amount_munch
+com.jiusg.mainscreenshow.R$string: int snow_style_1
+com.jiusg.mainscreenshow.R$string: int snow_style_2
+com.jiusg.mainscreenshow.R$string: int snow_style_3
+com.jiusg.mainscreenshow.R$string: int snow_style_4
 com.jiusg.mainscreenshow.R$string: int starShine_num_general
 com.jiusg.mainscreenshow.R$string: int starShine_num_less
 com.jiusg.mainscreenshow.R$string: int starShine_num_much
@@ -673,7 +689,6 @@ com.jiusg.mainscreenshow.service.MSSService: void startAnimation(int,int)
 com.jiusg.mainscreenshow.service.MSSService: void stopAnimation()
 com.jiusg.mainscreenshow.service.MSSService: java.lang.String GetAnimationClassName(java.lang.String)
 com.jiusg.mainscreenshow.service.MSSService: com.jiusg.mainscreenshow.process.AnimationProcess instanceAnimation(java.lang.String,int)
-com.jiusg.mainscreenshow.service.MSSService: int convertAnimation(java.lang.String)
 com.jiusg.mainscreenshow.service.MSSService: void previewStartA(int)
 com.jiusg.mainscreenshow.service.MSSService: void previewStopA()
 com.jiusg.mainscreenshow.service.MSSService: void registerBattery()

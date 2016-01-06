@@ -5244,11 +5244,11 @@ com.jiusg.mainscreenshow.animation.anim.AnimationManage -> com.jiusg.mainscreens
     android.view.WindowManager$LayoutParams wmParams -> e
     com.jiusg.mainscreenshow.animation.anim.AnimationView animView -> f
     32:33:void init() -> b
-    36:44:void startAnimation(int,int) -> a
-    47:49:void stopAnimation() -> a
-    52:56:com.jiusg.mainscreenshow.animation.anim.AnimationView checkAnimation(int,int) -> b
-    62:71:com.jiusg.mainscreenshow.animation.anim.AnimationView instanceAnimationView(int,int) -> c
-    75:80:com.jiusg.mainscreenshow.animation.anim.AnimationManage$Animation instanceAnimation(int,int) -> d
+    36:43:void startAnimation(int,int) -> a
+    46:48:void stopAnimation() -> a
+    51:55:com.jiusg.mainscreenshow.animation.anim.AnimationView checkAnimation(int,int) -> b
+    61:70:com.jiusg.mainscreenshow.animation.anim.AnimationView instanceAnimationView(int,int) -> c
+    74:79:com.jiusg.mainscreenshow.animation.anim.AnimationManage$Animation instanceAnimation(int,int) -> d
 com.jiusg.mainscreenshow.animation.anim.AnimationManage$Animation -> com.jiusg.mainscreenshow.a.a.c:
     int event -> a
     int anim -> b
@@ -5268,26 +5268,26 @@ com.jiusg.mainscreenshow.animation.anim.AnimationView -> com.jiusg.mainscreensho
     boolean isVisible -> k
     int event -> l
     java.lang.String TAG -> m
-    52:54:void init() -> b
-    63:78:com.jiusg.mainscreenshow.animation.anim.Animation instanceAnimation(int) -> a
-    82:89:void startAnimation() -> c
-    99:104:void stopAnimation() -> a
-    108:110:void surfaceCreated(android.view.SurfaceHolder) -> surfaceCreated
-    115:115:void surfaceChanged(android.view.SurfaceHolder,int,int,int) -> surfaceChanged
-    119:121:void surfaceDestroyed(android.view.SurfaceHolder) -> surfaceDestroyed
-    19:19:boolean access$000(com.jiusg.mainscreenshow.animation.anim.AnimationView) -> a
-    19:19:android.view.SurfaceHolder access$100(com.jiusg.mainscreenshow.animation.anim.AnimationView) -> b
-    19:19:com.jiusg.mainscreenshow.animation.anim.Animation access$200(com.jiusg.mainscreenshow.animation.anim.AnimationView) -> c
-    19:19:int access$300(com.jiusg.mainscreenshow.animation.anim.AnimationView) -> d
-    19:19:boolean access$400(com.jiusg.mainscreenshow.animation.anim.AnimationView) -> e
-    19:19:int access$500(com.jiusg.mainscreenshow.animation.anim.AnimationView) -> f
+    53:55:void init() -> b
+    64:79:com.jiusg.mainscreenshow.animation.anim.Animation instanceAnimation(int) -> a
+    83:90:void startAnimation() -> c
+    100:105:void stopAnimation() -> a
+    109:111:void surfaceCreated(android.view.SurfaceHolder) -> surfaceCreated
+    116:116:void surfaceChanged(android.view.SurfaceHolder,int,int,int) -> surfaceChanged
+    120:122:void surfaceDestroyed(android.view.SurfaceHolder) -> surfaceDestroyed
+    20:20:boolean access$000(com.jiusg.mainscreenshow.animation.anim.AnimationView) -> a
+    20:20:android.view.SurfaceHolder access$100(com.jiusg.mainscreenshow.animation.anim.AnimationView) -> b
+    20:20:com.jiusg.mainscreenshow.animation.anim.Animation access$200(com.jiusg.mainscreenshow.animation.anim.AnimationView) -> c
+    20:20:int access$300(com.jiusg.mainscreenshow.animation.anim.AnimationView) -> d
+    20:20:boolean access$400(com.jiusg.mainscreenshow.animation.anim.AnimationView) -> e
+    20:20:int access$500(com.jiusg.mainscreenshow.animation.anim.AnimationView) -> f
 com.jiusg.mainscreenshow.animation.anim.AnimationView$CountThread -> com.jiusg.mainscreenshow.a.a.e:
     com.jiusg.mainscreenshow.animation.anim.AnimationView this$0 -> a
-    162:173:void run() -> run
+    163:174:void run() -> run
 com.jiusg.mainscreenshow.animation.anim.AnimationView$DrawThread -> com.jiusg.mainscreenshow.a.a.f:
     android.graphics.Canvas canvas -> b
     com.jiusg.mainscreenshow.animation.anim.AnimationView this$0 -> a
-    129:156:void run() -> run
+    130:157:void run() -> run
 com.jiusg.mainscreenshow.animation.bubble.Bubble -> com.jiusg.mainscreenshow.a.b.a:
     java.lang.String size -> a
     android.graphics.Bitmap bubble -> b
@@ -5565,24 +5565,26 @@ com.jiusg.mainscreenshow.animation.rain.RainAnimation -> com.jiusg.mainscreensho
     97:106:int getAmount(java.lang.String) -> a
     111:116:int getStyle(java.lang.String) -> b
 com.jiusg.mainscreenshow.animation.rain.RainSetting -> com.jiusg.mainscreenshow.a.d.c:
-    float alpha -> g
-    int speed -> h
-    int amount -> i
-    int style -> j
+    float alpha -> i
+    int speed -> j
+    int amount -> k
+    int style -> l
     int AMOUNT_VERY_MUNCH -> a
     int AMOUNT_MUNCH -> b
     int AMOUNT_GENERAL -> c
     int AMOUNT_LESS -> d
     int STYLE_1 -> e
     int STYLE_2 -> f
-    20:20:int getStyle() -> a
-    24:25:void setStyle(int) -> a
-    28:28:float getAlpha() -> b
-    32:33:void setAlpha(float) -> a
-    36:36:int getSpeed() -> c
-    40:41:void setSpeed(int) -> b
-    44:44:int getAmount() -> d
-    48:49:void setAmount(int) -> c
+    int STYLE_3 -> g
+    int STYLE_4 -> h
+    22:22:int getStyle() -> a
+    26:27:void setStyle(int) -> a
+    30:30:float getAlpha() -> b
+    34:35:void setAlpha(float) -> a
+    38:38:int getSpeed() -> c
+    42:43:void setSpeed(int) -> b
+    46:46:int getAmount() -> d
+    50:51:void setAmount(int) -> c
 com.jiusg.mainscreenshow.animation.rain.RainView -> com.jiusg.mainscreenshow.a.d.d:
     android.view.SurfaceHolder surfaceHolder -> a
     android.graphics.Paint paint -> b
@@ -5616,7 +5618,82 @@ com.jiusg.mainscreenshow.animation.rain.RainView$RainCountHandler -> com.jiusg.m
 com.jiusg.mainscreenshow.animation.rain.RainView$RainHandler -> com.jiusg.mainscreenshow.a.d.h:
     com.jiusg.mainscreenshow.animation.rain.RainView this$0 -> a
     136:138:void handleMessage(android.os.Message) -> handleMessage
-com.jiusg.mainscreenshow.animation.starshine.Starshine -> com.jiusg.mainscreenshow.a.e.a:
+com.jiusg.mainscreenshow.animation.snow.Snow -> com.jiusg.mainscreenshow.a.e.a:
+    int x -> a
+    int y -> b
+    int width -> i
+    int height -> j
+    int y_speed -> k
+    boolean isAlive -> l
+    long rotateTime -> m
+    long alphaTime -> n
+    long scaleTime -> o
+    long curveTime -> p
+    int degree -> q
+    int alpha -> r
+    int w_h -> s
+    int cw -> t
+    int ch -> u
+    android.graphics.Bitmap bit -> c
+    double num -> d
+    double t -> v
+    double angle -> w
+    double m -> x
+    double A -> y
+    int moveType -> z
+    android.graphics.Matrix matrix -> e
+    android.graphics.Paint paint -> f
+    com.jiusg.mainscreenshow.animation.snow.SnowSetting setting -> A
+    int screenWidth -> g
+    int screenHeight -> h
+    92:93:void drawSnow(android.graphics.Canvas) -> a
+    96:103:void countSnow() -> a
+    105:109:void snowMove_1() -> b
+    113:129:void snowMove_2() -> c
+    131:141:void move(int) -> a
+    147:156:void snowAlphaChange(android.graphics.Paint) -> a
+    162:171:void snowRotate() -> d
+    177:189:void snowScaleChange() -> e
+com.jiusg.mainscreenshow.animation.snow.SnowAnimation -> com.jiusg.mainscreenshow.a.e.b:
+    android.content.Context context -> l
+    com.jiusg.mainscreenshow.animation.snow.SnowSetting snowSetting -> m
+    int snow_x -> n
+    int snow_y -> o
+    java.util.Random rd -> p
+    long time -> q
+    java.util.ArrayList snow_list -> k
+    30:35:void draw(android.graphics.Canvas) -> a
+    39:39:int getAnimation() -> d
+    44:52:void count() -> e
+    56:56:int getBackground() -> c
+    66:75:void init() -> f
+    78:83:com.jiusg.mainscreenshow.animation.snow.SnowSetting loadSetting() -> g
+    87:91:void onDraw(android.graphics.Canvas) -> b
+    94:106:void createSnow1() -> h
+    109:126:void chooseType(android.content.Context,int) -> a
+    130:137:int getAmount(java.lang.String) -> a
+    143:152:int getStyle(java.lang.String) -> b
+com.jiusg.mainscreenshow.animation.snow.SnowSetting -> com.jiusg.mainscreenshow.a.e.c:
+    float alpha -> h
+    int speed -> i
+    int amount -> j
+    int style -> k
+    int STYLE_1 -> a
+    int STYLE_2 -> b
+    int STYLE_3 -> c
+    int STYLE_4 -> d
+    int AMOUNT_MUNCH -> e
+    int AMOUNT_GENERAL -> f
+    int AMOUNT_LESS -> g
+    23:23:int getStyle() -> a
+    27:28:void setStyle(int) -> a
+    31:31:float getAlpha() -> b
+    35:36:void setAlpha(float) -> a
+    39:39:int getSpeed() -> c
+    43:44:void setSpeed(int) -> b
+    47:47:int getAmount() -> d
+    51:52:void setAmount(int) -> c
+com.jiusg.mainscreenshow.animation.starshine.Starshine -> com.jiusg.mainscreenshow.a.f.a:
     android.graphics.Bitmap bt -> a
     float positionX -> b
     float positionY -> c
@@ -5643,7 +5720,7 @@ com.jiusg.mainscreenshow.animation.starshine.Starshine -> com.jiusg.mainscreensh
     151:189:void SetBitmap(android.content.Context,int) -> a
     198:223:android.graphics.Bitmap getStaticStar(android.content.Context) -> a
     229:235:android.graphics.Bitmap getDnamicStar(android.content.Context) -> b
-com.jiusg.mainscreenshow.animation.starshine.StarshineAnimation -> com.jiusg.mainscreenshow.a.e.b:
+com.jiusg.mainscreenshow.animation.starshine.StarshineAnimation -> com.jiusg.mainscreenshow.a.f.b:
     int allCount -> k
     int starCount -> l
     int starDynamicCount -> m
@@ -5667,7 +5744,7 @@ com.jiusg.mainscreenshow.animation.starshine.StarshineAnimation -> com.jiusg.mai
     178:189:int GetAllCount(java.lang.String) -> a
     195:206:int GetStarMeteorCount(java.lang.String) -> b
     211:216:int getStyle(java.lang.String) -> c
-com.jiusg.mainscreenshow.animation.starshine.StarshineDynamic -> com.jiusg.mainscreenshow.a.e.c:
+com.jiusg.mainscreenshow.animation.starshine.StarshineDynamic -> com.jiusg.mainscreenshow.a.f.c:
     float scale -> a
     float maxScale -> b
     float minScale -> c
@@ -5680,7 +5757,7 @@ com.jiusg.mainscreenshow.animation.starshine.StarshineDynamic -> com.jiusg.mains
     123:123:float getNPositionX() -> j
     128:128:float getNPositionY() -> k
     134:135:void SetAlpha() -> g
-com.jiusg.mainscreenshow.animation.starshine.StarshineMeteor -> com.jiusg.mainscreenshow.a.e.d:
+com.jiusg.mainscreenshow.animation.starshine.StarshineMeteor -> com.jiusg.mainscreenshow.a.f.d:
     int T -> b
     int time -> c
     float speedX -> d
@@ -5693,7 +5770,7 @@ com.jiusg.mainscreenshow.animation.starshine.StarshineMeteor -> com.jiusg.mainsc
     45:46:void SetSize(float) -> c
     49:62:void GetNextPosition() -> h
     69:73:float Speed() -> i
-com.jiusg.mainscreenshow.animation.starshine.StarshineSetting -> com.jiusg.mainscreenshow.a.e.e:
+com.jiusg.mainscreenshow.animation.starshine.StarshineSetting -> com.jiusg.mainscreenshow.a.f.e:
     int allCount -> a
     int starMeteorCount -> b
     boolean starMeteorSwitch -> c
@@ -5706,7 +5783,7 @@ com.jiusg.mainscreenshow.animation.starshine.StarshineSetting -> com.jiusg.mains
     30:31:void setStarMeteorCount(int) -> c
     33:33:boolean isStarMeteorSwitch() -> d
     36:37:void setStarMeteorSwitch(boolean) -> a
-com.jiusg.mainscreenshow.animation.starshine.StarshineView -> com.jiusg.mainscreenshow.a.e.f:
+com.jiusg.mainscreenshow.animation.starshine.StarshineView -> com.jiusg.mainscreenshow.a.f.f:
     boolean mLoop -> a
     android.view.SurfaceHolder mSurfaceHolder -> b
     android.content.Context mContext -> c
@@ -5738,23 +5815,25 @@ com.jiusg.mainscreenshow.animation.starshine.StarshineView -> com.jiusg.mainscre
     31:31:android.os.Handler access$000(com.jiusg.mainscreenshow.animation.starshine.StarshineView) -> a
     31:31:com.jiusg.mainscreenshow.animation.starshine.StarshineDynamic[] access$100(com.jiusg.mainscreenshow.animation.starshine.StarshineView) -> b
     31:31:com.jiusg.mainscreenshow.animation.starshine.StarshineMeteor[] access$200(com.jiusg.mainscreenshow.animation.starshine.StarshineView) -> c
-com.jiusg.mainscreenshow.animation.starshine.StarshineView$1 -> com.jiusg.mainscreenshow.a.e.g:
+com.jiusg.mainscreenshow.animation.starshine.StarshineView$1 -> com.jiusg.mainscreenshow.a.f.g:
     com.jiusg.mainscreenshow.animation.starshine.StarshineView$StarshineCountHandler val$countHandler -> a
     com.jiusg.mainscreenshow.animation.starshine.StarshineView this$0 -> b
     93:96:void run() -> run
-com.jiusg.mainscreenshow.animation.starshine.StarshineView$2 -> com.jiusg.mainscreenshow.a.e.h:
+com.jiusg.mainscreenshow.animation.starshine.StarshineView$2 -> com.jiusg.mainscreenshow.a.f.h:
     com.jiusg.mainscreenshow.animation.starshine.StarshineView this$0 -> a
     104:107:void run() -> run
-com.jiusg.mainscreenshow.animation.starshine.StarshineView$StarshineCountHandler -> com.jiusg.mainscreenshow.a.e.i:
+com.jiusg.mainscreenshow.animation.starshine.StarshineView$StarshineCountHandler -> com.jiusg.mainscreenshow.a.f.i:
     com.jiusg.mainscreenshow.animation.starshine.StarshineView this$0 -> a
     245:249:void handleMessage(android.os.Message) -> handleMessage
-com.jiusg.mainscreenshow.animation.starshine.StarshineView$StarshineHandler -> com.jiusg.mainscreenshow.a.e.j:
+com.jiusg.mainscreenshow.animation.starshine.StarshineView$StarshineHandler -> com.jiusg.mainscreenshow.a.f.j:
     com.jiusg.mainscreenshow.animation.starshine.StarshineView this$0 -> a
     234:238:void handleMessage(android.os.Message) -> handleMessage
+com.jiusg.mainscreenshow.base.AnimationConvert -> com.jiusg.mainscreenshow.base.a:
+    14:35:int convertAnimation(java.lang.String,android.content.Context) -> a
 com.jiusg.mainscreenshow.base.BaseApplication -> com.jiusg.mainscreenshow.base.BaseApplication:
     java.lang.String TAG -> a
     20:47:void onCreate() -> onCreate
-com.jiusg.mainscreenshow.base.C -> com.jiusg.mainscreenshow.base.a:
+com.jiusg.mainscreenshow.base.C -> com.jiusg.mainscreenshow.base.b:
     boolean ISMEIZU -> a
     boolean ISCRASHHANDLER -> b
     int FRAME -> c
@@ -5831,10 +5910,10 @@ com.jiusg.mainscreenshow.service.MSSLiveWallpaper -> com.jiusg.mainscreenshow.se
     com.jiusg.mainscreenshow.service.MSSLiveWallpaper$MSSEngine engine -> engine
     int ANIMATION -> ANIMATION
     java.lang.String TAG -> TAG
-    31:32:android.service.wallpaper.WallpaperService$Engine onCreateEngine() -> onCreateEngine
-    37:38:void onCreate() -> onCreate
-    42:44:void onDestroy() -> onDestroy
-    48:50:int onStartCommand(android.content.Intent,int,int) -> onStartCommand
+    32:33:android.service.wallpaper.WallpaperService$Engine onCreateEngine() -> onCreateEngine
+    38:39:void onCreate() -> onCreate
+    43:45:void onDestroy() -> onDestroy
+    49:51:int onStartCommand(android.content.Intent,int,int) -> onStartCommand
 com.jiusg.mainscreenshow.service.MSSLiveWallpaper$MSSEngine -> com.jiusg.mainscreenshow.service.MSSLiveWallpaper$MSSEngine:
     com.jiusg.mainscreenshow.animation.anim.Animation animation -> animation
     int frame -> frame
@@ -5846,32 +5925,32 @@ com.jiusg.mainscreenshow.service.MSSLiveWallpaper$MSSEngine -> com.jiusg.mainscr
     boolean isVisible -> isVisible
     boolean isReset -> isReset
     com.jiusg.mainscreenshow.service.MSSLiveWallpaper this$0 -> this$0
-    71:73:void init() -> init
-    82:97:com.jiusg.mainscreenshow.animation.anim.Animation instanceAnimation(int) -> instanceAnimation
-    106:125:int loadSettingAnimation() -> loadSettingAnimation
-    129:136:void startAnimation() -> startAnimation
-    140:141:void reset() -> reset
-    144:149:void stopAnimation() -> stopAnimation
-    153:168:void onVisibilityChanged(boolean) -> onVisibilityChanged
-    172:173:void onCreate(android.view.SurfaceHolder) -> onCreate
-    177:178:void onDestroy() -> onDestroy
-    182:183:void onSurfaceChanged(android.view.SurfaceHolder,int,int,int) -> onSurfaceChanged
-    187:188:void onSurfaceCreated(android.view.SurfaceHolder) -> onSurfaceCreated
-    192:193:void onSurfaceDestroyed(android.view.SurfaceHolder) -> onSurfaceDestroyed
-    53:53:void access$000(com.jiusg.mainscreenshow.service.MSSLiveWallpaper$MSSEngine) -> access$000
-    53:53:boolean access$100(com.jiusg.mainscreenshow.service.MSSLiveWallpaper$MSSEngine) -> access$100
-    53:53:com.jiusg.mainscreenshow.animation.anim.Animation access$200(com.jiusg.mainscreenshow.service.MSSLiveWallpaper$MSSEngine) -> access$200
-    53:53:int access$300(com.jiusg.mainscreenshow.service.MSSLiveWallpaper$MSSEngine) -> access$300
-    53:53:boolean access$400(com.jiusg.mainscreenshow.service.MSSLiveWallpaper$MSSEngine) -> access$400
-    53:53:int access$500(com.jiusg.mainscreenshow.service.MSSLiveWallpaper$MSSEngine) -> access$500
+    72:74:void init() -> init
+    83:98:com.jiusg.mainscreenshow.animation.anim.Animation instanceAnimation(int) -> instanceAnimation
+    107:126:int loadSettingAnimation() -> loadSettingAnimation
+    130:137:void startAnimation() -> startAnimation
+    141:142:void reset() -> reset
+    145:150:void stopAnimation() -> stopAnimation
+    154:169:void onVisibilityChanged(boolean) -> onVisibilityChanged
+    173:174:void onCreate(android.view.SurfaceHolder) -> onCreate
+    178:179:void onDestroy() -> onDestroy
+    183:184:void onSurfaceChanged(android.view.SurfaceHolder,int,int,int) -> onSurfaceChanged
+    188:189:void onSurfaceCreated(android.view.SurfaceHolder) -> onSurfaceCreated
+    193:194:void onSurfaceDestroyed(android.view.SurfaceHolder) -> onSurfaceDestroyed
+    54:54:void access$000(com.jiusg.mainscreenshow.service.MSSLiveWallpaper$MSSEngine) -> access$000
+    54:54:boolean access$100(com.jiusg.mainscreenshow.service.MSSLiveWallpaper$MSSEngine) -> access$100
+    54:54:com.jiusg.mainscreenshow.animation.anim.Animation access$200(com.jiusg.mainscreenshow.service.MSSLiveWallpaper$MSSEngine) -> access$200
+    54:54:int access$300(com.jiusg.mainscreenshow.service.MSSLiveWallpaper$MSSEngine) -> access$300
+    54:54:boolean access$400(com.jiusg.mainscreenshow.service.MSSLiveWallpaper$MSSEngine) -> access$400
+    54:54:int access$500(com.jiusg.mainscreenshow.service.MSSLiveWallpaper$MSSEngine) -> access$500
 com.jiusg.mainscreenshow.service.MSSLiveWallpaper$MSSEngine$CountThread -> com.jiusg.mainscreenshow.service.MSSLiveWallpaper$MSSEngine$CountThread:
     com.jiusg.mainscreenshow.service.MSSLiveWallpaper$MSSEngine this$1 -> this$1
-    238:249:void run() -> run
+    239:250:void run() -> run
 com.jiusg.mainscreenshow.service.MSSLiveWallpaper$MSSEngine$DrawThread -> com.jiusg.mainscreenshow.service.MSSLiveWallpaper$MSSEngine$DrawThread:
     android.graphics.Canvas canvas -> canvas
     android.view.SurfaceHolder holder -> holder
     com.jiusg.mainscreenshow.service.MSSLiveWallpaper$MSSEngine this$1 -> this$1
-    202:231:void run() -> run
+    203:232:void run() -> run
 com.jiusg.mainscreenshow.service.MSSService -> com.jiusg.mainscreenshow.service.MSSService:
     int FLAGS -> FLAGS
     android.view.WindowManager Wm -> Wm
@@ -5901,43 +5980,42 @@ com.jiusg.mainscreenshow.service.MSSService -> com.jiusg.mainscreenshow.service.
     com.jiusg.mainscreenshow.tools.ImageCache imageCache -> imageCache
     int imageCacheFlag -> imageCacheFlag
     boolean isExit -> isExit
-    103:103:android.os.IBinder onBind(android.content.Intent) -> onBind
-    109:165:void onCreate() -> onCreate
-    170:175:void onDestroy() -> onDestroy
-    181:191:int onStartCommand(android.content.Intent,int,int) -> onStartCommand
-    201:215:java.util.List getHomes() -> getHomes
-    225:235:boolean isHome() -> isHome
-    244:250:java.lang.String getTopPackNameOld() -> getTopPackNameOld
-    260:301:java.lang.String getTopPackNameNew() -> getTopPackNameNew
-    313:315:boolean isScreenLocked(android.content.Context) -> isScreenLocked
-    443:490:boolean onTouch(android.view.View,android.view.MotionEvent) -> onTouch
-    499:581:void loadEvent() -> loadEvent
-    598:611:void startAnimation(int,int) -> startAnimation
-    618:624:void stopAnimation() -> stopAnimation
-    635:651:java.lang.String GetAnimationClassName(java.lang.String) -> GetAnimationClassName
-    664:695:com.jiusg.mainscreenshow.process.AnimationProcess instanceAnimation(java.lang.String,int) -> instanceAnimation
-    730:751:int convertAnimation(java.lang.String) -> convertAnimation
-    763:765:void previewStartA(int) -> previewStartA
-    773:776:void previewStopA() -> previewStopA
-    784:786:void registerBattery() -> registerBattery
-    793:795:void unregisterBattery() -> unregisterBattery
-    801:811:void runCharing() -> runCharing
-    818:820:void disposeWifi() -> disposeWifi
-    827:829:void disposeLaunchImage() -> disposeLaunchImage
-    836:856:void checkUpdate() -> checkUpdate
-    866:879:void notifyVersion(java.lang.String,java.lang.String) -> notifyVersion
-    883:885:void canclaNotify() -> canclaNotify
-    63:63:android.util.SparseBooleanArray access$000(com.jiusg.mainscreenshow.service.MSSService) -> access$000
-    63:63:android.util.SparseArray access$100(com.jiusg.mainscreenshow.service.MSSService) -> access$100
-    63:63:boolean access$200(com.jiusg.mainscreenshow.service.MSSService) -> access$200
-    63:63:boolean access$300(com.jiusg.mainscreenshow.service.MSSService) -> access$300
-    63:63:boolean access$302(com.jiusg.mainscreenshow.service.MSSService,boolean) -> access$302
-    63:63:com.jiusg.mainscreenshow.service.MSSService$MssHandler access$400(com.jiusg.mainscreenshow.service.MSSService) -> access$400
-    63:63:void access$500(com.jiusg.mainscreenshow.service.MSSService,java.lang.String,java.lang.String) -> access$500
+    104:104:android.os.IBinder onBind(android.content.Intent) -> onBind
+    110:166:void onCreate() -> onCreate
+    171:176:void onDestroy() -> onDestroy
+    182:192:int onStartCommand(android.content.Intent,int,int) -> onStartCommand
+    202:216:java.util.List getHomes() -> getHomes
+    226:236:boolean isHome() -> isHome
+    245:251:java.lang.String getTopPackNameOld() -> getTopPackNameOld
+    261:302:java.lang.String getTopPackNameNew() -> getTopPackNameNew
+    314:316:boolean isScreenLocked(android.content.Context) -> isScreenLocked
+    444:491:boolean onTouch(android.view.View,android.view.MotionEvent) -> onTouch
+    500:582:void loadEvent() -> loadEvent
+    599:612:void startAnimation(int,int) -> startAnimation
+    619:625:void stopAnimation() -> stopAnimation
+    637:653:java.lang.String GetAnimationClassName(java.lang.String) -> GetAnimationClassName
+    666:697:com.jiusg.mainscreenshow.process.AnimationProcess instanceAnimation(java.lang.String,int) -> instanceAnimation
+    742:744:void previewStartA(int) -> previewStartA
+    752:755:void previewStopA() -> previewStopA
+    763:765:void registerBattery() -> registerBattery
+    772:774:void unregisterBattery() -> unregisterBattery
+    780:790:void runCharing() -> runCharing
+    797:799:void disposeWifi() -> disposeWifi
+    806:808:void disposeLaunchImage() -> disposeLaunchImage
+    815:835:void checkUpdate() -> checkUpdate
+    845:858:void notifyVersion(java.lang.String,java.lang.String) -> notifyVersion
+    862:864:void canclaNotify() -> canclaNotify
+    64:64:android.util.SparseBooleanArray access$000(com.jiusg.mainscreenshow.service.MSSService) -> access$000
+    64:64:android.util.SparseArray access$100(com.jiusg.mainscreenshow.service.MSSService) -> access$100
+    64:64:boolean access$200(com.jiusg.mainscreenshow.service.MSSService) -> access$200
+    64:64:boolean access$300(com.jiusg.mainscreenshow.service.MSSService) -> access$300
+    64:64:boolean access$302(com.jiusg.mainscreenshow.service.MSSService,boolean) -> access$302
+    64:64:com.jiusg.mainscreenshow.service.MSSService$MssHandler access$400(com.jiusg.mainscreenshow.service.MSSService) -> access$400
+    64:64:void access$500(com.jiusg.mainscreenshow.service.MSSService,java.lang.String,java.lang.String) -> access$500
 com.jiusg.mainscreenshow.service.MSSService$1 -> com.jiusg.mainscreenshow.service.MSSService$1:
     com.jiusg.mainscreenshow.tools.UpdateVersion val$updateVersion -> val$updateVersion
     com.jiusg.mainscreenshow.service.MSSService this$0 -> this$0
-    845:852:void done(java.lang.String,java.lang.String,java.lang.String) -> done
+    824:831:void done(java.lang.String,java.lang.String,java.lang.String) -> done
 com.jiusg.mainscreenshow.service.MSSService$2 -> com.jiusg.mainscreenshow.service.MSSService$2:
     com.jiusg.mainscreenshow.service.MSSService this$0 -> this$0
     894:897:void run() -> run
@@ -5956,19 +6034,19 @@ com.jiusg.mainscreenshow.service.MSSService$Event -> com.jiusg.mainscreenshow.se
     com.jiusg.mainscreenshow.service.MSSService this$0 -> this$0
 com.jiusg.mainscreenshow.service.MSSService$MSSReceiver -> com.jiusg.mainscreenshow.service.MSSService$MSSReceiver:
     com.jiusg.mainscreenshow.service.MSSService this$0 -> this$0
-    398:437:void onReceive(android.content.Context,android.content.Intent) -> onReceive
+    399:438:void onReceive(android.content.Context,android.content.Intent) -> onReceive
 com.jiusg.mainscreenshow.service.MSSService$MSSSBinder -> com.jiusg.mainscreenshow.service.MSSService$MSSSBinder:
     com.jiusg.mainscreenshow.service.MSSService this$0 -> this$0
-    322:322:com.jiusg.mainscreenshow.service.MSSService getMSSService() -> getMSSService
+    323:323:com.jiusg.mainscreenshow.service.MSSService getMSSService() -> getMSSService
 com.jiusg.mainscreenshow.service.MSSService$MssHandler -> com.jiusg.mainscreenshow.service.MSSService$MssHandler:
     com.jiusg.mainscreenshow.service.MSSService this$0 -> this$0
-    704:711:void handleMessage(android.os.Message) -> handleMessage
+    706:713:void handleMessage(android.os.Message) -> handleMessage
 com.jiusg.mainscreenshow.service.MSSService$ScreenReceiver -> com.jiusg.mainscreenshow.service.MSSService$ScreenReceiver:
     boolean isRegisterReceiver -> isRegisterReceiver
     com.jiusg.mainscreenshow.service.MSSService this$0 -> this$0
-    333:361:void onReceive(android.content.Context,android.content.Intent) -> onReceive
-    366:377:void registerScreenActionReceiver(android.content.Context) -> registerScreenActionReceiver
-    381:385:void unRegisterScreenActionReceiver(android.content.Context) -> unRegisterScreenActionReceiver
+    334:362:void onReceive(android.content.Context,android.content.Intent) -> onReceive
+    367:378:void registerScreenActionReceiver(android.content.Context) -> registerScreenActionReceiver
+    382:386:void unRegisterScreenActionReceiver(android.content.Context) -> unRegisterScreenActionReceiver
 com.jiusg.mainscreenshow.service.MSSService_animation -> com.jiusg.mainscreenshow.service.MSSService_animation:
     com.jiusg.mainscreenshow.process.AnimationProcess animationP -> animationP
     int eventId -> eventId
@@ -6098,11 +6176,12 @@ com.jiusg.mainscreenshow.tools.MyLog -> com.jiusg.mainscreenshow.c.s:
 com.jiusg.mainscreenshow.tools.PropertiesUtils -> com.jiusg.mainscreenshow.c.t:
     60:78:int GetAnimationLength(android.content.Context) -> a
     90:108:int getEndLength(int,android.content.Context) -> a
-    121:139:java.lang.String[] GetEventInfo(int,android.content.Context) -> b
-    151:159:java.lang.String[] getEventEndInfo(int,android.content.Context) -> c
-    164:181:java.lang.String[] getAnimationInfo(android.content.Context) -> b
-    186:201:int getAnimationListLenght(java.lang.String,android.content.Context,int) -> a
-    207:228:java.lang.String getHelpInfo(int,java.lang.String,android.content.Context) -> a
+    120:138:java.lang.String[] GetEventInfo(int,android.content.Context) -> b
+    150:158:java.lang.String[] getEventEndInfo(int,android.content.Context) -> c
+    167:183:java.lang.String[] getActiveAnimationInfo(android.content.Context) -> b
+    195:212:java.lang.String[] getAnimationInfo(android.content.Context) -> c
+    217:235:int getAnimationListLenght(java.lang.String,android.content.Context,int) -> a
+    241:262:java.lang.String getHelpInfo(int,java.lang.String,android.content.Context) -> a
 com.jiusg.mainscreenshow.tools.SmartBarUtils -> com.jiusg.mainscreenshow.c.u:
     159:177:void setBackIcon(android.app.ActionBar,android.graphics.drawable.Drawable) -> a
 com.jiusg.mainscreenshow.tools.Time -> com.jiusg.mainscreenshow.c.v:
@@ -6240,6 +6319,12 @@ com.jiusg.mainscreenshow.ui.BaseSet -> com.jiusg.mainscreenshow.ui.BaseSet:
     1576:1608:void showRain_Amount() -> o
     1616:1672:void showRain_Speed(android.view.View) -> t
     1680:1736:void showRain_Alpha(android.view.View) -> u
+    1742:1761:void showSnow_StyleInfo(android.view.View) -> v
+    1769:1801:void showSnow_Style() -> p
+    1807:1826:void showSnow_AmountInfo(android.view.View) -> w
+    1834:1866:void showSnow_Amount() -> q
+    1874:1930:void showSnow_Speed(android.view.View) -> x
+    1938:1994:void showSnow_Alpha(android.view.View) -> y
     39:39:android.os.Handler access$000(com.jiusg.mainscreenshow.ui.BaseSet) -> a
     39:39:com.jiusg.mainscreenshow.process.SetAdapter access$100(com.jiusg.mainscreenshow.ui.BaseSet) -> b
     39:39:int access$200(com.jiusg.mainscreenshow.ui.BaseSet) -> c
@@ -6337,29 +6422,49 @@ com.jiusg.mainscreenshow.ui.BaseSet$27 -> com.jiusg.mainscreenshow.ui.t:
     1716:1721:void onStopTrackingTouch(android.widget.SeekBar) -> onStopTrackingTouch
     1726:1726:void onStartTrackingTouch(android.widget.SeekBar) -> onStartTrackingTouch
     1732:1733:void onProgressChanged(android.widget.SeekBar,int,boolean) -> onProgressChanged
-com.jiusg.mainscreenshow.ui.BaseSet$3 -> com.jiusg.mainscreenshow.ui.u:
+com.jiusg.mainscreenshow.ui.BaseSet$28 -> com.jiusg.mainscreenshow.ui.u:
+    java.lang.String[] val$s -> a
+    com.jiusg.mainscreenshow.ui.BaseSet this$0 -> b
+    1793:1797:void onClick(android.content.DialogInterface,int) -> onClick
+com.jiusg.mainscreenshow.ui.BaseSet$29 -> com.jiusg.mainscreenshow.ui.v:
+    java.lang.String[] val$s -> a
+    com.jiusg.mainscreenshow.ui.BaseSet this$0 -> b
+    1858:1862:void onClick(android.content.DialogInterface,int) -> onClick
+com.jiusg.mainscreenshow.ui.BaseSet$3 -> com.jiusg.mainscreenshow.ui.w:
     android.widget.Switch val$sw -> a
     com.jiusg.mainscreenshow.ui.BaseSet this$0 -> b
     314:337:void onCheckedChanged(android.widget.CompoundButton,boolean) -> onCheckedChanged
-com.jiusg.mainscreenshow.ui.BaseSet$3$1 -> com.jiusg.mainscreenshow.ui.v:
+com.jiusg.mainscreenshow.ui.BaseSet$3$1 -> com.jiusg.mainscreenshow.ui.x:
     com.jiusg.mainscreenshow.ui.BaseSet$3 this$1 -> a
     321:327:void onClick(android.content.DialogInterface,int) -> onClick
-com.jiusg.mainscreenshow.ui.BaseSet$4 -> com.jiusg.mainscreenshow.ui.w:
+com.jiusg.mainscreenshow.ui.BaseSet$30 -> com.jiusg.mainscreenshow.ui.y:
+    android.widget.TextView val$tvSet_ -> a
+    com.jiusg.mainscreenshow.ui.BaseSet this$0 -> b
+    1910:1915:void onStopTrackingTouch(android.widget.SeekBar) -> onStopTrackingTouch
+    1920:1920:void onStartTrackingTouch(android.widget.SeekBar) -> onStartTrackingTouch
+    1926:1927:void onProgressChanged(android.widget.SeekBar,int,boolean) -> onProgressChanged
+com.jiusg.mainscreenshow.ui.BaseSet$31 -> com.jiusg.mainscreenshow.ui.z:
+    android.widget.TextView val$tvSet_ -> a
+    com.jiusg.mainscreenshow.ui.BaseSet this$0 -> b
+    1974:1979:void onStopTrackingTouch(android.widget.SeekBar) -> onStopTrackingTouch
+    1984:1984:void onStartTrackingTouch(android.widget.SeekBar) -> onStartTrackingTouch
+    1990:1991:void onProgressChanged(android.widget.SeekBar,int,boolean) -> onProgressChanged
+com.jiusg.mainscreenshow.ui.BaseSet$4 -> com.jiusg.mainscreenshow.ui.aa:
     com.jiusg.mainscreenshow.ui.BaseSet this$0 -> a
     366:375:void onCheckedChanged(android.widget.CompoundButton,boolean) -> onCheckedChanged
-com.jiusg.mainscreenshow.ui.BaseSet$5 -> com.jiusg.mainscreenshow.ui.x:
+com.jiusg.mainscreenshow.ui.BaseSet$5 -> com.jiusg.mainscreenshow.ui.ab:
     java.lang.String[] val$s -> a
     com.jiusg.mainscreenshow.ui.BaseSet this$0 -> b
     420:424:void onClick(android.content.DialogInterface,int) -> onClick
-com.jiusg.mainscreenshow.ui.BaseSet$6 -> com.jiusg.mainscreenshow.ui.y:
+com.jiusg.mainscreenshow.ui.BaseSet$6 -> com.jiusg.mainscreenshow.ui.ac:
     java.lang.String[] val$s -> a
     com.jiusg.mainscreenshow.ui.BaseSet this$0 -> b
     448:457:void onClick(android.content.DialogInterface,int) -> onClick
-com.jiusg.mainscreenshow.ui.BaseSet$8 -> com.jiusg.mainscreenshow.ui.z:
+com.jiusg.mainscreenshow.ui.BaseSet$8 -> com.jiusg.mainscreenshow.ui.ad:
     java.lang.String[] val$s -> a
     com.jiusg.mainscreenshow.ui.BaseSet this$0 -> b
     533:538:void onClick(android.content.DialogInterface,int) -> onClick
-com.jiusg.mainscreenshow.ui.BaseSet$9 -> com.jiusg.mainscreenshow.ui.aa:
+com.jiusg.mainscreenshow.ui.BaseSet$9 -> com.jiusg.mainscreenshow.ui.ae:
     java.lang.String[] val$s -> a
     com.jiusg.mainscreenshow.ui.BaseSet this$0 -> b
     608:612:void onClick(android.content.DialogInterface,int) -> onClick
@@ -6371,22 +6476,22 @@ com.jiusg.mainscreenshow.ui.CallSet -> com.jiusg.mainscreenshow.ui.CallSet:
     android.content.SharedPreferences sp_date -> k
     android.content.SharedPreferences sp_setA -> l
     int SETLENGHT -> m
-    40:94:void onCreate(android.os.Bundle) -> onCreate
-    204:230:void clearDate() -> p
+    40:96:void onCreate(android.os.Bundle) -> onCreate
+    210:236:void clearDate() -> r
     22:22:void access$000(com.jiusg.mainscreenshow.ui.CallSet) -> a
-com.jiusg.mainscreenshow.ui.CallSet$1 -> com.jiusg.mainscreenshow.ui.ab:
+com.jiusg.mainscreenshow.ui.CallSet$1 -> com.jiusg.mainscreenshow.ui.af:
     com.jiusg.mainscreenshow.ui.CallSet this$0 -> a
-    66:92:void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
-com.jiusg.mainscreenshow.ui.CallSet$CallAdapter -> com.jiusg.mainscreenshow.ui.ac:
+    66:94:void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+com.jiusg.mainscreenshow.ui.CallSet$CallAdapter -> com.jiusg.mainscreenshow.ui.ag:
     com.jiusg.mainscreenshow.ui.CallSet this$0 -> a
-    101:101:int getCount() -> getCount
-    107:107:java.lang.Object getItem(int) -> getItem
-    113:113:long getItemId(int) -> getItemId
-    118:188:android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
-    194:197:boolean isEnabled(int) -> isEnabled
-com.jiusg.mainscreenshow.ui.CallSet$mHandler -> com.jiusg.mainscreenshow.ui.ad:
+    103:103:int getCount() -> getCount
+    109:109:java.lang.Object getItem(int) -> getItem
+    115:115:long getItemId(int) -> getItemId
+    120:194:android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+    200:203:boolean isEnabled(int) -> isEnabled
+com.jiusg.mainscreenshow.ui.CallSet$mHandler -> com.jiusg.mainscreenshow.ui.ah:
     com.jiusg.mainscreenshow.ui.CallSet this$0 -> a
-    238:243:void handleMessage(android.os.Message) -> handleMessage
+    244:249:void handleMessage(android.os.Message) -> handleMessage
 com.jiusg.mainscreenshow.ui.CharingSet -> com.jiusg.mainscreenshow.ui.CharingSet:
     int VALUE -> g
     java.lang.String eventName -> h
@@ -6395,22 +6500,22 @@ com.jiusg.mainscreenshow.ui.CharingSet -> com.jiusg.mainscreenshow.ui.CharingSet
     android.content.SharedPreferences sp_date -> k
     android.content.SharedPreferences sp_setA -> l
     int SETLENGHT -> m
-    40:96:void onCreate(android.os.Bundle) -> onCreate
-    208:233:void clearDate() -> p
+    40:98:void onCreate(android.os.Bundle) -> onCreate
+    214:239:void clearDate() -> r
     23:23:void access$000(com.jiusg.mainscreenshow.ui.CharingSet) -> a
-com.jiusg.mainscreenshow.ui.CharingSet$1 -> com.jiusg.mainscreenshow.ui.ae:
+com.jiusg.mainscreenshow.ui.CharingSet$1 -> com.jiusg.mainscreenshow.ui.ai:
     com.jiusg.mainscreenshow.ui.CharingSet this$0 -> a
-    65:94:void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
-com.jiusg.mainscreenshow.ui.CharingSet$CharingAdapter -> com.jiusg.mainscreenshow.ui.af:
+    65:96:void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+com.jiusg.mainscreenshow.ui.CharingSet$CharingAdapter -> com.jiusg.mainscreenshow.ui.aj:
     com.jiusg.mainscreenshow.ui.CharingSet this$0 -> a
-    104:104:int getCount() -> getCount
-    110:110:java.lang.Object getItem(int) -> getItem
-    116:116:long getItemId(int) -> getItemId
-    121:193:android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
-    199:202:boolean isEnabled(int) -> isEnabled
-com.jiusg.mainscreenshow.ui.CharingSet$mHandler -> com.jiusg.mainscreenshow.ui.ag:
+    106:106:int getCount() -> getCount
+    112:112:java.lang.Object getItem(int) -> getItem
+    118:118:long getItemId(int) -> getItemId
+    123:199:android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+    205:208:boolean isEnabled(int) -> isEnabled
+com.jiusg.mainscreenshow.ui.CharingSet$mHandler -> com.jiusg.mainscreenshow.ui.ak:
     com.jiusg.mainscreenshow.ui.CharingSet this$0 -> a
-    240:244:void handleMessage(android.os.Message) -> handleMessage
+    246:250:void handleMessage(android.os.Message) -> handleMessage
 com.jiusg.mainscreenshow.ui.DesktopSet -> com.jiusg.mainscreenshow.ui.DesktopSet:
     com.jiusg.mainscreenshow.ui.DesktopSet$DesktopAdapter dA -> h
     android.widget.ListView lv -> i
@@ -6426,49 +6531,49 @@ com.jiusg.mainscreenshow.ui.DesktopSet -> com.jiusg.mainscreenshow.ui.DesktopSet
     java.lang.String picturePath -> s
     java.lang.String backPath -> g
     int SETLENGHT -> t
-    66:121:void onCreate(android.os.Bundle) -> onCreate
-    233:260:void clearDate() -> r
-    278:287:boolean isStart() -> s
-    299:306:void showEventBackTitle(android.view.View,java.lang.String) -> d
-    313:347:void showEventBack() -> p
-    350:356:java.lang.String getPath() -> q
-    361:372:void onResume() -> onResume
-    376:398:void onActivityResult(int,int,android.content.Intent) -> onActivityResult
+    66:123:void onCreate(android.os.Bundle) -> onCreate
+    239:266:void clearDate() -> t
+    284:293:boolean isStart() -> u
+    305:312:void showEventBackTitle(android.view.View,java.lang.String) -> d
+    319:353:void showEventBack() -> r
+    356:362:java.lang.String getPath() -> s
+    367:378:void onResume() -> onResume
+    382:404:void onActivityResult(int,int,android.content.Intent) -> onActivityResult
     41:41:boolean access$000(com.jiusg.mainscreenshow.ui.DesktopSet) -> a
     41:41:void access$100(com.jiusg.mainscreenshow.ui.DesktopSet) -> b
     41:41:android.content.SharedPreferences access$200(com.jiusg.mainscreenshow.ui.DesktopSet) -> c
     41:41:java.lang.String access$300(com.jiusg.mainscreenshow.ui.DesktopSet) -> d
     41:41:android.app.ProgressDialog access$400(com.jiusg.mainscreenshow.ui.DesktopSet) -> e
-com.jiusg.mainscreenshow.ui.DesktopSet$1 -> com.jiusg.mainscreenshow.ui.ah:
+com.jiusg.mainscreenshow.ui.DesktopSet$1 -> com.jiusg.mainscreenshow.ui.al:
     com.jiusg.mainscreenshow.ui.DesktopSet this$0 -> a
-    92:118:void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
-com.jiusg.mainscreenshow.ui.DesktopSet$2 -> com.jiusg.mainscreenshow.ui.ai:
+    92:120:void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+com.jiusg.mainscreenshow.ui.DesktopSet$2 -> com.jiusg.mainscreenshow.ui.am:
     com.jiusg.mainscreenshow.ui.DesktopSet this$0 -> a
-    328:345:void onClick(android.content.DialogInterface,int) -> onClick
-com.jiusg.mainscreenshow.ui.DesktopSet$DesktopAdapter -> com.jiusg.mainscreenshow.ui.aj:
+    334:351:void onClick(android.content.DialogInterface,int) -> onClick
+com.jiusg.mainscreenshow.ui.DesktopSet$DesktopAdapter -> com.jiusg.mainscreenshow.ui.an:
     com.jiusg.mainscreenshow.ui.DesktopSet this$0 -> a
-    129:129:int getCount() -> getCount
-    135:135:java.lang.Object getItem(int) -> getItem
-    141:141:long getItemId(int) -> getItemId
-    147:217:android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
-    223:226:boolean isEnabled(int) -> isEnabled
-com.jiusg.mainscreenshow.ui.DesktopSet$DesktopHandler -> com.jiusg.mainscreenshow.ui.ak:
+    131:131:int getCount() -> getCount
+    137:137:java.lang.Object getItem(int) -> getItem
+    143:143:long getItemId(int) -> getItemId
+    149:223:android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+    229:232:boolean isEnabled(int) -> isEnabled
+com.jiusg.mainscreenshow.ui.DesktopSet$DesktopHandler -> com.jiusg.mainscreenshow.ui.ao:
     com.jiusg.mainscreenshow.ui.DesktopSet this$0 -> a
-    403:419:void handleMessage(android.os.Message) -> handleMessage
-com.jiusg.mainscreenshow.ui.DesktopSet$mHanler -> com.jiusg.mainscreenshow.ui.al:
+    409:425:void handleMessage(android.os.Message) -> handleMessage
+com.jiusg.mainscreenshow.ui.DesktopSet$mHanler -> com.jiusg.mainscreenshow.ui.ap:
     com.jiusg.mainscreenshow.ui.DesktopSet this$0 -> a
-    268:273:void handleMessage(android.os.Message) -> handleMessage
+    274:279:void handleMessage(android.os.Message) -> handleMessage
 com.jiusg.mainscreenshow.ui.FeedBack -> com.jiusg.mainscreenshow.ui.FeedBack:
     android.widget.EditText content -> a
     android.widget.EditText qq -> b
     31:41:void onCreate(android.os.Bundle) -> onCreate
     46:49:boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
     54:100:boolean onMenuItemSelected(int,android.view.MenuItem) -> onMenuItemSelected
-com.jiusg.mainscreenshow.ui.FeedBack$1 -> com.jiusg.mainscreenshow.ui.am:
+com.jiusg.mainscreenshow.ui.FeedBack$1 -> com.jiusg.mainscreenshow.ui.aq:
     android.app.ProgressDialog val$dialog -> a
     com.jiusg.mainscreenshow.ui.FeedBack this$0 -> b
     71:90:void done(com.avos.avoscloud.AVException) -> b
-com.jiusg.mainscreenshow.ui.FeedBack$1$1 -> com.jiusg.mainscreenshow.ui.an:
+com.jiusg.mainscreenshow.ui.FeedBack$1$1 -> com.jiusg.mainscreenshow.ui.ar:
     com.jiusg.mainscreenshow.ui.FeedBack$1 this$1 -> a
     83:84:void onClick(android.content.DialogInterface,int) -> onClick
 com.jiusg.mainscreenshow.ui.Help -> com.jiusg.mainscreenshow.ui.Help:
@@ -6480,20 +6585,20 @@ com.jiusg.mainscreenshow.ui.Help -> com.jiusg.mainscreenshow.ui.Help:
     71:83:void initArrayList() -> a
     158:166:boolean joinQQGroup(java.lang.String) -> a
     25:25:java.util.ArrayList access$000(com.jiusg.mainscreenshow.ui.Help) -> a
-com.jiusg.mainscreenshow.ui.Help$1 -> com.jiusg.mainscreenshow.ui.ao:
+com.jiusg.mainscreenshow.ui.Help$1 -> com.jiusg.mainscreenshow.ui.as:
     com.jiusg.mainscreenshow.ui.Help this$0 -> a
     57:64:void onClick(android.view.View) -> onClick
-com.jiusg.mainscreenshow.ui.Help$HelpAdapter -> com.jiusg.mainscreenshow.ui.ap:
+com.jiusg.mainscreenshow.ui.Help$HelpAdapter -> com.jiusg.mainscreenshow.ui.at:
     com.jiusg.mainscreenshow.ui.Help this$0 -> a
     90:90:int getCount() -> getCount
     96:96:java.lang.Object getItem(int) -> getItem
     102:102:long getItemId(int) -> getItemId
     110:138:android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
-com.jiusg.mainscreenshow.ui.Help$HelpAdapter$1 -> com.jiusg.mainscreenshow.ui.aq:
+com.jiusg.mainscreenshow.ui.Help$HelpAdapter$1 -> com.jiusg.mainscreenshow.ui.au:
     com.jiusg.mainscreenshow.ui.Help$ViewHolder val$holder -> a
     com.jiusg.mainscreenshow.ui.Help$HelpAdapter this$1 -> b
     131:136:void onClick(android.view.View) -> onClick
-com.jiusg.mainscreenshow.ui.Help$ViewHolder -> com.jiusg.mainscreenshow.ui.ar:
+com.jiusg.mainscreenshow.ui.Help$ViewHolder -> com.jiusg.mainscreenshow.ui.av:
     android.widget.TextView question -> a
     android.widget.TextView answer -> b
     com.jiusg.mainscreenshow.ui.Help this$0 -> c
@@ -6505,22 +6610,22 @@ com.jiusg.mainscreenshow.ui.LockScreenSet -> com.jiusg.mainscreenshow.ui.LockScr
     android.content.SharedPreferences sp_date -> k
     android.content.SharedPreferences sp_setA -> l
     int SETLENGHT -> m
-    39:94:void onCreate(android.os.Bundle) -> onCreate
-    206:242:void clearDate() -> p
+    39:96:void onCreate(android.os.Bundle) -> onCreate
+    212:248:void clearDate() -> r
     22:22:void access$000(com.jiusg.mainscreenshow.ui.LockScreenSet) -> a
-com.jiusg.mainscreenshow.ui.LockScreenSet$1 -> com.jiusg.mainscreenshow.ui.as:
+com.jiusg.mainscreenshow.ui.LockScreenSet$1 -> com.jiusg.mainscreenshow.ui.aw:
     com.jiusg.mainscreenshow.ui.LockScreenSet this$0 -> a
-    66:92:void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
-com.jiusg.mainscreenshow.ui.LockScreenSet$LockScreenAdapter -> com.jiusg.mainscreenshow.ui.at:
+    66:94:void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+com.jiusg.mainscreenshow.ui.LockScreenSet$LockScreenAdapter -> com.jiusg.mainscreenshow.ui.ax:
     com.jiusg.mainscreenshow.ui.LockScreenSet this$0 -> a
-    102:102:int getCount() -> getCount
-    108:108:java.lang.Object getItem(int) -> getItem
-    114:114:long getItemId(int) -> getItemId
-    120:190:android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
-    196:199:boolean isEnabled(int) -> isEnabled
-com.jiusg.mainscreenshow.ui.LockScreenSet$mHandler -> com.jiusg.mainscreenshow.ui.au:
+    104:104:int getCount() -> getCount
+    110:110:java.lang.Object getItem(int) -> getItem
+    116:116:long getItemId(int) -> getItemId
+    122:196:android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+    202:205:boolean isEnabled(int) -> isEnabled
+com.jiusg.mainscreenshow.ui.LockScreenSet$mHandler -> com.jiusg.mainscreenshow.ui.ay:
     com.jiusg.mainscreenshow.ui.LockScreenSet this$0 -> a
-    250:255:void handleMessage(android.os.Message) -> handleMessage
+    256:261:void handleMessage(android.os.Message) -> handleMessage
 com.jiusg.mainscreenshow.ui.MSS -> com.jiusg.mainscreenshow.ui.MSS:
     com.meizu.mstore.license.ILicensingService mLicensingService -> o
     android.app.AlertDialog dialogUpdate -> p
@@ -6553,23 +6658,23 @@ com.jiusg.mainscreenshow.ui.MSS -> com.jiusg.mainscreenshow.ui.MSS:
     54:54:android.content.SharedPreferences access$400(com.jiusg.mainscreenshow.ui.MSS) -> e
     54:54:android.content.ServiceConnection access$500(com.jiusg.mainscreenshow.ui.MSS) -> f
     54:54:android.app.AlertDialog access$600(com.jiusg.mainscreenshow.ui.MSS) -> g
-com.jiusg.mainscreenshow.ui.MSS$1 -> com.jiusg.mainscreenshow.ui.av:
+com.jiusg.mainscreenshow.ui.MSS$1 -> com.jiusg.mainscreenshow.ui.az:
     com.jiusg.mainscreenshow.ui.MSS this$0 -> a
     64:65:void onServiceDisconnected(android.content.ComponentName) -> onServiceDisconnected
     70:71:void onServiceConnected(android.content.ComponentName,android.os.IBinder) -> onServiceConnected
-com.jiusg.mainscreenshow.ui.MSS$2 -> com.jiusg.mainscreenshow.ui.aw:
+com.jiusg.mainscreenshow.ui.MSS$2 -> com.jiusg.mainscreenshow.ui.ba:
     com.jiusg.mainscreenshow.ui.MSS this$0 -> a
     137:137:void onPageScrolled(int,float,int) -> a
     141:155:void onPageSelected(int) -> a
     160:160:void onPageScrollStateChanged(int) -> b
-com.jiusg.mainscreenshow.ui.MSS$3 -> com.jiusg.mainscreenshow.ui.ax:
+com.jiusg.mainscreenshow.ui.MSS$3 -> com.jiusg.mainscreenshow.ui.bb:
     com.jiusg.mainscreenshow.ui.MSS this$0 -> a
     235:235:void onServiceDisconnected(android.content.ComponentName) -> onServiceDisconnected
     240:242:void onServiceConnected(android.content.ComponentName,android.os.IBinder) -> onServiceConnected
-com.jiusg.mainscreenshow.ui.MSS$LicenseHandler -> com.jiusg.mainscreenshow.ui.ay:
+com.jiusg.mainscreenshow.ui.MSS$LicenseHandler -> com.jiusg.mainscreenshow.ui.bc:
     com.jiusg.mainscreenshow.ui.MSS this$0 -> a
     315:411:void handleMessage(android.os.Message) -> handleMessage
-com.jiusg.mainscreenshow.ui.MSS$MSSFragmentAdapter -> com.jiusg.mainscreenshow.ui.az:
+com.jiusg.mainscreenshow.ui.MSS$MSSFragmentAdapter -> com.jiusg.mainscreenshow.ui.bd:
     java.util.ArrayList list -> a
     com.jiusg.mainscreenshow.ui.MSS this$0 -> b
     441:441:android.support.v4.app.Fragment getItem(int) -> a
@@ -6602,41 +6707,41 @@ com.jiusg.mainscreenshow.ui.MSSEvent -> com.jiusg.mainscreenshow.ui.MSSEvent:
     43:43:com.jiusg.mainscreenshow.ui.MSSEvent$MSSEventAdapter access$400(com.jiusg.mainscreenshow.ui.MSSEvent) -> d
     43:43:com.jiusg.mainscreenshow.service.MSSService access$302(com.jiusg.mainscreenshow.ui.MSSEvent,com.jiusg.mainscreenshow.service.MSSService) -> a
     43:43:android.app.AlertDialog access$500(com.jiusg.mainscreenshow.ui.MSSEvent) -> e
-com.jiusg.mainscreenshow.ui.MSSEvent$1 -> com.jiusg.mainscreenshow.ui.ba:
+com.jiusg.mainscreenshow.ui.MSSEvent$1 -> com.jiusg.mainscreenshow.ui.be:
     com.jiusg.mainscreenshow.ui.MSSEvent this$0 -> a
     147:148:void onClick(android.content.DialogInterface,int) -> onClick
-com.jiusg.mainscreenshow.ui.MSSEvent$2 -> com.jiusg.mainscreenshow.ui.bb:
+com.jiusg.mainscreenshow.ui.MSSEvent$2 -> com.jiusg.mainscreenshow.ui.bf:
     com.jiusg.mainscreenshow.ui.MSSEvent this$0 -> a
     138:141:void onClick(android.content.DialogInterface,int) -> onClick
-com.jiusg.mainscreenshow.ui.MSSEvent$3 -> com.jiusg.mainscreenshow.ui.bc:
+com.jiusg.mainscreenshow.ui.MSSEvent$3 -> com.jiusg.mainscreenshow.ui.bg:
     com.jiusg.mainscreenshow.ui.MSSEvent this$0 -> a
     158:184:void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
-com.jiusg.mainscreenshow.ui.MSSEvent$4 -> com.jiusg.mainscreenshow.ui.bd:
+com.jiusg.mainscreenshow.ui.MSSEvent$4 -> com.jiusg.mainscreenshow.ui.bh:
     com.jiusg.mainscreenshow.ui.MSSEvent this$0 -> a
     193:251:boolean onItemLongClick(android.widget.AdapterView,android.view.View,int,long) -> onItemLongClick
-com.jiusg.mainscreenshow.ui.MSSEvent$4$1 -> com.jiusg.mainscreenshow.ui.be:
+com.jiusg.mainscreenshow.ui.MSSEvent$4$1 -> com.jiusg.mainscreenshow.ui.bi:
     int val$x -> a
     java.lang.String[] val$s -> b
     com.jiusg.mainscreenshow.ui.MSSEvent$4 this$1 -> c
     208:248:void onClick(android.content.DialogInterface,int) -> onClick
-com.jiusg.mainscreenshow.ui.MSSEvent$5 -> com.jiusg.mainscreenshow.ui.bf:
+com.jiusg.mainscreenshow.ui.MSSEvent$5 -> com.jiusg.mainscreenshow.ui.bj:
     com.jiusg.mainscreenshow.ui.MSSEvent this$0 -> a
     260:260:void onServiceDisconnected(android.content.ComponentName) -> onServiceDisconnected
     265:267:void onServiceConnected(android.content.ComponentName,android.os.IBinder) -> onServiceConnected
-com.jiusg.mainscreenshow.ui.MSSEvent$6 -> com.jiusg.mainscreenshow.ui.bg:
+com.jiusg.mainscreenshow.ui.MSSEvent$6 -> com.jiusg.mainscreenshow.ui.bk:
     com.jiusg.mainscreenshow.ui.MSSEvent this$0 -> a
     321:324:void onClick(android.content.DialogInterface,int) -> onClick
-com.jiusg.mainscreenshow.ui.MSSEvent$MSSEventAdapter -> com.jiusg.mainscreenshow.ui.bh:
+com.jiusg.mainscreenshow.ui.MSSEvent$MSSEventAdapter -> com.jiusg.mainscreenshow.ui.bl:
     com.jiusg.mainscreenshow.ui.MSSEvent this$0 -> a
     355:355:int getCount() -> getCount
     361:361:java.lang.Object getItem(int) -> getItem
     367:367:long getItemId(int) -> getItemId
     373:478:android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
     484:486:boolean isEnabled(int) -> isEnabled
-com.jiusg.mainscreenshow.ui.MSSEvent$MSSEventHandler -> com.jiusg.mainscreenshow.ui.bi:
+com.jiusg.mainscreenshow.ui.MSSEvent$MSSEventHandler -> com.jiusg.mainscreenshow.ui.bm:
     com.jiusg.mainscreenshow.ui.MSSEvent this$0 -> a
     518:529:void handleMessage(android.os.Message) -> handleMessage
-com.jiusg.mainscreenshow.ui.MSSEventFragment -> com.jiusg.mainscreenshow.ui.bj:
+com.jiusg.mainscreenshow.ui.MSSEventFragment -> com.jiusg.mainscreenshow.ui.bn:
     android.widget.RelativeLayout main -> aa
     android.widget.ImageView img -> ab
     android.content.SharedPreferences sp_date -> ac
@@ -6645,25 +6750,25 @@ com.jiusg.mainscreenshow.ui.MSSEventFragment -> com.jiusg.mainscreenshow.ui.bj:
     android.app.AlertDialog dialogUpdate -> af
     com.jiusg.mainscreenshow.ui.MSSEventFragment$MSSEventHandler hd -> ag
     boolean isImg -> ah
-    45:51:void onCreate(android.os.Bundle) -> c
-    55:58:android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle) -> a
-    67:103:void initData() -> H
-    107:152:boolean onTouch(android.view.View,android.view.MotionEvent) -> onTouch
-    156:191:void disposeClickImg(int) -> a
-    200:204:void recycleBitmap(android.graphics.Bitmap) -> a
-    213:225:int clickImg(android.view.MotionEvent) -> a
-    229:238:float countImg(float,int) -> a
+    45:53:void onCreate(android.os.Bundle) -> c
+    57:60:android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle) -> a
+    69:105:void initData() -> H
+    109:154:boolean onTouch(android.view.View,android.view.MotionEvent) -> onTouch
+    158:193:void disposeClickImg(int) -> a
+    202:206:void recycleBitmap(android.graphics.Bitmap) -> a
+    215:227:int clickImg(android.view.MotionEvent) -> a
+    231:240:float countImg(float,int) -> a
     30:30:android.content.SharedPreferences access$000(com.jiusg.mainscreenshow.ui.MSSEventFragment) -> a
     30:30:android.app.AlertDialog access$100(com.jiusg.mainscreenshow.ui.MSSEventFragment) -> b
-com.jiusg.mainscreenshow.ui.MSSEventFragment$1 -> com.jiusg.mainscreenshow.ui.bk:
+com.jiusg.mainscreenshow.ui.MSSEventFragment$1 -> com.jiusg.mainscreenshow.ui.bo:
     com.jiusg.mainscreenshow.ui.MSSEventFragment this$0 -> a
-    99:100:void onClick(android.content.DialogInterface,int) -> onClick
-com.jiusg.mainscreenshow.ui.MSSEventFragment$2 -> com.jiusg.mainscreenshow.ui.bl:
+    101:102:void onClick(android.content.DialogInterface,int) -> onClick
+com.jiusg.mainscreenshow.ui.MSSEventFragment$2 -> com.jiusg.mainscreenshow.ui.bp:
     com.jiusg.mainscreenshow.ui.MSSEventFragment this$0 -> a
-    90:93:void onClick(android.content.DialogInterface,int) -> onClick
-com.jiusg.mainscreenshow.ui.MSSEventFragment$MSSEventHandler -> com.jiusg.mainscreenshow.ui.bm:
+    92:95:void onClick(android.content.DialogInterface,int) -> onClick
+com.jiusg.mainscreenshow.ui.MSSEventFragment$MSSEventHandler -> com.jiusg.mainscreenshow.ui.bq:
     com.jiusg.mainscreenshow.ui.MSSEventFragment this$0 -> a
-    259:270:void handleMessage(android.os.Message) -> handleMessage
+    261:272:void handleMessage(android.os.Message) -> handleMessage
 com.jiusg.mainscreenshow.ui.MSSPreview -> com.jiusg.mainscreenshow.ui.MSSPreview:
     android.widget.GridView gv -> a
     com.jiusg.mainscreenshow.ui.MSSPreview$MSSPreviewAdapter mssPA -> b
@@ -6671,17 +6776,17 @@ com.jiusg.mainscreenshow.ui.MSSPreview -> com.jiusg.mainscreenshow.ui.MSSPreview
     java.lang.String TAG -> d
     35:54:void onCreate(android.os.Bundle) -> onCreate
     58:61:void onResume() -> onResume
-com.jiusg.mainscreenshow.ui.MSSPreview$1 -> com.jiusg.mainscreenshow.ui.bn:
+com.jiusg.mainscreenshow.ui.MSSPreview$1 -> com.jiusg.mainscreenshow.ui.br:
     com.jiusg.mainscreenshow.ui.MSSPreview this$0 -> a
     51:51:void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
-com.jiusg.mainscreenshow.ui.MSSPreview$MSSPreviewAdapter -> com.jiusg.mainscreenshow.ui.bo:
+com.jiusg.mainscreenshow.ui.MSSPreview$MSSPreviewAdapter -> com.jiusg.mainscreenshow.ui.bs:
     com.jiusg.mainscreenshow.ui.MSSPreview this$0 -> a
     68:68:int getCount() -> getCount
     74:74:java.lang.Object getItem(int) -> getItem
     80:80:long getItemId(int) -> getItemId
     154:154:android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
     160:162:boolean isEnabled(int) -> isEnabled
-com.jiusg.mainscreenshow.ui.MssPreviewFragment -> com.jiusg.mainscreenshow.ui.bp:
+com.jiusg.mainscreenshow.ui.MssPreviewFragment -> com.jiusg.mainscreenshow.ui.bt:
     android.widget.RelativeLayout main -> aa
     android.widget.GridView gv -> ab
     com.jiusg.mainscreenshow.ui.MssPreviewFragment$MSSPreviewAdapter mssPA -> ac
@@ -6690,20 +6795,20 @@ com.jiusg.mainscreenshow.ui.MssPreviewFragment -> com.jiusg.mainscreenshow.ui.bp
     34:35:void onCreate(android.os.Bundle) -> c
     40:53:android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle) -> a
     58:60:void onActivityCreated(android.os.Bundle) -> d
-com.jiusg.mainscreenshow.ui.MssPreviewFragment$1 -> com.jiusg.mainscreenshow.ui.bq:
+com.jiusg.mainscreenshow.ui.MssPreviewFragment$1 -> com.jiusg.mainscreenshow.ui.bu:
     com.jiusg.mainscreenshow.ui.MssPreviewFragment this$0 -> a
     51:51:void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
-com.jiusg.mainscreenshow.ui.MssPreviewFragment$MSSPreviewAdapter -> com.jiusg.mainscreenshow.ui.br:
+com.jiusg.mainscreenshow.ui.MssPreviewFragment$MSSPreviewAdapter -> com.jiusg.mainscreenshow.ui.bv:
     com.jiusg.mainscreenshow.ui.MssPreviewFragment this$0 -> a
     67:67:int getCount() -> getCount
     73:73:java.lang.Object getItem(int) -> getItem
     79:79:long getItemId(int) -> getItemId
-    84:137:android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
-    144:144:boolean isEnabled(int) -> isEnabled
-com.jiusg.mainscreenshow.ui.MssPreviewFragment$MSSPreviewAdapter$1 -> com.jiusg.mainscreenshow.ui.bs:
+    84:144:android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+    151:151:boolean isEnabled(int) -> isEnabled
+com.jiusg.mainscreenshow.ui.MssPreviewFragment$MSSPreviewAdapter$1 -> com.jiusg.mainscreenshow.ui.bw:
     int val$position -> a
     com.jiusg.mainscreenshow.ui.MssPreviewFragment$MSSPreviewAdapter this$1 -> b
-    112:134:void onClick(android.view.View) -> onClick
+    116:141:void onClick(android.view.View) -> onClick
 com.jiusg.mainscreenshow.ui.PictureWallChoose -> com.jiusg.mainscreenshow.ui.PictureWallChoose:
     android.widget.GridView gv -> a
     com.jiusg.mainscreenshow.ui.PictureWallChoose$PWCAdapter pA -> b
@@ -6740,20 +6845,20 @@ com.jiusg.mainscreenshow.ui.PictureWallChoose -> com.jiusg.mainscreenshow.ui.Pic
     46:46:android.app.ProgressDialog access$300(com.jiusg.mainscreenshow.ui.PictureWallChoose) -> g
     46:46:android.content.SharedPreferences access$700(com.jiusg.mainscreenshow.ui.PictureWallChoose) -> h
     46:46:java.lang.String access$800(com.jiusg.mainscreenshow.ui.PictureWallChoose) -> i
-com.jiusg.mainscreenshow.ui.PictureWallChoose$PWCAdapter -> com.jiusg.mainscreenshow.ui.bt:
+com.jiusg.mainscreenshow.ui.PictureWallChoose$PWCAdapter -> com.jiusg.mainscreenshow.ui.bx:
     com.jiusg.mainscreenshow.ui.PictureWallChoose this$0 -> a
     145:145:int getCount() -> getCount
     151:151:java.lang.Object getItem(int) -> getItem
     157:157:long getItemId(int) -> getItemId
     164:189:android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
-com.jiusg.mainscreenshow.ui.PictureWallChoose$PWCAdapter$1 -> com.jiusg.mainscreenshow.ui.bu:
+com.jiusg.mainscreenshow.ui.PictureWallChoose$PWCAdapter$1 -> com.jiusg.mainscreenshow.ui.by:
     int val$position -> a
     com.jiusg.mainscreenshow.ui.PictureWallChoose$PWCAdapter this$1 -> b
     179:186:void onClick(android.view.View) -> onClick
-com.jiusg.mainscreenshow.ui.PictureWallChoose$PWCHandler -> com.jiusg.mainscreenshow.ui.bv:
+com.jiusg.mainscreenshow.ui.PictureWallChoose$PWCHandler -> com.jiusg.mainscreenshow.ui.bz:
     com.jiusg.mainscreenshow.ui.PictureWallChoose this$0 -> a
     199:273:void handleMessage(android.os.Message) -> handleMessage
-com.jiusg.mainscreenshow.ui.PictureWallChoose$PWCHandler$1 -> com.jiusg.mainscreenshow.ui.bw:
+com.jiusg.mainscreenshow.ui.PictureWallChoose$PWCHandler$1 -> com.jiusg.mainscreenshow.ui.ca:
     com.jiusg.mainscreenshow.ui.PictureWallChoose$PWCHandler this$1 -> a
     224:227:void onClick(android.content.DialogInterface,int) -> onClick
 com.jiusg.mainscreenshow.ui.PreviewAnimation -> com.jiusg.mainscreenshow.ui.PreviewAnimation:
@@ -6763,35 +6868,49 @@ com.jiusg.mainscreenshow.ui.PreviewAnimation -> com.jiusg.mainscreenshow.ui.Prev
     int Animation -> d
     android.widget.ImageView background -> e
     android.widget.Button button -> f
-    47:151:void onCreate(android.os.Bundle) -> onCreate
-    156:160:void onStart() -> onStart
-    164:171:void onDestroy() -> onDestroy
-    179:183:void recycleBitmap(android.graphics.Bitmap) -> a
-    186:196:void showDialog() -> a
-    201:204:void onStop() -> onStop
-    35:35:com.jiusg.mainscreenshow.service.MSSService access$000(com.jiusg.mainscreenshow.ui.PreviewAnimation) -> a
-    35:35:com.jiusg.mainscreenshow.service.MSSService access$002(com.jiusg.mainscreenshow.ui.PreviewAnimation,com.jiusg.mainscreenshow.service.MSSService) -> a
-    35:35:int access$100(com.jiusg.mainscreenshow.ui.PreviewAnimation) -> b
-    35:35:void access$200(com.jiusg.mainscreenshow.ui.PreviewAnimation) -> c
-com.jiusg.mainscreenshow.ui.PreviewAnimation$1 -> com.jiusg.mainscreenshow.ui.bx:
+    android.content.SharedPreferences anim -> g
+    float pointsBalance -> h
+    53:166:void onCreate(android.os.Bundle) -> onCreate
+    171:175:void onStart() -> onStart
+    179:186:void onDestroy() -> onDestroy
+    194:198:void recycleBitmap(android.graphics.Bitmap) -> a
+    201:231:void showDialogAnim(int) -> a
+    236:239:void onStop() -> onStop
+    243:247:java.lang.String getIsActivated(int) -> b
+    251:255:java.lang.Boolean isActivated(int) -> c
+    259:263:int getPoint(int) -> d
+    39:39:com.jiusg.mainscreenshow.service.MSSService access$000(com.jiusg.mainscreenshow.ui.PreviewAnimation) -> a
+    39:39:com.jiusg.mainscreenshow.service.MSSService access$002(com.jiusg.mainscreenshow.ui.PreviewAnimation,com.jiusg.mainscreenshow.service.MSSService) -> a
+    39:39:com.jiusg.mainscreenshow.ui.PreviewAnimation$mHandler access$100(com.jiusg.mainscreenshow.ui.PreviewAnimation) -> b
+    39:39:int access$200(com.jiusg.mainscreenshow.ui.PreviewAnimation) -> c
+    39:39:void access$300(com.jiusg.mainscreenshow.ui.PreviewAnimation,int) -> a
+    39:39:int access$400(com.jiusg.mainscreenshow.ui.PreviewAnimation,int) -> b
+    39:39:android.content.SharedPreferences access$500(com.jiusg.mainscreenshow.ui.PreviewAnimation) -> d
+    39:39:java.lang.String access$600(com.jiusg.mainscreenshow.ui.PreviewAnimation,int) -> c
+    39:39:android.widget.Button access$700(com.jiusg.mainscreenshow.ui.PreviewAnimation) -> e
+com.jiusg.mainscreenshow.ui.PreviewAnimation$1 -> com.jiusg.mainscreenshow.ui.cb:
     com.jiusg.mainscreenshow.ui.PreviewAnimation this$0 -> a
-    72:79:void onClick(android.view.View) -> onClick
-com.jiusg.mainscreenshow.ui.PreviewAnimation$2 -> com.jiusg.mainscreenshow.ui.by:
+    78:85:void onClick(android.view.View) -> onClick
+com.jiusg.mainscreenshow.ui.PreviewAnimation$2 -> com.jiusg.mainscreenshow.ui.cc:
     com.jiusg.mainscreenshow.ui.PreviewAnimation this$0 -> a
-    88:88:void onServiceDisconnected(android.content.ComponentName) -> onServiceDisconnected
-    93:95:void onServiceConnected(android.content.ComponentName,android.os.IBinder) -> onServiceConnected
-com.jiusg.mainscreenshow.ui.PreviewAnimation$3 -> com.jiusg.mainscreenshow.ui.bz:
+    94:94:void onServiceDisconnected(android.content.ComponentName) -> onServiceDisconnected
+    99:103:void onServiceConnected(android.content.ComponentName,android.os.IBinder) -> onServiceConnected
+com.jiusg.mainscreenshow.ui.PreviewAnimation$3 -> com.jiusg.mainscreenshow.ui.cd:
     com.jiusg.mainscreenshow.ui.PreviewAnimation this$0 -> a
-    126:127:void onClick(android.view.View) -> onClick
-com.jiusg.mainscreenshow.ui.PreviewAnimation$4 -> com.jiusg.mainscreenshow.ui.ca:
+    138:139:void onClick(android.view.View) -> onClick
+com.jiusg.mainscreenshow.ui.PreviewAnimation$4 -> com.jiusg.mainscreenshow.ui.ce:
     com.jiusg.mainscreenshow.ui.PreviewAnimation this$0 -> a
-    133:149:void onClick(android.view.View) -> onClick
-com.jiusg.mainscreenshow.ui.PreviewAnimation$5 -> com.jiusg.mainscreenshow.ui.cb:
+    145:164:void onClick(android.view.View) -> onClick
+com.jiusg.mainscreenshow.ui.PreviewAnimation$5 -> com.jiusg.mainscreenshow.ui.cf:
     com.jiusg.mainscreenshow.ui.PreviewAnimation this$0 -> a
-    194:194:void onClick(android.content.DialogInterface,int) -> onClick
-com.jiusg.mainscreenshow.ui.PreviewAnimation$mHandler -> com.jiusg.mainscreenshow.ui.cc:
+    210:210:void onClick(android.content.DialogInterface,int) -> onClick
+com.jiusg.mainscreenshow.ui.PreviewAnimation$6 -> com.jiusg.mainscreenshow.ui.cg:
+    int val$an -> a
+    com.jiusg.mainscreenshow.ui.PreviewAnimation this$0 -> b
+    218:227:void onClick(android.content.DialogInterface,int) -> onClick
+com.jiusg.mainscreenshow.ui.PreviewAnimation$mHandler -> com.jiusg.mainscreenshow.ui.ch:
     com.jiusg.mainscreenshow.ui.PreviewAnimation this$0 -> a
-    212:215:void handleMessage(android.os.Message) -> handleMessage
+    273:276:void handleMessage(android.os.Message) -> handleMessage
 com.jiusg.mainscreenshow.ui.SMSSet -> com.jiusg.mainscreenshow.ui.SMSSet:
     int VALUE -> g
     java.lang.String eventName -> h
@@ -6800,22 +6919,22 @@ com.jiusg.mainscreenshow.ui.SMSSet -> com.jiusg.mainscreenshow.ui.SMSSet:
     android.content.SharedPreferences sp_date -> k
     android.content.SharedPreferences sp_setA -> l
     int SETLENGHT -> m
-    40:95:void onCreate(android.os.Bundle) -> onCreate
-    220:246:void clearDate() -> p
+    40:97:void onCreate(android.os.Bundle) -> onCreate
+    226:252:void clearDate() -> r
     23:23:void access$000(com.jiusg.mainscreenshow.ui.SMSSet) -> a
-com.jiusg.mainscreenshow.ui.SMSSet$1 -> com.jiusg.mainscreenshow.ui.cd:
+com.jiusg.mainscreenshow.ui.SMSSet$1 -> com.jiusg.mainscreenshow.ui.ci:
     com.jiusg.mainscreenshow.ui.SMSSet this$0 -> a
-    66:92:void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
-com.jiusg.mainscreenshow.ui.SMSSet$SMSAdapter -> com.jiusg.mainscreenshow.ui.ce:
+    66:94:void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+com.jiusg.mainscreenshow.ui.SMSSet$SMSAdapter -> com.jiusg.mainscreenshow.ui.cj:
     com.jiusg.mainscreenshow.ui.SMSSet this$0 -> a
-    103:103:int getCount() -> getCount
-    109:109:java.lang.Object getItem(int) -> getItem
-    115:115:long getItemId(int) -> getItemId
-    120:189:android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
-    195:198:boolean isEnabled(int) -> isEnabled
-com.jiusg.mainscreenshow.ui.SMSSet$mHadler -> com.jiusg.mainscreenshow.ui.cf:
+    105:105:int getCount() -> getCount
+    111:111:java.lang.Object getItem(int) -> getItem
+    117:117:long getItemId(int) -> getItemId
+    122:195:android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+    201:204:boolean isEnabled(int) -> isEnabled
+com.jiusg.mainscreenshow.ui.SMSSet$mHadler -> com.jiusg.mainscreenshow.ui.ck:
     com.jiusg.mainscreenshow.ui.SMSSet this$0 -> a
-    208:213:void handleMessage(android.os.Message) -> handleMessage
+    214:219:void handleMessage(android.os.Message) -> handleMessage
 com.jiusg.mainscreenshow.ui.Setting -> com.jiusg.mainscreenshow.ui.Setting:
     android.content.ServiceConnection mSc -> a
     com.jiusg.mainscreenshow.service.MSSService mssservice -> b
@@ -6827,16 +6946,16 @@ com.jiusg.mainscreenshow.ui.Setting -> com.jiusg.mainscreenshow.ui.Setting:
     439:442:void onStart() -> onStart
     447:449:void onStop() -> onStop
     454:457:void onDestroy() -> onDestroy
-    461:482:java.lang.String getUpdateInfo(android.content.Context) -> a
+    461:483:java.lang.String getUpdateInfo(android.content.Context) -> a
     48:48:com.jiusg.mainscreenshow.service.MSSService access$002(com.jiusg.mainscreenshow.ui.Setting,com.jiusg.mainscreenshow.service.MSSService) -> a
     48:48:com.jiusg.mainscreenshow.service.MSSService access$000(com.jiusg.mainscreenshow.ui.Setting) -> a
     48:48:android.app.AlertDialog access$202(com.jiusg.mainscreenshow.ui.Setting,android.app.AlertDialog) -> a
     48:48:android.app.AlertDialog access$200(com.jiusg.mainscreenshow.ui.Setting) -> b
-com.jiusg.mainscreenshow.ui.Setting$1 -> com.jiusg.mainscreenshow.ui.cg:
+com.jiusg.mainscreenshow.ui.Setting$1 -> com.jiusg.mainscreenshow.ui.cl:
     com.jiusg.mainscreenshow.ui.Setting this$0 -> a
     80:80:void onServiceDisconnected(android.content.ComponentName) -> onServiceDisconnected
     85:86:void onServiceConnected(android.content.ComponentName,android.os.IBinder) -> onServiceConnected
-com.jiusg.mainscreenshow.ui.Setting$SettingFragment -> com.jiusg.mainscreenshow.ui.ch:
+com.jiusg.mainscreenshow.ui.Setting$SettingFragment -> com.jiusg.mainscreenshow.ui.cm:
     com.jiusg.mainscreenshow.ui.Setting$SettingFragment$mHandler handler -> b
     android.preference.CheckBoxPreference powerSaving -> c
     android.preference.ListPreference frame -> d
@@ -6859,76 +6978,76 @@ com.jiusg.mainscreenshow.ui.Setting$SettingFragment -> com.jiusg.mainscreenshow.
     105:105:android.preference.PreferenceScreen access$500(com.jiusg.mainscreenshow.ui.Setting$SettingFragment) -> d
     105:105:android.preference.PreferenceScreen access$600(com.jiusg.mainscreenshow.ui.Setting$SettingFragment) -> e
     105:105:android.preference.PreferenceScreen access$700(com.jiusg.mainscreenshow.ui.Setting$SettingFragment) -> f
-com.jiusg.mainscreenshow.ui.Setting$SettingFragment$1 -> com.jiusg.mainscreenshow.ui.ci:
+com.jiusg.mainscreenshow.ui.Setting$SettingFragment$1 -> com.jiusg.mainscreenshow.ui.cn:
     com.jiusg.mainscreenshow.ui.Setting$SettingFragment this$1 -> a
     174:175:boolean onPreferenceChange(android.preference.Preference,java.lang.Object) -> onPreferenceChange
-com.jiusg.mainscreenshow.ui.Setting$SettingFragment$10 -> com.jiusg.mainscreenshow.ui.cj:
+com.jiusg.mainscreenshow.ui.Setting$SettingFragment$10 -> com.jiusg.mainscreenshow.ui.co:
     com.jiusg.mainscreenshow.ui.Setting$SettingFragment this$1 -> a
     309:356:boolean onPreferenceClick(android.preference.Preference) -> onPreferenceClick
-com.jiusg.mainscreenshow.ui.Setting$SettingFragment$10$1 -> com.jiusg.mainscreenshow.ui.ck:
+com.jiusg.mainscreenshow.ui.Setting$SettingFragment$10$1 -> com.jiusg.mainscreenshow.ui.cp:
     com.jiusg.mainscreenshow.ui.Setting$SettingFragment$10 this$2 -> a
     346:353:void onClick(android.content.DialogInterface,int) -> onClick
-com.jiusg.mainscreenshow.ui.Setting$SettingFragment$10$2 -> com.jiusg.mainscreenshow.ui.cl:
+com.jiusg.mainscreenshow.ui.Setting$SettingFragment$10$2 -> com.jiusg.mainscreenshow.ui.cq:
     com.jiusg.mainscreenshow.ui.Setting$SettingFragment$10 this$2 -> a
     318:339:void onClick(android.content.DialogInterface,int) -> onClick
-com.jiusg.mainscreenshow.ui.Setting$SettingFragment$11 -> com.jiusg.mainscreenshow.ui.cm:
+com.jiusg.mainscreenshow.ui.Setting$SettingFragment$11 -> com.jiusg.mainscreenshow.ui.cr:
     com.jiusg.mainscreenshow.ui.Setting$SettingFragment this$1 -> a
     363:376:boolean onPreferenceClick(android.preference.Preference) -> onPreferenceClick
-com.jiusg.mainscreenshow.ui.Setting$SettingFragment$11$1 -> com.jiusg.mainscreenshow.ui.cn:
+com.jiusg.mainscreenshow.ui.Setting$SettingFragment$11$1 -> com.jiusg.mainscreenshow.ui.cs:
     com.jiusg.mainscreenshow.ui.Setting$SettingFragment$11 this$2 -> a
     369:374:void onClick(android.content.DialogInterface,int) -> onClick
-com.jiusg.mainscreenshow.ui.Setting$SettingFragment$2 -> com.jiusg.mainscreenshow.ui.co:
+com.jiusg.mainscreenshow.ui.Setting$SettingFragment$2 -> com.jiusg.mainscreenshow.ui.ct:
     com.jiusg.mainscreenshow.ui.Setting$SettingFragment this$1 -> a
     184:187:boolean onPreferenceChange(android.preference.Preference,java.lang.Object) -> onPreferenceChange
-com.jiusg.mainscreenshow.ui.Setting$SettingFragment$3 -> com.jiusg.mainscreenshow.ui.cp:
+com.jiusg.mainscreenshow.ui.Setting$SettingFragment$3 -> com.jiusg.mainscreenshow.ui.cu:
     com.jiusg.mainscreenshow.ui.Setting$SettingFragment this$1 -> a
     207:211:boolean onPreferenceClick(android.preference.Preference) -> onPreferenceClick
-com.jiusg.mainscreenshow.ui.Setting$SettingFragment$4 -> com.jiusg.mainscreenshow.ui.cq:
+com.jiusg.mainscreenshow.ui.Setting$SettingFragment$4 -> com.jiusg.mainscreenshow.ui.cv:
     com.jiusg.mainscreenshow.ui.Setting$SettingFragment this$1 -> a
     219:220:boolean onPreferenceClick(android.preference.Preference) -> onPreferenceClick
-com.jiusg.mainscreenshow.ui.Setting$SettingFragment$5 -> com.jiusg.mainscreenshow.ui.cr:
+com.jiusg.mainscreenshow.ui.Setting$SettingFragment$5 -> com.jiusg.mainscreenshow.ui.cw:
     com.jiusg.mainscreenshow.ui.Setting$SettingFragment this$1 -> a
     227:235:boolean onPreferenceClick(android.preference.Preference) -> onPreferenceClick
-com.jiusg.mainscreenshow.ui.Setting$SettingFragment$6 -> com.jiusg.mainscreenshow.ui.cs:
+com.jiusg.mainscreenshow.ui.Setting$SettingFragment$6 -> com.jiusg.mainscreenshow.ui.cx:
     com.jiusg.mainscreenshow.ui.Setting$SettingFragment this$1 -> a
     243:261:boolean onPreferenceClick(android.preference.Preference) -> onPreferenceClick
-com.jiusg.mainscreenshow.ui.Setting$SettingFragment$6$1 -> com.jiusg.mainscreenshow.ui.ct:
+com.jiusg.mainscreenshow.ui.Setting$SettingFragment$6$1 -> com.jiusg.mainscreenshow.ui.cy:
     android.app.ProgressDialog val$progressDialog -> a
     com.jiusg.mainscreenshow.tools.UpdateVersion val$updateVersion -> b
     com.jiusg.mainscreenshow.ui.Setting$SettingFragment$6 this$2 -> c
     250:259:void done(java.lang.String,java.lang.String,java.lang.String) -> done
-com.jiusg.mainscreenshow.ui.Setting$SettingFragment$7 -> com.jiusg.mainscreenshow.ui.cu:
+com.jiusg.mainscreenshow.ui.Setting$SettingFragment$7 -> com.jiusg.mainscreenshow.ui.cz:
     com.jiusg.mainscreenshow.ui.Setting$SettingFragment this$1 -> a
     268:279:boolean onPreferenceClick(android.preference.Preference) -> onPreferenceClick
-com.jiusg.mainscreenshow.ui.Setting$SettingFragment$7$1 -> com.jiusg.mainscreenshow.ui.cv:
+com.jiusg.mainscreenshow.ui.Setting$SettingFragment$7$1 -> com.jiusg.mainscreenshow.ui.da:
     com.jiusg.mainscreenshow.ui.Setting$SettingFragment$7 this$2 -> a
     272:273:void onActivityDestroy(android.content.Context) -> a
-com.jiusg.mainscreenshow.ui.Setting$SettingFragment$8 -> com.jiusg.mainscreenshow.ui.cw:
+com.jiusg.mainscreenshow.ui.Setting$SettingFragment$8 -> com.jiusg.mainscreenshow.ui.db:
     com.jiusg.mainscreenshow.ui.Setting$SettingFragment this$1 -> a
     285:287:boolean onPreferenceClick(android.preference.Preference) -> onPreferenceClick
-com.jiusg.mainscreenshow.ui.Setting$SettingFragment$9 -> com.jiusg.mainscreenshow.ui.cx:
+com.jiusg.mainscreenshow.ui.Setting$SettingFragment$9 -> com.jiusg.mainscreenshow.ui.dc:
     com.jiusg.mainscreenshow.ui.Setting$SettingFragment this$1 -> a
     295:301:boolean onPreferenceClick(android.preference.Preference) -> onPreferenceClick
-com.jiusg.mainscreenshow.ui.Setting$SettingFragment$mHandler -> com.jiusg.mainscreenshow.ui.cy:
+com.jiusg.mainscreenshow.ui.Setting$SettingFragment$mHandler -> com.jiusg.mainscreenshow.ui.dd:
     com.jiusg.mainscreenshow.ui.Setting$SettingFragment this$1 -> a
     389:430:void handleMessage(android.os.Message) -> handleMessage
 com.jiusg.mainscreenshow.ui.SettingApp -> com.jiusg.mainscreenshow.ui.SettingApp:
     23:31:void onCreate(android.os.Bundle) -> onCreate
-com.jiusg.mainscreenshow.ui.SettingApp$SettingAppFragment -> com.jiusg.mainscreenshow.ui.cz:
+com.jiusg.mainscreenshow.ui.SettingApp$SettingAppFragment -> com.jiusg.mainscreenshow.ui.de:
     android.preference.PreferenceScreen lockhelper -> b
     android.preference.PreferenceScreen flashlight -> c
     com.jiusg.mainscreenshow.ui.SettingApp this$0 -> a
     42:95:void onCreate(android.os.Bundle) -> onCreate
-com.jiusg.mainscreenshow.ui.SettingApp$SettingAppFragment$1 -> com.jiusg.mainscreenshow.ui.da:
+com.jiusg.mainscreenshow.ui.SettingApp$SettingAppFragment$1 -> com.jiusg.mainscreenshow.ui.df:
     com.jiusg.mainscreenshow.ui.SettingApp$SettingAppFragment this$1 -> a
     53:69:boolean onPreferenceClick(android.preference.Preference) -> onPreferenceClick
-com.jiusg.mainscreenshow.ui.SettingApp$SettingAppFragment$2 -> com.jiusg.mainscreenshow.ui.db:
+com.jiusg.mainscreenshow.ui.SettingApp$SettingAppFragment$2 -> com.jiusg.mainscreenshow.ui.dg:
     com.jiusg.mainscreenshow.ui.SettingApp$SettingAppFragment this$1 -> a
     76:92:boolean onPreferenceClick(android.preference.Preference) -> onPreferenceClick
 com.jiusg.mainscreenshow.ui.SettingMore -> com.jiusg.mainscreenshow.ui.SettingMore:
     30:38:void onCreate(android.os.Bundle) -> onCreate
     42:46:boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
-com.jiusg.mainscreenshow.ui.SettingMore$SettingMoreFragment -> com.jiusg.mainscreenshow.ui.dc:
+com.jiusg.mainscreenshow.ui.SettingMore$SettingMoreFragment -> com.jiusg.mainscreenshow.ui.dh:
     android.content.SharedPreferences sp_tip -> b
     android.preference.PreferenceScreen rt -> c
     android.preference.CheckBoxPreference debug -> d
@@ -6936,16 +7055,16 @@ com.jiusg.mainscreenshow.ui.SettingMore$SettingMoreFragment -> com.jiusg.mainscr
     59:115:void onCreate(android.os.Bundle) -> onCreate
     50:50:android.preference.CheckBoxPreference access$000(com.jiusg.mainscreenshow.ui.SettingMore$SettingMoreFragment) -> a
     50:50:android.content.SharedPreferences access$100(com.jiusg.mainscreenshow.ui.SettingMore$SettingMoreFragment) -> b
-com.jiusg.mainscreenshow.ui.SettingMore$SettingMoreFragment$1 -> com.jiusg.mainscreenshow.ui.dd:
+com.jiusg.mainscreenshow.ui.SettingMore$SettingMoreFragment$1 -> com.jiusg.mainscreenshow.ui.di:
     com.jiusg.mainscreenshow.ui.SettingMore$SettingMoreFragment this$1 -> a
     68:93:boolean onPreferenceChange(android.preference.Preference,java.lang.Object) -> onPreferenceChange
-com.jiusg.mainscreenshow.ui.SettingMore$SettingMoreFragment$1$1 -> com.jiusg.mainscreenshow.ui.de:
+com.jiusg.mainscreenshow.ui.SettingMore$SettingMoreFragment$1$1 -> com.jiusg.mainscreenshow.ui.dj:
     com.jiusg.mainscreenshow.ui.SettingMore$SettingMoreFragment$1 this$2 -> a
     78:87:void onClick(android.content.DialogInterface,int) -> onClick
-com.jiusg.mainscreenshow.ui.SettingMore$SettingMoreFragment$2 -> com.jiusg.mainscreenshow.ui.df:
+com.jiusg.mainscreenshow.ui.SettingMore$SettingMoreFragment$2 -> com.jiusg.mainscreenshow.ui.dk:
     com.jiusg.mainscreenshow.ui.SettingMore$SettingMoreFragment this$1 -> a
     101:112:boolean onPreferenceClick(android.preference.Preference) -> onPreferenceClick
-com.jiusg.mainscreenshow.ui.SettingMore$SettingMoreFragment$2$1 -> com.jiusg.mainscreenshow.ui.dg:
+com.jiusg.mainscreenshow.ui.SettingMore$SettingMoreFragment$2$1 -> com.jiusg.mainscreenshow.ui.dl:
     com.jiusg.mainscreenshow.ui.SettingMore$SettingMoreFragment$2 this$2 -> a
     108:109:void onClick(android.content.DialogInterface,int) -> onClick
 com.jiusg.mainscreenshow.ui.Welcome -> com.jiusg.mainscreenshow.ui.Welcome:
@@ -6967,17 +7086,17 @@ com.jiusg.mainscreenshow.ui.Welcome -> com.jiusg.mainscreenshow.ui.Welcome:
     android.content.ServiceConnection mSc -> p
     android.widget.Button button -> q
     android.widget.ImageView text -> r
-    73:228:void onCreate(android.os.Bundle) -> onCreate
-    234:236:void onStart() -> onStart
-    241:248:void onStop() -> onStop
-    286:288:int getScreenWidth() -> a
-    298:300:int getScreenHeight() -> b
-    332:350:void frist() -> d
-    353:355:boolean isUpdateVersion() -> e
-    363:512:void updateVersion() -> f
-    521:532:java.lang.String getVersionName() -> g
-    543:558:void saveImage(android.graphics.Bitmap,java.lang.String) -> a
-    561:567:java.lang.String getPath() -> c
+    73:224:void onCreate(android.os.Bundle) -> onCreate
+    230:232:void onStart() -> onStart
+    237:244:void onStop() -> onStop
+    282:284:int getScreenWidth() -> a
+    294:296:int getScreenHeight() -> b
+    328:346:void frist() -> d
+    349:351:boolean isUpdateVersion() -> e
+    359:515:void updateVersion() -> f
+    524:535:java.lang.String getVersionName() -> g
+    546:561:void saveImage(android.graphics.Bitmap,java.lang.String) -> a
+    564:570:java.lang.String getPath() -> c
     48:48:com.jiusg.mainscreenshow.service.MSSService access$002(com.jiusg.mainscreenshow.ui.Welcome,com.jiusg.mainscreenshow.service.MSSService) -> a
     48:48:com.jiusg.mainscreenshow.service.MSSService access$000(com.jiusg.mainscreenshow.ui.Welcome) -> a
     48:48:com.jiusg.mainscreenshow.ui.Welcome$mHandler access$102(com.jiusg.mainscreenshow.ui.Welcome,com.jiusg.mainscreenshow.ui.Welcome$mHandler) -> a
@@ -6993,30 +7112,30 @@ com.jiusg.mainscreenshow.ui.Welcome -> com.jiusg.mainscreenshow.ui.Welcome:
     48:48:android.content.SharedPreferences access$1000(com.jiusg.mainscreenshow.ui.Welcome) -> k
     48:48:android.widget.ImageView access$1100(com.jiusg.mainscreenshow.ui.Welcome) -> l
     48:48:android.widget.Button access$1200(com.jiusg.mainscreenshow.ui.Welcome) -> m
-com.jiusg.mainscreenshow.ui.Welcome$1 -> com.jiusg.mainscreenshow.ui.dh:
+com.jiusg.mainscreenshow.ui.Welcome$1 -> com.jiusg.mainscreenshow.ui.dm:
     com.jiusg.mainscreenshow.ui.Welcome this$0 -> a
     104:104:void onServiceDisconnected(android.content.ComponentName) -> onServiceDisconnected
     109:116:void onServiceConnected(android.content.ComponentName,android.os.IBinder) -> onServiceConnected
-com.jiusg.mainscreenshow.ui.Welcome$2 -> com.jiusg.mainscreenshow.ui.di:
+com.jiusg.mainscreenshow.ui.Welcome$2 -> com.jiusg.mainscreenshow.ui.dn:
     com.jiusg.mainscreenshow.ui.Welcome this$0 -> a
-    153:165:void onClick(android.view.View) -> onClick
-com.jiusg.mainscreenshow.ui.Welcome$3 -> com.jiusg.mainscreenshow.ui.dj:
+    153:161:void onClick(android.view.View) -> onClick
+com.jiusg.mainscreenshow.ui.Welcome$3 -> com.jiusg.mainscreenshow.ui.do:
     com.jiusg.mainscreenshow.ui.Welcome this$0 -> a
-    175:197:void onPageSelected(int) -> a
-    203:203:void onPageScrolled(int,float,int) -> a
-    209:209:void onPageScrollStateChanged(int) -> b
-com.jiusg.mainscreenshow.ui.Welcome$WelcomeAdapter -> com.jiusg.mainscreenshow.ui.dk:
+    171:193:void onPageSelected(int) -> a
+    199:199:void onPageScrolled(int,float,int) -> a
+    205:205:void onPageScrollStateChanged(int) -> b
+com.jiusg.mainscreenshow.ui.Welcome$WelcomeAdapter -> com.jiusg.mainscreenshow.ui.dp:
     com.jiusg.mainscreenshow.ui.Welcome this$0 -> a
-    255:255:int getCount() -> b
-    261:261:boolean isViewFromObject(android.view.View,java.lang.Object) -> a
-    267:268:java.lang.Object instantiateItem(android.view.View,int) -> a
-    274:275:void destroyItem(android.view.View,int,java.lang.Object) -> a
-com.jiusg.mainscreenshow.ui.Welcome$mHandler -> com.jiusg.mainscreenshow.ui.dl:
+    251:251:int getCount() -> b
+    257:257:boolean isViewFromObject(android.view.View,java.lang.Object) -> a
+    263:264:java.lang.Object instantiateItem(android.view.View,int) -> a
+    270:271:void destroyItem(android.view.View,int,java.lang.Object) -> a
+com.jiusg.mainscreenshow.ui.Welcome$mHandler -> com.jiusg.mainscreenshow.ui.dq:
     com.jiusg.mainscreenshow.ui.Welcome this$0 -> a
-    576:640:void handleMessage(android.os.Message) -> handleMessage
-com.jiusg.mainscreenshow.ui.Welcome$mHandler$1 -> com.jiusg.mainscreenshow.ui.dm:
+    579:644:void handleMessage(android.os.Message) -> handleMessage
+com.jiusg.mainscreenshow.ui.Welcome$mHandler$1 -> com.jiusg.mainscreenshow.ui.dr:
     com.jiusg.mainscreenshow.ui.Welcome$mHandler this$1 -> a
-    626:635:void onClick(android.view.View) -> onClick
+    630:639:void onClick(android.view.View) -> onClick
 com.loopj.android.http.AssertUtils -> com.c.a.a.a:
     30:33:void asserts(boolean,java.lang.String) -> a
 com.loopj.android.http.AsyncHttpClient -> com.c.a.a.b:
@@ -10377,6 +10496,7 @@ net.youmi.android.offers.PointsManager -> net.youmi.android.offers.h:
     boolean d -> d
     net.youmi.android.offers.PointsManager getInstance(android.content.Context) -> a
     float queryPoints() -> a
+    boolean spendPoints(float) -> a
     void registerNotify(net.youmi.android.offers.PointsChangeNotify) -> a
     void unRegisterNotify(net.youmi.android.offers.PointsChangeNotify) -> b
     boolean isEnableEarnPointsNotification() -> b
@@ -10474,6 +10594,7 @@ net.youmi.android.offers.d.b.e -> net.youmi.android.offers.c.b.e:
     net.youmi.android.offers.d.b.e a(android.content.Context) -> a
     java.lang.String a() -> a
     boolean a(java.lang.String) -> a
+    boolean b(java.lang.String) -> b
     void b() -> b
     java.lang.String b(android.content.Context) -> b
     java.lang.String c(android.content.Context) -> c

@@ -107,7 +107,7 @@ public class Welcome extends Activity {
                     public void onServiceConnected(ComponentName name, IBinder service) {
 
                         mssservice = ((MSSService.MSSSBinder) service).getMSSService();
-                        mssservice.previewStartA(C.ANIMATION_RAIN);
+                        mssservice.previewStartA(C.ANIMATION_SNOW);
 
                         handler = new mHandler();
                         Message msg = handler.obtainMessage();
@@ -151,12 +151,8 @@ public class Welcome extends Activity {
                     public void onClick(View v) {
 
                         if (!isWelcome) {
-                            if (C.ISMEIZU)
-                                startActivity(new Intent()
-                                        .setClass(Welcome.this, MSS.class));
-                            else
-                                startActivity(new Intent().setClass(Welcome.this,
-                                        MSSEvent.class));
+                            startActivity(new Intent()
+                                    .setClass(Welcome.this, MSS.class));
                             overridePendingTransition(android.R.anim.fade_in,
                                     android.R.anim.fade_out);
                         }
@@ -507,6 +503,13 @@ public class Welcome extends Activity {
                 }
             }
 
+            // 动画激活信息
+
+            SharedPreferences animation = getSharedPreferences("animation",MODE_PRIVATE);
+            animation.edit().putBoolean(PropertiesUtils.getAnimationInfo(getApplicationContext())[C.ANIMATION_BUBBLE], true).apply();
+            animation.edit().putBoolean(PropertiesUtils.getAnimationInfo(getApplicationContext())[C.ANIMATION_PICTUREWALL],true).apply();
+            animation.edit().putBoolean(PropertiesUtils.getAnimationInfo(getApplicationContext())[C.ANIMATION_STARSHINE],true).apply();
+            animation.edit().putBoolean(PropertiesUtils.getAnimationInfo(getApplicationContext())[C.ANIMATION_RAIN], true).apply();
             MyLog.i(TAG, "update" + getVersionName());
         }
     }
@@ -574,6 +577,7 @@ public class Welcome extends Activity {
         public void handleMessage(Message msg) {
 
             super.handleMessage(msg);
+            startService(new Intent(Welcome.this, MSSService.class));
             if (msg.obj.toString().equals("ok")) {
 
                 frist();

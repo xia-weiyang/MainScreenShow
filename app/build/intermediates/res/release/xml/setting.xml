@@ -55,4 +55,4 @@
             android:title="@string/setting_Exit" />
     </PreferenceCategory>
 
-</PreferenceScreen><!-- From: file:/D:/MainScreenShow/MainScreenShow/app/src/main/res/xml/setting.xml -->
+</PreferenceScreen><!-- From: file:/D:/MSS/MainScreenShow/app/src/main/res/xml/setting.xml -->

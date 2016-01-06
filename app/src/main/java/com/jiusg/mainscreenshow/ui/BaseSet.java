@@ -431,7 +431,7 @@ public class BaseSet extends Activity {
     protected void showAnimation() {
         final String[] s;
         int x = 0;
-        s = PropertiesUtils.getAnimationInfo(BaseSet.this);
+        s = PropertiesUtils.getActiveAnimationInfo(BaseSet.this);
         x = 0;
         for (int i = 0; i < s.length; i++) {
 
@@ -1694,6 +1694,264 @@ public class BaseSet extends Activity {
                     eventName
                             + PropertiesUtils
                             .getAnimationInfo(BaseSet.this)[C.ANIMATION_RAIN],
+                    0);
+            final TextView tvSet_ = (TextView) convertView
+                    .findViewById(R.id.tv_msseventset_setting_);
+            TextView tvSet = (TextView) convertView
+                    .findViewById(R.id.tv_msseventset_setting);
+            tvSet_.setText(sp_setA.getFloat("alpha", 1f) + "");
+            tvSet.setText(sp_setA.getFloat("alpha", 1f) + "");
+            tvSet_.setVisibility(View.VISIBLE);
+            tvSet.setVisibility(View.INVISIBLE);
+            SeekBar sb = (SeekBar) convertView
+                    .findViewById(R.id.tv_msseventset_seekbar);
+            sb.setVisibility(View.VISIBLE);
+            sb.setMax(20);
+            sb.setProgress((int) (sp_setA.getFloat("alpha", 1f) * 20));
+            sb.setOnSeekBarChangeListener(new OnSeekBarChangeListener() {
+
+                @Override
+                public void onStopTrackingTouch(SeekBar seekBar) {
+
+                    sp_setA.edit()
+                            .putFloat(
+                                    "alpha",
+                                    ((float) (seekBar.getProgress()) / 20))
+                            .commit();
+                }
+
+                @Override
+                public void onStartTrackingTouch(SeekBar seekBar) {
+
+                }
+
+                @Override
+                public void onProgressChanged(SeekBar seekBar,
+                                              int progress, boolean fromUser) {
+
+                    tvSet_.setText(((float) (progress) / 20) + "");
+                }
+            });
+        }
+    }
+
+    /**
+     * show Title snow 样式
+     */
+    protected void showSnow_StyleInfo(View convertView) {
+        if (sp_date.getString("animation" + VALUE, "")
+                .equals(PropertiesUtils
+                        .getAnimationInfo(BaseSet.this)[C.ANIMATION_SNOW])) {
+            TextView title_ = (TextView) convertView
+                    .findViewById(R.id.tv_msseventset_title_);
+            TextView tip = (TextView) convertView
+                    .findViewById(R.id.tv_msseventset_tip);
+            title_.setText("雪花样式");
+            tip.setText("改变雪花样式");
+            sp_setA = getSharedPreferences(
+                    eventName
+                            + PropertiesUtils
+                            .getAnimationInfo(BaseSet.this)[C.ANIMATION_SNOW],
+                    0);
+            TextView tvSet = (TextView) convertView
+                    .findViewById(R.id.tv_msseventset_setting);
+            tvSet.setVisibility(View.VISIBLE);
+            tvSet.setText(sp_setA.getString("style", getString(R.string.snow_style_1)));
+        }
+    }
+
+    /**
+     * show AlertDialog snow 样式
+     */
+    protected void showSnow_Style() {
+
+        final String[] s;
+        int x = 0;
+        if (sp_date
+                .getString("animation" + VALUE, "")
+                .equals(PropertiesUtils.getAnimationInfo(BaseSet.this)[C.ANIMATION_SNOW])) {
+
+            sp_setA = getSharedPreferences(
+                    eventName
+                            + PropertiesUtils.getAnimationInfo(BaseSet.this)[C.ANIMATION_SNOW],
+                    0);
+
+            s = new String[]{getString(R.string.snow_style_1), getString(R.string.snow_style_2),getString(R.string.snow_style_3),getString(R.string.snow_style_4)};
+            x = 0;
+            for (int i = 0; i < s.length; i++) {
+
+                if (sp_setA.getString("style", getString(R.string.snow_style_1)).equals(s[i]))
+                    x = i;
+            }
+            new AlertDialog.Builder(BaseSet.this)
+                    .setTitle(R.string.action_ChoosePlease)
+                    .setIcon(android.R.drawable.ic_dialog_info)
+                    .setSingleChoiceItems(s, x,
+                            new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog,
+                                                    int which) {
+                                    dialog.dismiss();
+                                    sp_setA.edit().putString("style", s[which])
+                                            .apply();
+                                    adapter.notifyDataSetChanged();
+                                }
+                            }).show();
+
+        }
+    }
+
+    /**
+     * show Title snow 数量
+     */
+    protected void showSnow_AmountInfo(View convertView) {
+        if (sp_date.getString("animation" + VALUE, "")
+                .equals(PropertiesUtils
+                        .getAnimationInfo(BaseSet.this)[C.ANIMATION_SNOW])) {
+            TextView title_ = (TextView) convertView
+                    .findViewById(R.id.tv_msseventset_title_);
+            TextView tip = (TextView) convertView
+                    .findViewById(R.id.tv_msseventset_tip);
+            title_.setText("雪花数量");
+            tip.setText("数量越多代表雪下的越大");
+            sp_setA = getSharedPreferences(
+                    eventName
+                            + PropertiesUtils
+                            .getAnimationInfo(BaseSet.this)[C.ANIMATION_SNOW],
+                    0);
+            TextView tvSet = (TextView) convertView
+                    .findViewById(R.id.tv_msseventset_setting);
+            tvSet.setVisibility(View.VISIBLE);
+            tvSet.setText(sp_setA.getString("amount", getString(R.string.snow_amount_general)));
+        }
+    }
+
+    /**
+     * show AlertDialog snow 数量
+     */
+    protected void showSnow_Amount() {
+
+        final String[] s;
+        int x = 0;
+        if (sp_date
+                .getString("animation" + VALUE, "")
+                .equals(PropertiesUtils.getAnimationInfo(BaseSet.this)[C.ANIMATION_SNOW])) {
+
+            sp_setA = getSharedPreferences(
+                    eventName
+                            + PropertiesUtils.getAnimationInfo(BaseSet.this)[C.ANIMATION_SNOW],
+                    0);
+
+            s = new String[]{getString(R.string.snow_amount_munch), getString(R.string.snow_amount_general), getString(R.string.snow_amount_less)};
+            x = 0;
+            for (int i = 0; i < s.length; i++) {
+
+                if (sp_setA.getString("amount", getString(R.string.snow_amount_general)).equals(s[i]))
+                    x = i;
+            }
+            new AlertDialog.Builder(BaseSet.this)
+                    .setTitle(R.string.action_ChoosePlease)
+                    .setIcon(android.R.drawable.ic_dialog_info)
+                    .setSingleChoiceItems(s, x,
+                            new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog,
+                                                    int which) {
+                                    dialog.dismiss();
+                                    sp_setA.edit().putString("amount", s[which])
+                                            .apply();
+                                    adapter.notifyDataSetChanged();
+                                }
+                            }).show();
+
+        }
+    }
+
+    /**
+     * show SeekBar snow 速度
+     *
+     * @param convertView
+     */
+    protected void showSnow_Speed(View convertView) {
+        if (sp_date.getString("animation" + VALUE, "")
+                .equals(PropertiesUtils
+                        .getAnimationInfo(BaseSet.this)[C.ANIMATION_SNOW])) {
+            TextView title_ = (TextView) convertView
+                    .findViewById(R.id.tv_msseventset_title_);
+            TextView title = (TextView) convertView
+                    .findViewById(R.id.tv_msseventset_title);
+            TextView tip = (TextView) convertView
+                    .findViewById(R.id.tv_msseventset_tip);
+            title.setText("雪下落速度");
+            title.setVisibility(View.INVISIBLE);
+            title_.setText("雪下落速度");
+            tip.setText("调整雪下落速度");
+            sp_setA = getSharedPreferences(
+                    eventName
+                            + PropertiesUtils
+                            .getAnimationInfo(BaseSet.this)[C.ANIMATION_SNOW],
+                    0);
+            final TextView tvSet_ = (TextView) convertView
+                    .findViewById(R.id.tv_msseventset_setting_);
+            TextView tvSet = (TextView) convertView
+                    .findViewById(R.id.tv_msseventset_setting);
+            tvSet_.setText(sp_setA.getInt("speed", 3) + "");
+            tvSet.setText(sp_setA.getInt("speed", 3) + "");
+            tvSet_.setVisibility(View.VISIBLE);
+            tvSet.setVisibility(View.INVISIBLE);
+            SeekBar sb = (SeekBar) convertView
+                    .findViewById(R.id.tv_msseventset_seekbar);
+            sb.setVisibility(View.VISIBLE);
+            sb.setMax(9);
+            sb.setProgress(sp_setA.getInt("speed", 3)-1);
+            sb.setOnSeekBarChangeListener(new OnSeekBarChangeListener() {
+
+                @Override
+                public void onStopTrackingTouch(SeekBar seekBar) {
+
+                    sp_setA.edit()
+                            .putInt(
+                                    "speed",
+                                    seekBar.getProgress() + 1)
+                            .commit();
+                }
+
+                @Override
+                public void onStartTrackingTouch(SeekBar seekBar) {
+
+                }
+
+                @Override
+                public void onProgressChanged(SeekBar seekBar,
+                                              int progress, boolean fromUser) {
+
+                    tvSet_.setText(seekBar.getProgress() + 1 + "");
+                }
+            });
+        }
+    }
+
+    /**
+     * show SeekBar snow 透明度
+     *
+     * @param convertView
+     */
+    protected void showSnow_Alpha(View convertView) {
+        if (sp_date.getString("animation" + VALUE, "")
+                .equals(PropertiesUtils
+                        .getAnimationInfo(BaseSet.this)[C.ANIMATION_SNOW])) {
+            TextView title_ = (TextView) convertView
+                    .findViewById(R.id.tv_msseventset_title_);
+            TextView title = (TextView) convertView
+                    .findViewById(R.id.tv_msseventset_title);
+            TextView tip = (TextView) convertView
+                    .findViewById(R.id.tv_msseventset_tip);
+            title.setText(R.string.setting_rain_alpha);
+            title.setVisibility(View.INVISIBLE);
+            title_.setText(R.string.setting_rain_alpha);
+            tip.setText(R.string.tip_rain_alpha);
+            sp_setA = getSharedPreferences(
+                    eventName
+                            + PropertiesUtils
+                            .getAnimationInfo(BaseSet.this)[C.ANIMATION_SNOW],
                     0);
             final TextView tvSet_ = (TextView) convertView
                     .findViewById(R.id.tv_msseventset_setting_);

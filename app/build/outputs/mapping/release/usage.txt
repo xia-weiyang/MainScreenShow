@@ -4088,7 +4088,7 @@ com.jiusg.mainscreenshow.animation.StarshineView$2
 com.jiusg.mainscreenshow.animation.StarshineView$StarshineCountHandler
 com.jiusg.mainscreenshow.animation.StarshineView$StarshineHandler
 com.jiusg.mainscreenshow.animation.anim.AnimationView:
-    93:96:public void reset()
+    94:97:public void reset()
 com.jiusg.mainscreenshow.animation.bubble.Bubble:
     79:79:public boolean isFalg()
 com.jiusg.mainscreenshow.animation.bubble.BubbleView
@@ -4149,6 +4149,9 @@ com.jiusg.mainscreenshow.animation.starshine.StarshineSetting:
     public static final int STARS
 com.jiusg.mainscreenshow.animation.starshine.StarshineView:
     34:57:public StarshineView(android.content.Context)
+com.jiusg.mainscreenshow.base.AnimationActive
+com.jiusg.mainscreenshow.base.AnimationConvert:
+    11:11:public AnimationConvert()
 com.jiusg.mainscreenshow.base.C:
     public static final boolean MEIZU_ADAPTE
     public static final int SERVICE_FLAG_BOOTRECEIVER
@@ -4242,12 +4245,12 @@ com.jiusg.mainscreenshow.ui.DesktopSet:
 com.jiusg.mainscreenshow.ui.MSS:
     249:255:private boolean findActionBarTabsShowAtBottom()
 com.jiusg.mainscreenshow.ui.MSSEventFragment:
-    246:252:private void checkUpdate()
+    248:254:private void checkUpdate()
 com.jiusg.mainscreenshow.ui.Setting:
     public static final int RESULT_SETTING
 com.jiusg.mainscreenshow.ui.Setting$SettingFragment$11$2
 com.jiusg.mainscreenshow.ui.Welcome:
-    309:324:public int getStatusBarHeight()
+    305:320:public int getStatusBarHeight()
 com.loopj.android.http.AssertUtils:
     26:27:private AssertUtils()
 com.loopj.android.http.AsyncHttpClient:
@@ -5038,7 +5041,6 @@ net.youmi.android.offers.OffersManager:
 net.youmi.android.offers.OffersWallDialogListener
 net.youmi.android.offers.PointsManager:
     public boolean awardPoints(float)
-    public boolean spendPoints(float)
     public void registerPointsEarnNotify(net.youmi.android.offers.PointsEarnNotify)
     public void unRegisterPointsEarnNotify(net.youmi.android.offers.PointsEarnNotify)
     public static void setEnableEarnPointsNotification(boolean)
@@ -5075,8 +5077,6 @@ net.youmi.android.offers.c.a.e
 net.youmi.android.offers.c.a.f
 net.youmi.android.offers.d.b.a:
     public void a(java.lang.String,java.lang.String)
-net.youmi.android.offers.d.b.e:
-    public boolean b(java.lang.String)
 net.youmi.android.offers.d.c.a:
     public static void a()
 net.youmi.android.offers.d.c.b:

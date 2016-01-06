@@ -11,6 +11,7 @@ import com.jiusg.mainscreenshow.animation.anim.Animation;
 import com.jiusg.mainscreenshow.animation.bubble.BubbleAnimation;
 import com.jiusg.mainscreenshow.animation.picturewall.PictureWallAnimation;
 import com.jiusg.mainscreenshow.animation.rain.RainAnimation;
+import com.jiusg.mainscreenshow.animation.snow.SnowAnimation;
 import com.jiusg.mainscreenshow.animation.starshine.StarshineAnimation;
 import com.jiusg.mainscreenshow.base.C;
 import com.jiusg.mainscreenshow.tools.PropertiesUtils;
@@ -89,7 +90,7 @@ public class MSSLiveWallpaper extends WallpaperService {
                 case C.ANIMATION_RAIN:
                     return new RainAnimation(getApplicationContext(), C.EVENT_DESKTOP);
                 case C.ANIMATION_SNOW:
-                    return new RainAnimation(getApplicationContext(), C.EVENT_DESKTOP);
+                    return new SnowAnimation(getApplicationContext(), C.EVENT_DESKTOP);
                 default:
                     break;
             }
