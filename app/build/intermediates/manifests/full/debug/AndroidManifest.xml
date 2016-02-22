@@ -45,7 +45,7 @@
         android:theme="@style/AppTheme" >
         <meta-data
             android:name="Channel ID"
-            android:value="Wandoujia" />
+            android:value="MainScreenShow" />
 
         <activity
             android:name="com.jiusg.mainscreenshow.ui.Welcome"
