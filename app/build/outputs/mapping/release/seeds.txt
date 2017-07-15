@@ -127,14 +127,38 @@ com.baidu.ops.appunion.sdk.a.a.b.a.b: com.baidu.ops.appunion.sdk.a.a.b.a.b value
 com.baidu.ops.appunion.sdk.a.a.b.a.e: com.baidu.ops.appunion.sdk.a.a.b.a.e[] values()
 com.baidu.ops.appunion.sdk.a.a.b.a.e: com.baidu.ops.appunion.sdk.a.a.b.a.e valueOf(java.lang.String)
 com.baidu.ops.appunion.sdk.activity.AppListActivity
+com.baidu.ops.appunion.sdk.activity.AppListActivity: void goBack()
+com.baidu.ops.appunion.sdk.activity.AppListActivity: void log(java.lang.String)
+com.baidu.ops.appunion.sdk.activity.AppListActivity: void startDownload(java.lang.String)
+com.baidu.ops.appunion.sdk.activity.AppListActivity: void openApp(java.lang.String)
+com.baidu.ops.appunion.sdk.activity.AppListActivity: java.lang.String getFbParams()
+com.baidu.ops.appunion.sdk.activity.AppListActivity: java.lang.String getInstalledKey(java.lang.String)
+com.baidu.ops.appunion.sdk.activity.AppListActivity: java.lang.String getParams()
 com.baidu.ops.appunion.sdk.activity.WebActivity
 com.baidu.ops.appunion.sdk.banner.BaiduBanner: void setBannerType(com.baidu.ops.appunion.sdk.banner.BannerType)
 com.baidu.ops.appunion.sdk.banner.BaiduBannerView: void setBannerType(com.baidu.ops.appunion.sdk.banner.BannerType)
 com.baidu.ops.appunion.sdk.banner.BaiduBannerView: com.baidu.ops.appunion.sdk.banner.BannerType getBannerType()
+com.baidu.ops.appunion.sdk.banner.BaiduBannerView: void goBack()
+com.baidu.ops.appunion.sdk.banner.BaiduBannerView: void log(java.lang.String)
+com.baidu.ops.appunion.sdk.banner.BaiduBannerView: void logCpm(java.lang.String)
+com.baidu.ops.appunion.sdk.banner.BaiduBannerView: void openUrl(java.lang.String)
+com.baidu.ops.appunion.sdk.banner.BaiduBannerView: void showBanner()
 com.baidu.ops.appunion.sdk.banner.BaiduBannerView: java.lang.String getParams()
+com.baidu.ops.appunion.sdk.banner.BaiduBannerView: void startDownload(java.lang.String)
+com.baidu.ops.appunion.sdk.banner.BaiduBannerView: java.lang.String getInstalledKey(java.lang.String)
+com.baidu.ops.appunion.sdk.banner.BaiduBannerView: void openApp(java.lang.String)
 com.baidu.ops.appunion.sdk.banner.BannerType: com.baidu.ops.appunion.sdk.banner.BannerType[] values()
 com.baidu.ops.appunion.sdk.banner.BannerType: com.baidu.ops.appunion.sdk.banner.BannerType valueOf(java.lang.String)
 com.baidu.ops.appunion.sdk.banner.BaseBanner: void setBannerInterval(int)
+com.baidu.ops.appunion.sdk.dialog.WebDialog: void logCpm(java.lang.String)
+com.baidu.ops.appunion.sdk.dialog.WebDialog: void openUrl(java.lang.String)
+com.baidu.ops.appunion.sdk.dialog.WebDialog: void goBack()
+com.baidu.ops.appunion.sdk.dialog.WebDialog: void log(java.lang.String)
+com.baidu.ops.appunion.sdk.dialog.WebDialog: void startDownload(java.lang.String)
+com.baidu.ops.appunion.sdk.dialog.WebDialog: void openApp(java.lang.String)
+com.baidu.ops.appunion.sdk.dialog.WebDialog: java.lang.String getFbParams()
+com.baidu.ops.appunion.sdk.dialog.WebDialog: java.lang.String getInstalledKey(java.lang.String)
+com.baidu.ops.appunion.sdk.dialog.WebDialog: java.lang.String getParams()
 com.baidu.ops.appunion.sdk.download.DownloadState: com.baidu.ops.appunion.sdk.download.DownloadState[] values()
 com.baidu.ops.appunion.sdk.download.DownloadState: com.baidu.ops.appunion.sdk.download.DownloadState valueOf(java.lang.String)
 com.baidu.ops.appunion.sdk.service.AppUnionService
@@ -361,6 +385,7 @@ com.jiusg.mainscreenshow.R$string: int Ver_1_3_9
 com.jiusg.mainscreenshow.R$string: int Ver_1_4_0
 com.jiusg.mainscreenshow.R$string: int Ver_1_4_5
 com.jiusg.mainscreenshow.R$string: int Ver_1_4_8
+com.jiusg.mainscreenshow.R$string: int Ver_1_4_9
 com.jiusg.mainscreenshow.R$string: int action_Charing
 com.jiusg.mainscreenshow.R$string: int action_ChoosePlease
 com.jiusg.mainscreenshow.R$string: int action_Desktop
@@ -574,9 +599,6 @@ com.jiusg.mainscreenshow.R$xml: int livewallpaper
 com.jiusg.mainscreenshow.R$xml: int setting
 com.jiusg.mainscreenshow.R$xml: int setting_app
 com.jiusg.mainscreenshow.R$xml: int setting_more
-com.jiusg.mainscreenshow.animation.BubbleView: java.lang.String getRandomSize()
-com.jiusg.mainscreenshow.animation.BubbleView: void getPX()
-com.jiusg.mainscreenshow.animation.PictureWallView: int getFrame()
 com.jiusg.mainscreenshow.animation.bubble.BubbleView: java.lang.String getRandomSize()
 com.jiusg.mainscreenshow.animation.bubble.BubbleView: void getPX()
 com.jiusg.mainscreenshow.animation.picturewall.PictureWallView: int getFrame()
@@ -712,15 +734,6 @@ com.jiusg.mainscreenshow.service.MSSService$1: com.jiusg.mainscreenshow.tools.Up
 com.jiusg.mainscreenshow.service.MSSService$1: com.jiusg.mainscreenshow.service.MSSService this$0
 com.jiusg.mainscreenshow.service.MSSService$1: MSSService$1(com.jiusg.mainscreenshow.service.MSSService,com.jiusg.mainscreenshow.tools.UpdateVersion,com.jiusg.mainscreenshow.tools.UpdateVersion)
 com.jiusg.mainscreenshow.service.MSSService$1: void done(java.lang.String,java.lang.String,java.lang.String)
-com.jiusg.mainscreenshow.service.MSSService$2
-com.jiusg.mainscreenshow.service.MSSService$2: com.jiusg.mainscreenshow.service.MSSService this$0
-com.jiusg.mainscreenshow.service.MSSService$2: MSSService$2(com.jiusg.mainscreenshow.service.MSSService)
-com.jiusg.mainscreenshow.service.MSSService$2: void run()
-com.jiusg.mainscreenshow.service.MSSService$3
-com.jiusg.mainscreenshow.service.MSSService$3: com.jiusg.mainscreenshow.tools.UpdateVersion val$updateVersion
-com.jiusg.mainscreenshow.service.MSSService$3: com.jiusg.mainscreenshow.service.MSSService this$0
-com.jiusg.mainscreenshow.service.MSSService$3: MSSService$3(com.jiusg.mainscreenshow.service.MSSService,com.jiusg.mainscreenshow.tools.UpdateVersion,com.jiusg.mainscreenshow.tools.UpdateVersion)
-com.jiusg.mainscreenshow.service.MSSService$3: void done(java.lang.String,java.lang.String,java.lang.String)
 com.jiusg.mainscreenshow.service.MSSService$Event
 com.jiusg.mainscreenshow.service.MSSService$Event: int EVENT_NO
 com.jiusg.mainscreenshow.service.MSSService$Event: int EVENT_CALL
@@ -750,26 +763,6 @@ com.jiusg.mainscreenshow.service.MSSService$ScreenReceiver: MSSService$ScreenRec
 com.jiusg.mainscreenshow.service.MSSService$ScreenReceiver: void onReceive(android.content.Context,android.content.Intent)
 com.jiusg.mainscreenshow.service.MSSService$ScreenReceiver: void registerScreenActionReceiver(android.content.Context)
 com.jiusg.mainscreenshow.service.MSSService$ScreenReceiver: void unRegisterScreenActionReceiver(android.content.Context)
-com.jiusg.mainscreenshow.service.MSSService_animation
-com.jiusg.mainscreenshow.service.MSSService_animation: com.jiusg.mainscreenshow.process.AnimationProcess animationP
-com.jiusg.mainscreenshow.service.MSSService_animation: int eventId
-com.jiusg.mainscreenshow.service.MSSService_animation: MSSService_animation()
-com.jiusg.mainscreenshow.service.MSSService_animation: com.jiusg.mainscreenshow.process.AnimationProcess getAnimationP()
-com.jiusg.mainscreenshow.service.MSSService_animation: void setAnimationP(com.jiusg.mainscreenshow.process.AnimationProcess)
-com.jiusg.mainscreenshow.service.MSSService_animation: int getEventId()
-com.jiusg.mainscreenshow.service.MSSService_animation: void setEventId(int)
-com.jiusg.mainscreenshow.service.MSSService_eventStack
-com.jiusg.mainscreenshow.service.MSSService_eventStack: int[] Eventing
-com.jiusg.mainscreenshow.service.MSSService_eventStack: java.lang.String TAG
-com.jiusg.mainscreenshow.service.MSSService_eventStack: MSSService_eventStack()
-com.jiusg.mainscreenshow.service.MSSService_eventStack: void intoEvent(int)
-com.jiusg.mainscreenshow.service.MSSService_eventStack: void into(int)
-com.jiusg.mainscreenshow.service.MSSService_eventStack: int getEvent()
-com.jiusg.mainscreenshow.service.MSSService_eventStack: void popEvent(int)
-com.jiusg.mainscreenshow.service.MSSService_eventStack: boolean delEvent(int)
-com.jiusg.mainscreenshow.service.MSSService_eventStack: int getPriority(int)
-com.jiusg.mainscreenshow.service.MSSService_eventStack: void clearEvent()
-com.jiusg.mainscreenshow.service.MSSService_eventStack: void printlEvent()
 com.jiusg.mainscreenshow.tools.UpdateVersion$CallBack: com.jiusg.mainscreenshow.tools.UpdateVersion this$0
 com.jiusg.mainscreenshow.tools.UpdateVersion$CallBack: UpdateVersion$CallBack(com.jiusg.mainscreenshow.tools.UpdateVersion)
 com.jiusg.mainscreenshow.tools.UpdateVersion$CallBack: void done(java.lang.String,java.lang.String,java.lang.String)
@@ -810,40 +803,5 @@ com.jiusg.mainscreenshow.ui.Welcome
 com.jiusg.mainscreenshow.ui.Welcome: Welcome()
 com.meizu.mstore.license.LicenseResult: android.os.Parcelable$Creator CREATOR
 com.meizu.mstore.license.SubProduct: android.os.Parcelable$Creator CREATOR
-net.youmi.android.AdBrowser
-net.youmi.android.AdBrowser: AdBrowser()
-net.youmi.android.AdReceiver
-net.youmi.android.AdReceiver: AdReceiver()
-net.youmi.android.AdService
-net.youmi.android.AdService: AdService()
-net.youmi.android.ExpService
-net.youmi.android.ExpService: ExpService()
-net.youmi.android.a.a.e.a: net.youmi.android.a.a.e.a[] values()
-net.youmi.android.a.a.e.a: net.youmi.android.a.a.e.a valueOf(java.lang.String)
-net.youmi.android.a.a.g.d.g
-net.youmi.android.a.a.j.a.g: void setEnableOffersJsCodeLoader(boolean)
-net.youmi.android.a.a.j.a.g: void setEnableOffersJsFileLoader(boolean)
-net.youmi.android.a.a.j.a.g: android.view.View getCurrentView()
-net.youmi.android.a.a.j.a.g: void setUserAgentString(java.lang.String)
-net.youmi.android.a.a.j.a.g: java.lang.String getUserAgentString()
-net.youmi.android.a.a.k.b: void setBackEnable(boolean)
-net.youmi.android.a.a.k.b: void setForwardEnable(boolean)
-net.youmi.android.a.a.k.b.c: net.youmi.android.a.a.k.b.c[] values()
-net.youmi.android.a.a.k.b.c: net.youmi.android.a.a.k.b.c valueOf(java.lang.String)
-net.youmi.android.a.a.k.b.d: void setState(net.youmi.android.a.a.k.b.c)
-net.youmi.android.a.a.k.b.d: net.youmi.android.a.a.k.b.c getState()
-net.youmi.android.a.a.k.b.d: net.youmi.android.a.a.k.b.c getPreState()
-net.youmi.android.a.a.k.b.f: void setOnRefreshListener(net.youmi.android.a.a.k.b.l)
-net.youmi.android.a.a.k.b.f: android.view.View getRefreshableView()
-net.youmi.android.a.a.k.b.f: net.youmi.android.a.a.k.b.d getHeaderLoadingLayout()
-net.youmi.android.a.a.k.d: void setLogoVisibility(int)
-net.youmi.android.a.a.k.d: void setPointsLayoutVisibility(int)
-net.youmi.android.a.a.k.d: void setBackBtnVisibiity(int)
-net.youmi.android.a.a.k.d: void setTitle(java.lang.CharSequence)
-net.youmi.android.a.a.k.d: void setPointsUnit(java.lang.CharSequence)
-net.youmi.android.a.a.k.d: void setPoints(java.lang.String)
-net.youmi.android.a.a.k.d: void setTitleBackgroundColor(int)
-net.youmi.android.offers.PointsReceiver
-net.youmi.android.offers.e
 org.apache.http.entity.mime.HttpMultipartMode: org.apache.http.entity.mime.HttpMultipartMode[] values()
 org.apache.http.entity.mime.HttpMultipartMode: org.apache.http.entity.mime.HttpMultipartMode valueOf(java.lang.String)

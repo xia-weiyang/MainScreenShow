@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "D:\\Develop\\Android\\Project\\MainScreenShow\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\mssb.png",
+        "source": "D:\\Develop\\Android\\Project\\MainScreenShow\\app\\src\\main\\res\\drawable-xxhdpi\\mssb.png"
+    },
+    {
+        "merged": "D:\\Develop\\Android\\Project\\MainScreenShow\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\mssb_desktop.png",
+        "source": "D:\\Develop\\Android\\Project\\MainScreenShow\\app\\src\\main\\res\\drawable-xxhdpi\\mssb_desktop.png"
+    },
+    {
+        "merged": "D:\\Develop\\Android\\Project\\MainScreenShow\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\mssb_call.png",
+        "source": "D:\\Develop\\Android\\Project\\MainScreenShow\\app\\src\\main\\res\\drawable-xxhdpi\\mssb_call.png"
+    },
+    {
+        "merged": "D:\\Develop\\Android\\Project\\MainScreenShow\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\mssb_chargin.png",
+        "source": "D:\\Develop\\Android\\Project\\MainScreenShow\\app\\src\\main\\res\\drawable-xxhdpi\\mssb_chargin.png"
+    },
+    {
+        "merged": "D:\\Develop\\Android\\Project\\MainScreenShow\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\mssb_lockscreen.png",
+        "source": "D:\\Develop\\Android\\Project\\MainScreenShow\\app\\src\\main\\res\\drawable-xxhdpi\\mssb_lockscreen.png"
+    },
+    {
+        "merged": "D:\\Develop\\Android\\Project\\MainScreenShow\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_launcher.png",
+        "source": "D:\\Develop\\Android\\Project\\MainScreenShow\\app\\src\\main\\res\\drawable-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Develop\\Android\\Project\\MainScreenShow\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\mssb_sms.png",
+        "source": "D:\\Develop\\Android\\Project\\MainScreenShow\\app\\src\\main\\res\\drawable-xxhdpi\\mssb_sms.png"
+    }
+]

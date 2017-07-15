@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.jiusg.mainscreenshow"
     android:versionCode="25"
-    android:versionName="1.4.8" >
+    android:versionName="1.4.9" >
 
     <uses-sdk
         android:minSdkVersion="14"
@@ -126,25 +126,6 @@
 
         <service android:name="com.jiusg.mainscreenshow.service.MSSService" />
 
-        <activity
-            android:name="net.youmi.android.AdBrowser"
-            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
-            android:theme="@android:style/Theme.Light.NoTitleBar" />
-
-        <service
-            android:name="net.youmi.android.AdService"
-            android:exported="false" />
-        <service
-            android:name="net.youmi.android.ExpService"
-            android:exported="false" />
-
-        <receiver android:name="net.youmi.android.AdReceiver" >
-            <intent-filter>
-                <action android:name="android.intent.action.PACKAGE_ADDED" />
-
-                <data android:scheme="package" />
-            </intent-filter>
-        </receiver>
         <receiver android:name="com.jiusg.mainscreenshow.receiver.BootReceiver" >
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />

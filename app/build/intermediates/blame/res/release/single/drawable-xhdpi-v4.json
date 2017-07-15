@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "D:\\Develop\\Android\\Project\\MainScreenShow\\app\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\picturewall_1.jpg",
+        "source": "D:\\Develop\\Android\\Project\\MainScreenShow\\app\\src\\main\\res\\drawable-xhdpi\\picturewall_1.jpg"
+    },
+    {
+        "merged": "D:\\Develop\\Android\\Project\\MainScreenShow\\app\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\preview_snow.jpg",
+        "source": "D:\\Develop\\Android\\Project\\MainScreenShow\\app\\src\\main\\res\\drawable-xhdpi\\preview_snow.jpg"
+    },
+    {
+        "merged": "D:\\Develop\\Android\\Project\\MainScreenShow\\app\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\preview_snow_background.jpg",
+        "source": "D:\\Develop\\Android\\Project\\MainScreenShow\\app\\src\\main\\res\\drawable-xhdpi\\preview_snow_background.jpg"
+    },
+    {
+        "merged": "D:\\Develop\\Android\\Project\\MainScreenShow\\app\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\preview_rain.jpg",
+        "source": "D:\\Develop\\Android\\Project\\MainScreenShow\\app\\src\\main\\res\\drawable-xhdpi\\preview_rain.jpg"
+    },
+    {
+        "merged": "D:\\Develop\\Android\\Project\\MainScreenShow\\app\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\preview_starshine_background.jpg",
+        "source": "D:\\Develop\\Android\\Project\\MainScreenShow\\app\\src\\main\\res\\drawable-xhdpi\\preview_starshine_background.jpg"
+    },
+    {
+        "merged": "D:\\Develop\\Android\\Project\\MainScreenShow\\app\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\preview_bubble_background.jpg",
+        "source": "D:\\Develop\\Android\\Project\\MainScreenShow\\app\\src\\main\\res\\drawable-xhdpi\\preview_bubble_background.jpg"
+    },
+    {
+        "merged": "D:\\Develop\\Android\\Project\\MainScreenShow\\app\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\preview_rain_background.jpg",
+        "source": "D:\\Develop\\Android\\Project\\MainScreenShow\\app\\src\\main\\res\\drawable-xhdpi\\preview_rain_background.jpg"
+    },
+    {
+        "merged": "D:\\Develop\\Android\\Project\\MainScreenShow\\app\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\picturewall_0.jpg",
+        "source": "D:\\Develop\\Android\\Project\\MainScreenShow\\app\\src\\main\\res\\drawable-xhdpi\\picturewall_0.jpg"
+    },
+    {
+        "merged": "D:\\Develop\\Android\\Project\\MainScreenShow\\app\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\welcome_rain.jpg",
+        "source": "D:\\Develop\\Android\\Project\\MainScreenShow\\app\\src\\main\\res\\drawable-xhdpi\\welcome_rain.jpg"
+    }
+]

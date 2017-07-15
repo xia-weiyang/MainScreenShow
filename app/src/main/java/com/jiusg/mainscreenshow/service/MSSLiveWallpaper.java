@@ -46,7 +46,7 @@ public class MSSLiveWallpaper extends WallpaperService {
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
-        if (intent.getFlags() == ANIMATION && engine != null)
+        if (intent != null && intent.getFlags() == ANIMATION && engine != null)
             engine.reset();
         return START_STICKY;
     }
@@ -119,7 +119,7 @@ public class MSSLiveWallpaper extends WallpaperService {
             } else if (animation.equals(PropertiesUtils.getAnimationInfo(getApplicationContext())[C.ANIMATION_RAIN])) {
 
                 return C.ANIMATION_RAIN;
-            }else if (animation.equals(PropertiesUtils.getAnimationInfo(getApplicationContext())[C.ANIMATION_SNOW])) {
+            } else if (animation.equals(PropertiesUtils.getAnimationInfo(getApplicationContext())[C.ANIMATION_SNOW])) {
 
                 return C.ANIMATION_SNOW;
             }
@@ -160,8 +160,7 @@ public class MSSLiveWallpaper extends WallpaperService {
 
                 }
                 startAnimation();
-            }
-            else {
+            } else {
                 stopAnimation();
                 // 启动service
                 startService(new Intent(getApplicationContext(), MSSService.class));
@@ -212,7 +211,8 @@ public class MSSLiveWallpaper extends WallpaperService {
                         if (canvas != null) {
                             try {
                                 holder.unlockCanvasAndPost(canvas);
-                            }catch (Exception e){}
+                            } catch (Exception e) {
+                            }
                         }
                     }
                     long time = 1000 / frame - (System.currentTimeMillis() - oldTime);

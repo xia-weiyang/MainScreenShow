@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "D:\\Develop\\Android\\Project\\MainScreenShow\\app\\build\\intermediates\\res\\merged\\release\\drawable\\qq_.xml",
+        "source": "D:\\Develop\\Android\\Project\\MainScreenShow\\app\\src\\main\\res\\drawable\\qq_.xml"
+    },
+    {
+        "merged": "D:\\Develop\\Android\\Project\\MainScreenShow\\app\\build\\intermediates\\res\\merged\\release\\drawable\\preview.xml",
+        "source": "D:\\Develop\\Android\\Project\\MainScreenShow\\app\\src\\main\\res\\drawable\\preview.xml"
+    },
+    {
+        "merged": "D:\\Develop\\Android\\Project\\MainScreenShow\\app\\build\\intermediates\\res\\merged\\release\\drawable\\event.xml",
+        "source": "D:\\Develop\\Android\\Project\\MainScreenShow\\app\\src\\main\\res\\drawable\\event.xml"
+    },
+    {
+        "merged": "D:\\Develop\\Android\\Project\\MainScreenShow\\app\\build\\intermediates\\res\\merged\\release\\drawable\\ic_tab_preview.xml",
+        "source": "D:\\Develop\\Android\\Project\\MainScreenShow\\app\\src\\main\\res\\drawable\\ic_tab_preview.xml"
+    },
+    {
+        "merged": "D:\\Develop\\Android\\Project\\MainScreenShow\\app\\build\\intermediates\\res\\merged\\release\\drawable\\setting.xml",
+        "source": "D:\\Develop\\Android\\Project\\MainScreenShow\\app\\src\\main\\res\\drawable\\setting.xml"
+    },
+    {
+        "merged": "D:\\Develop\\Android\\Project\\MainScreenShow\\app\\build\\intermediates\\res\\merged\\release\\drawable\\list.xml",
+        "source": "D:\\Develop\\Android\\Project\\MainScreenShow\\app\\src\\main\\res\\drawable\\list.xml"
+    },
+    {
+        "merged": "D:\\Develop\\Android\\Project\\MainScreenShow\\app\\build\\intermediates\\res\\merged\\release\\drawable\\ic_tab_event.xml",
+        "source": "D:\\Develop\\Android\\Project\\MainScreenShow\\app\\src\\main\\res\\drawable\\ic_tab_event.xml"
+    },
+    {
+        "merged": "D:\\Develop\\Android\\Project\\MainScreenShow\\app\\build\\intermediates\\res\\merged\\release\\drawable\\vp_button.xml",
+        "source": "D:\\Develop\\Android\\Project\\MainScreenShow\\app\\src\\main\\res\\drawable\\vp_button.xml"
+    },
+    {
+        "merged": "D:\\Develop\\Android\\Project\\MainScreenShow\\app\\build\\intermediates\\res\\merged\\release\\drawable\\button.xml",
+        "source": "D:\\Develop\\Android\\Project\\MainScreenShow\\app\\src\\main\\res\\drawable\\button.xml"
+    },
+    {
+        "merged": "D:\\Develop\\Android\\Project\\MainScreenShow\\app\\build\\intermediates\\res\\merged\\release\\drawable\\vp_button_.xml",
+        "source": "D:\\Develop\\Android\\Project\\MainScreenShow\\app\\src\\main\\res\\drawable\\vp_button_.xml"
+    }
+]

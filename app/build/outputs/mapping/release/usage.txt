@@ -30,6 +30,7 @@ android.support.annotation.StyleRes
 android.support.annotation.StyleableRes
 android.support.annotation.XmlRes
 android.support.v4.BuildConfig
+android.support.v4.R
 android.support.v4.accessibilityservice.AccessibilityServiceInfoCompat
 android.support.v4.accessibilityservice.AccessibilityServiceInfoCompat$AccessibilityServiceInfoIcsImpl
 android.support.v4.accessibilityservice.AccessibilityServiceInfoCompat$AccessibilityServiceInfoJellyBeanMr2
@@ -3833,12 +3834,8 @@ com.baidu.android.common.util.DeviceId$IMEIInfo:
 com.baidu.android.common.util.Util:
     private Util()
     public static boolean hasOtherServiceRuninMyPid(android.content.Context,java.lang.String)
-com.baidu.down.a.a.a.i:
-    public void a(com.baidu.down.request.task.AbstractTask)
 com.baidu.down.request.a.a:
-    public long a(android.database.sqlite.SQLiteDatabase,android.content.ContentValues)
     public int a(android.database.sqlite.SQLiteDatabase,java.lang.String,java.lang.String[])
-    public android.database.Cursor a(android.database.sqlite.SQLiteDatabase,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)
     public int b(android.database.sqlite.SQLiteDatabase,android.content.ContentValues)
 com.baidu.down.request.task.AbstractTask:
     public static final int TASK_TYPE_NARMAL
@@ -3846,7 +3843,6 @@ com.baidu.down.request.task.AbstractTask:
     public static final int TASK_TYPE_MUTI
     public static final int RANGE_BLOCK_SIZE
     public static final int BUFFER_SIZE
-    public int d
     public static final int STATUS_RECV_START
     public static final int STATUS_RECV_PROCESS
     public static final int STATUS_RECV_FINISHED
@@ -3861,20 +3857,9 @@ com.baidu.down.request.task.AbstractTask:
     public static final int PRIORITY_LEVEL_3
     public static final int PRIORITY_LEVEL_4
     public static final int PRIORITY_LEVEL_5
-    public android.content.Context g
-    public boolean p
-    public int s
-    public AbstractTask(int)
-    public void a(int)
     public abstract void a(boolean)
 com.baidu.down.request.task.a:
-    public a(android.content.Context,com.baidu.down.request.taskmanager.FileMsg)
     public void a(boolean)
-    private void f()
-com.baidu.down.request.task.b:
-    public b(com.baidu.down.request.task.a)
-com.baidu.down.request.task.c:
-    public c(java.lang.String)
 com.baidu.down.request.taskmanager.BinaryTaskMng:
     private android.os.Looper o
     public void release()
@@ -3883,8 +3868,6 @@ com.baidu.down.request.taskmanager.BinaryTaskMng:
     public int getMaxDownloadThread()
     public void resumeTaskFromDB()
     public void removeObserver(com.baidu.down.request.taskmanager.TaskObserverInterface)
-    public void taskPriorityQueueOffer(com.baidu.down.request.task.AbstractTask)
-    public long startDownload(com.baidu.down.request.taskmanager.FileMsg)
     public void stopDownload(java.lang.String,long,boolean)
     public void stopAllTask(boolean)
     public void pauseAllTask()
@@ -3897,19 +3880,17 @@ com.baidu.down.request.taskmanager.BinaryTaskMng:
     public java.lang.String findTaskMimetype(java.lang.String,long)
 com.baidu.down.request.taskmanager.ByteArrayInfoMng:
     public static final int MAX_BYTEARRAY_SIZE
-    public void initByteArray(int)
 com.baidu.down.request.taskmanager.DatabaseMng:
     public static final java.lang.String DB_NAME
     public static final int DB_VERSION
     public static final java.lang.String DEFAULT_SORT_ORDER
     public com.baidu.down.request.a.a getDownLoad()
     public android.database.sqlite.SQLiteDatabase getSQLiteDatabase()
-    public long insertToDatabase(java.lang.String,java.lang.String,java.lang.String,int)
     public long insert(android.content.ContentValues)
     public int delete(java.lang.String,java.lang.String[])
-    public android.database.Cursor query(java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)
     public int insertOrUpdate(android.content.ContentValues)
-com.baidu.down.request.taskmanager.FileMsg
+com.baidu.down.request.taskmanager.FileMsg:
+    public FileMsg(java.lang.String,long,java.lang.String,java.lang.String,java.lang.String,java.lang.Boolean,java.lang.String)
 com.baidu.down.request.taskmanager.TaskFacade:
     public int getMaxTask()
     public int getCurrentTaskVacant()
@@ -3933,7 +3914,6 @@ com.baidu.down.request.taskmanager.c
 com.baidu.ops.appunion.sdk.AppUnionSDK:
     public void initSdk()
     public void quitSdk()
-    public java.lang.String getApiKey()
     public void showAppList()
     public void showInterstitialAd(android.content.Context)
     public void setLocationInfo(double,double)
@@ -3942,23 +3922,6 @@ com.baidu.ops.appunion.sdk.a.f:
     protected static final int FAILURE_MESSAGE
     protected static final int START_MESSAGE
     protected static final int FINISH_MESSAGE
-com.baidu.ops.appunion.sdk.activity.AppListActivity:
-    public void goBack()
-    public void log(java.lang.String)
-    public void startDownload(java.lang.String)
-    private java.lang.String a(java.lang.String,java.lang.String,java.lang.String,int)
-    public void openApp(java.lang.String)
-    public java.lang.String getFbParams()
-    public java.lang.String getInstalledKey(java.lang.String)
-    public java.lang.String getParams()
-    private synchronized void a(com.baidu.ops.appunion.sdk.model.AppInfo,int)
-    private java.lang.String c()
-    private static boolean a(android.content.pm.PackageManager,android.content.Context,android.content.Intent)
-com.baidu.ops.appunion.sdk.activity.e
-com.baidu.ops.appunion.sdk.b.a:
-    private java.lang.String i
-    public java.lang.String a(int,java.lang.String,java.lang.String,int)
-    public java.lang.String b(android.content.Context)
 com.baidu.ops.appunion.sdk.banner.BaiduBanner
 com.baidu.ops.appunion.sdk.banner.BaiduBannerView
 com.baidu.ops.appunion.sdk.banner.BannerType
@@ -3973,33 +3936,15 @@ com.baidu.ops.appunion.sdk.banner.g
 com.baidu.ops.appunion.sdk.banner.h
 com.baidu.ops.appunion.sdk.banner.i
 com.baidu.ops.appunion.sdk.banner.j
-com.baidu.ops.appunion.sdk.c.a
 com.baidu.ops.appunion.sdk.dialog.WebDialog:
     protected void a(java.lang.String,java.lang.String)
     private com.baidu.ops.appunion.sdk.download.Download a(android.database.Cursor)
     public WebDialog(android.content.Context)
     public void addaddJavascriptInterface(java.lang.Object)
-    public void logCpm(java.lang.String)
-    private java.lang.String a(java.lang.String,java.lang.String,java.lang.String,int)
-    public void openUrl(java.lang.String)
-    public void goBack()
-    public void log(java.lang.String)
-    public void startDownload(java.lang.String)
-    private java.lang.String b(java.lang.String,java.lang.String,java.lang.String,int)
-    public void openApp(java.lang.String)
-    public java.lang.String getFbParams()
-    public java.lang.String getInstalledKey(java.lang.String)
-    public java.lang.String getParams()
-    private synchronized void a(com.baidu.ops.appunion.sdk.model.AppInfo,int)
-    private java.lang.String c()
-    private boolean a(android.content.pm.PackageManager,android.content.Context,android.content.Intent)
     static synthetic com.baidu.ops.appunion.sdk.download.Download a(com.baidu.ops.appunion.sdk.dialog.WebDialog,android.database.Cursor)
     static synthetic android.webkit.WebView a(com.baidu.ops.appunion.sdk.dialog.WebDialog)
 com.baidu.ops.appunion.sdk.dialog.a
 com.baidu.ops.appunion.sdk.dialog.b
-com.baidu.ops.appunion.sdk.dialog.e
-com.baidu.ops.appunion.sdk.dialog.f
-com.baidu.ops.appunion.sdk.dialog.g
 com.baidu.ops.appunion.sdk.download.Download:
     public java.lang.String getDownloadUri()
     public java.lang.String getDownloadFileName()
@@ -4015,33 +3960,37 @@ com.baidu.ops.appunion.sdk.download.DownloadManager:
     private static final long MIN_PROGRESS_SAVE_INTERVAL
     public static final java.lang.String ACTION_DOWNLOAD_PROGRESS_CHANGE
     public static final java.lang.String ACTION_DOWNLOAD_STATUS_CHANGE
-    private long startDownload(com.baidu.ops.appunion.sdk.download.Download)
-    public synchronized long start(com.baidu.ops.appunion.sdk.download.Download)
     public void pauseAll()
     public void resume(long)
     public varargs void cancel(long[])
     public varargs void delete(long[])
-    public void runAsync(java.lang.Runnable)
-    static synthetic long access$800(com.baidu.ops.appunion.sdk.download.DownloadManager,com.baidu.ops.appunion.sdk.download.Download)
-com.baidu.ops.appunion.sdk.download.DownloadManager$5
 com.baidu.ops.appunion.sdk.download.DownloadManager$6
-com.baidu.ops.appunion.sdk.download.b:
-    public long a(com.baidu.ops.appunion.sdk.download.Download)
-    public android.database.Cursor a(java.lang.String)
-com.baidu.ops.appunion.sdk.download.d
-com.baidu.ops.appunion.sdk.download.e
-com.baidu.ops.appunion.sdk.download.f
-com.baidu.ops.appunion.sdk.download.g
-com.baidu.ops.appunion.sdk.download.h
-com.baidu.ops.appunion.sdk.download.j:
-    public static boolean a(android.content.Context)
-    public static void c(android.content.Context,java.lang.String)
-    public static java.lang.String a(java.lang.Object)
-    public static java.lang.Object[] b(android.content.Context)
-    public static java.lang.String d(android.content.Context,java.lang.String)
-    public static java.lang.Object a(java.lang.Object,java.lang.String,java.lang.Class[],java.lang.Object[])
-com.baidu.ops.appunion.sdk.model.AppInfo
-com.baidu.util.Base64Encoder
+com.baidu.ops.appunion.sdk.model.AppInfo:
+    private java.lang.String e
+    private java.lang.String g
+    private java.lang.String h
+    private long i
+    private java.lang.String j
+    private java.lang.String l
+    public java.lang.String getBanner()
+    public void setBanner(java.lang.String)
+    public java.lang.String getApp_package()
+    public java.lang.String getApp_icon()
+    public void setApp_icon(java.lang.String)
+    public java.lang.String getCategory()
+    public void setCategory(java.lang.String)
+    public java.lang.String getStarlevel()
+    public void setStarlevel(java.lang.String)
+    public long getDownnum()
+    public void setDownnum(long)
+    public java.lang.String getComment()
+    public void setComment(java.lang.String)
+com.baidu.util.Base64Encoder:
+    3:3:public Base64Encoder()
+    50:63:public static final byte[] B64Decode(byte[])
+    72:85:public static final int B64GetVersion()
+    public static final native byte[] nativeB64Decode(byte[])
+    public static final native int nativeB64GetVersion()
 com.jiusg.mainscreenshow.BuildConfig
 com.jiusg.mainscreenshow.R
 com.jiusg.mainscreenshow.R$array
@@ -4055,38 +4004,6 @@ com.jiusg.mainscreenshow.R$menu
 com.jiusg.mainscreenshow.R$string
 com.jiusg.mainscreenshow.R$style
 com.jiusg.mainscreenshow.R$xml
-com.jiusg.mainscreenshow.animation.Bubble
-com.jiusg.mainscreenshow.animation.BubbleCount
-com.jiusg.mainscreenshow.animation.BubbleSetting
-com.jiusg.mainscreenshow.animation.BubbleSpeed
-com.jiusg.mainscreenshow.animation.BubbleView
-com.jiusg.mainscreenshow.animation.BubbleView$1
-com.jiusg.mainscreenshow.animation.BubbleView$2
-com.jiusg.mainscreenshow.animation.BubbleView$BubbleCountHandler
-com.jiusg.mainscreenshow.animation.BubbleView$BubbleHandler
-com.jiusg.mainscreenshow.animation.PictureWall
-com.jiusg.mainscreenshow.animation.PictureWallSetting
-com.jiusg.mainscreenshow.animation.PictureWallView
-com.jiusg.mainscreenshow.animation.PictureWallView$1
-com.jiusg.mainscreenshow.animation.PictureWallView$2
-com.jiusg.mainscreenshow.animation.PictureWallView$mHandler
-com.jiusg.mainscreenshow.animation.PictureWallView$periodHandler
-com.jiusg.mainscreenshow.animation.Rain
-com.jiusg.mainscreenshow.animation.RainSetting
-com.jiusg.mainscreenshow.animation.RainView
-com.jiusg.mainscreenshow.animation.RainView$1
-com.jiusg.mainscreenshow.animation.RainView$2
-com.jiusg.mainscreenshow.animation.RainView$RainCountHandler
-com.jiusg.mainscreenshow.animation.RainView$RainHandler
-com.jiusg.mainscreenshow.animation.Starshine
-com.jiusg.mainscreenshow.animation.StarshineDynamic
-com.jiusg.mainscreenshow.animation.StarshineMeteor
-com.jiusg.mainscreenshow.animation.StarshineSetting
-com.jiusg.mainscreenshow.animation.StarshineView
-com.jiusg.mainscreenshow.animation.StarshineView$1
-com.jiusg.mainscreenshow.animation.StarshineView$2
-com.jiusg.mainscreenshow.animation.StarshineView$StarshineCountHandler
-com.jiusg.mainscreenshow.animation.StarshineView$StarshineHandler
 com.jiusg.mainscreenshow.animation.anim.AnimationView:
     94:97:public void reset()
 com.jiusg.mainscreenshow.animation.bubble.Bubble:
@@ -4129,7 +4046,6 @@ com.jiusg.mainscreenshow.animation.rain.Rain:
     72:73:public void setBitmap(android.graphics.Bitmap)
 com.jiusg.mainscreenshow.animation.rain.RainView:
     29:42:public RainView(android.content.Context)
-com.jiusg.mainscreenshow.animation.snow.test
 com.jiusg.mainscreenshow.animation.starshine.Starshine:
     20:20:public int getStyle()
 com.jiusg.mainscreenshow.animation.starshine.StarshineDynamic:
@@ -4149,7 +4065,6 @@ com.jiusg.mainscreenshow.animation.starshine.StarshineSetting:
     public static final int STARS
 com.jiusg.mainscreenshow.animation.starshine.StarshineView:
     34:57:public StarshineView(android.content.Context)
-com.jiusg.mainscreenshow.base.AnimationActive
 com.jiusg.mainscreenshow.base.AnimationConvert:
     11:11:public AnimationConvert()
 com.jiusg.mainscreenshow.base.C:
@@ -4243,12 +4158,13 @@ com.jiusg.mainscreenshow.ui.BaseSet$7
 com.jiusg.mainscreenshow.ui.DesktopSet:
     public static final java.lang.String backName
 com.jiusg.mainscreenshow.ui.MSS:
-    249:255:private boolean findActionBarTabsShowAtBottom()
+    261:267:private boolean findActionBarTabsShowAtBottom()
 com.jiusg.mainscreenshow.ui.MSSEventFragment:
     248:254:private void checkUpdate()
+com.jiusg.mainscreenshow.ui.PreviewAnimation:
+    private float pointsBalance
 com.jiusg.mainscreenshow.ui.Setting:
     public static final int RESULT_SETTING
-com.jiusg.mainscreenshow.ui.Setting$SettingFragment$11$2
 com.jiusg.mainscreenshow.ui.Welcome:
     305:320:public int getStatusBarHeight()
 com.loopj.android.http.AssertUtils:
@@ -4480,642 +4396,6 @@ com.meizu.mstore.license.SubProduct:
     45:46:protected void setQuantity(int)
     53:57:public java.util.Calendar getDate()
     60:61:protected void setDate(int)
-net.youmi.android.AdBrowser:
-    public void a(java.lang.CharSequence)
-    public void a(int)
-    public void b(java.lang.CharSequence)
-    public void b(int)
-    public boolean l()
-    public boolean c(java.lang.String)
-    public boolean a(java.lang.String,byte[])
-    public boolean m()
-    public boolean a(int,int,float)
-net.youmi.android.AdManager:
-    public void setEnableDebugLog(boolean)
-    public java.lang.String getOnlineConfig(java.lang.String,java.lang.String)
-    public java.lang.String syncGetOnlineConfig(java.lang.String,java.lang.String)
-    public void asyncGetOnlineConfig(java.lang.String,net.youmi.android.onlineconfig.OnlineConfigCallBack)
-    public boolean syncCheckIsReachNtpTime(int,int,int)
-    public void asyncCheckIsReachNtpTime(int,int,int,net.youmi.android.onlineconfig.ntp.NtpResultListener)
-    public net.youmi.android.update.AppUpdateInfo syncCheckAppUpdate()
-    public void asyncCheckAppUpdate(net.youmi.android.update.CheckAppUpdateCallBack)
-    public net.youmi.android.update.AppUpdateInfo checkAppUpdate()
-    public static void setIsInstallationSuccessTipsDisplayOnNotification(boolean)
-    public static void setIsDownloadTipsDisplayOnNotification(boolean)
-net.youmi.android.a.a.a:
-    public static java.lang.String d()
-    public static java.lang.String n()
-    public static java.lang.String r()
-    public static java.lang.String D()
-    public static java.lang.String F()
-    public static java.lang.String S()
-    public static java.lang.String T()
-    public static java.lang.String ae()
-    public static java.lang.String ak()
-    public static java.lang.String at()
-    public static java.lang.String ax()
-    public static java.lang.String aB()
-    public static java.lang.String aC()
-    public static java.lang.String aD()
-    public static java.lang.String aE()
-    public static java.lang.String aF()
-    public static java.lang.String aG()
-    public static java.lang.String aN()
-    public static java.lang.String bb()
-    public static java.lang.String bg()
-    public static java.lang.String bi()
-    public static java.lang.String bm()
-net.youmi.android.a.a.a.a.a:
-    public a(java.lang.String,int)
-net.youmi.android.a.a.a.a.f:
-    public boolean a(android.content.Context,java.lang.String)
-net.youmi.android.a.a.b:
-    public static java.lang.String d()
-    public static java.lang.String e()
-    public static java.lang.String h()
-net.youmi.android.a.a.d.a:
-    protected final net.youmi.android.a.b.g.c.a a(net.youmi.android.a.b.g.e.a)
-    protected final net.youmi.android.a.b.g.b.b a()
-    public java.io.File a(java.lang.String,java.lang.String)
-net.youmi.android.a.a.d.a.b:
-    private static net.youmi.android.a.a.d.a.a b
-    private static net.youmi.android.a.a.d.a.a d
-    private static net.youmi.android.a.a.d.a.a e
-    public static net.youmi.android.a.a.d.a.a a(android.content.Context)
-    public static net.youmi.android.a.a.d.a.a a(android.content.Context,int)
-    public static net.youmi.android.a.a.d.a.a d(android.content.Context,int)
-net.youmi.android.a.a.d.b
-net.youmi.android.a.a.e.a
-net.youmi.android.a.a.e.a.a:
-    public boolean d(java.lang.String)
-    public boolean i(java.lang.String)
-    public boolean e(java.lang.String)
-    public boolean w(java.lang.String)
-    public boolean dd(java.lang.String)
-    public boolean di(java.lang.String)
-    public boolean de(java.lang.String)
-    public boolean dw(java.lang.String)
-    public java.lang.String a(int,int,java.lang.String)
-    abstract net.youmi.android.a.a.e.a.b.g a(int)
-    abstract net.youmi.android.a.a.e.a.b.g b(int)
-    abstract net.youmi.android.a.a.e.a.b.g c(int)
-    abstract net.youmi.android.a.a.e.a.b.g d(int)
-    abstract net.youmi.android.a.a.e.a.b.g e(int)
-    abstract net.youmi.android.a.a.e.a.b.g f(int)
-    abstract net.youmi.android.a.a.e.a.b.g g(int)
-    abstract net.youmi.android.a.a.e.a.b.g h(int)
-    abstract net.youmi.android.a.a.e.a.b.g i(int)
-net.youmi.android.a.a.e.a.a.b:
-    public abstract boolean a(int)
-    public abstract net.youmi.android.a.a.e.a.b.g a(int,int)
-net.youmi.android.a.a.e.a.b:
-    public java.lang.String a(int,int,java.lang.String)
-    public boolean d(java.lang.String)
-    public boolean i(java.lang.String)
-    public boolean w(java.lang.String)
-    public boolean e(java.lang.String)
-    public boolean di(java.lang.String)
-    public boolean de(java.lang.String)
-    public boolean dw(java.lang.String)
-    public boolean dd(java.lang.String)
-    net.youmi.android.a.a.e.a.b.g a(int)
-    net.youmi.android.a.a.e.a.b.g b(int)
-    net.youmi.android.a.a.e.a.b.g c(int)
-    net.youmi.android.a.a.e.a.b.g d(int)
-    net.youmi.android.a.a.e.a.b.g e(int)
-    net.youmi.android.a.a.e.a.b.g f(int)
-    net.youmi.android.a.a.e.a.b.g g(int)
-    net.youmi.android.a.a.e.a.b.g h(int)
-    net.youmi.android.a.a.e.a.b.g i(int)
-net.youmi.android.a.a.e.a.b.a:
-    public android.content.Context a()
-    protected android.content.Context c()
-    public net.youmi.android.a.a.e.a d()
-    public int e()
-    public int f()
-    public java.lang.String a(java.lang.String,java.lang.String)
-    public java.lang.String a(net.youmi.android.a.a.e.g.b)
-    public net.youmi.android.a.a.e.a g()
-    public net.youmi.android.a.a.e.a a(net.youmi.android.a.a.e.g.d)
-    public net.youmi.android.a.a.e.a a(net.youmi.android.a.a.e.g.g)
-    public net.youmi.android.a.a.e.a b(net.youmi.android.a.a.e.g.g)
-    public net.youmi.android.a.a.e.a a(net.youmi.android.a.a.e.g.a,net.youmi.android.a.a.e.g.f)
-    public net.youmi.android.a.a.e.a a(java.lang.String,java.lang.String,java.lang.String,long)
-    public net.youmi.android.a.a.e.a a(java.lang.String)
-    public net.youmi.android.a.a.e.a a(int,net.youmi.android.a.a.e.g.b)
-    public void a(net.youmi.android.a.a.j.a.b.c)
-    public net.youmi.android.a.a.e.a a(net.youmi.android.a.a.e.g.c)
-    public net.youmi.android.a.a.e.a a(int)
-    public int h()
-net.youmi.android.a.a.e.a.b.b
-net.youmi.android.a.a.e.a.b.c
-net.youmi.android.a.a.e.a.b.d
-net.youmi.android.a.a.e.a.b.e
-net.youmi.android.a.a.e.a.b.f:
-    public abstract net.youmi.android.a.a.e.a a()
-    public abstract boolean a(java.lang.Runnable)
-net.youmi.android.a.a.e.a.b.g
-net.youmi.android.a.a.e.a.b.h:
-    public abstract android.content.Context a()
-    public abstract void a(net.youmi.android.a.a.j.a.b.c)
-    public abstract net.youmi.android.a.a.e.a d()
-    public abstract int e()
-    public abstract int h()
-    public abstract int f()
-    public abstract java.lang.String a(java.lang.String,java.lang.String)
-    public abstract java.lang.String a(net.youmi.android.a.a.e.g.b)
-    public abstract net.youmi.android.a.a.e.a g()
-    public abstract net.youmi.android.a.a.e.a a(net.youmi.android.a.a.e.g.d)
-    public abstract net.youmi.android.a.a.e.a a(net.youmi.android.a.a.e.g.c)
-    public abstract net.youmi.android.a.a.e.a b(net.youmi.android.a.a.e.g.g)
-    public abstract net.youmi.android.a.a.e.a a(net.youmi.android.a.a.e.g.a,net.youmi.android.a.a.e.g.f)
-    public abstract net.youmi.android.a.a.e.a a(java.lang.String,java.lang.String,java.lang.String,long)
-    public abstract net.youmi.android.a.a.e.a a(java.lang.String)
-    public abstract net.youmi.android.a.a.e.a a(int,net.youmi.android.a.a.e.g.b)
-    public abstract net.youmi.android.a.a.e.a a(int)
-    public abstract net.youmi.android.a.a.e.a a(net.youmi.android.a.a.e.g.g)
-net.youmi.android.a.a.e.a.b.j
-net.youmi.android.a.a.e.a.b.k
-net.youmi.android.a.a.e.a.b.l
-net.youmi.android.a.a.e.b.a
-net.youmi.android.a.a.e.b.b
-net.youmi.android.a.a.e.b.d
-net.youmi.android.a.a.e.b.e
-net.youmi.android.a.a.e.c.a.a
-net.youmi.android.a.a.e.c.a.b
-net.youmi.android.a.a.e.c.a.c
-net.youmi.android.a.a.e.c.a.d
-net.youmi.android.a.a.e.c.a.e
-net.youmi.android.a.a.e.c.a.f
-net.youmi.android.a.a.e.c.a.g
-net.youmi.android.a.a.e.c.a.h
-net.youmi.android.a.a.e.c.a.i
-net.youmi.android.a.a.e.c.a.j
-net.youmi.android.a.a.e.c.a.k
-net.youmi.android.a.a.e.c.a.l
-net.youmi.android.a.a.e.c.a.m
-net.youmi.android.a.a.e.c.a.n
-net.youmi.android.a.a.e.c.a.o
-net.youmi.android.a.a.e.c.b.a
-net.youmi.android.a.a.e.c.b.b
-net.youmi.android.a.a.e.c.b.c
-net.youmi.android.a.a.e.c.b.d
-net.youmi.android.a.a.e.c.b.e
-net.youmi.android.a.a.e.c.b.f
-net.youmi.android.a.a.e.c.b.g
-net.youmi.android.a.a.e.c.b.h
-net.youmi.android.a.a.e.c.b.i
-net.youmi.android.a.a.e.c.b.j
-net.youmi.android.a.a.e.c.b.k
-net.youmi.android.a.a.e.c.b.l
-net.youmi.android.a.a.e.c.b.m
-net.youmi.android.a.a.e.c.b.n
-net.youmi.android.a.a.e.c.b.o
-net.youmi.android.a.a.e.c.b.p
-net.youmi.android.a.a.e.c.b.q
-net.youmi.android.a.a.e.c.b.r
-net.youmi.android.a.a.e.c.b.s
-net.youmi.android.a.a.e.c.b.t
-net.youmi.android.a.a.e.c.b.u
-net.youmi.android.a.a.e.c.c.a
-net.youmi.android.a.a.e.c.c.b
-net.youmi.android.a.a.e.c.c.c
-net.youmi.android.a.a.e.c.c.d
-net.youmi.android.a.a.e.c.d.a
-net.youmi.android.a.a.e.c.d.b
-net.youmi.android.a.a.e.c.e.a
-net.youmi.android.a.a.e.c.e.b
-net.youmi.android.a.a.e.c.e.c
-net.youmi.android.a.a.e.c.e.d
-net.youmi.android.a.a.e.c.e.e
-net.youmi.android.a.a.e.c.f.a
-net.youmi.android.a.a.e.c.f.b
-net.youmi.android.a.a.e.c.f.c
-net.youmi.android.a.a.e.c.g.a
-net.youmi.android.a.a.e.c.g.b
-net.youmi.android.a.a.e.c.g.c
-net.youmi.android.a.a.e.c.g.d
-net.youmi.android.a.a.e.c.g.e
-net.youmi.android.a.a.e.c.h.a
-net.youmi.android.a.a.e.c.h.b
-net.youmi.android.a.a.e.c.i.a
-net.youmi.android.a.a.e.c.i.b
-net.youmi.android.a.a.e.c.i.c
-net.youmi.android.a.a.e.c.i.d
-net.youmi.android.a.a.e.e.a:
-    public void a(java.lang.String,java.lang.String)
-net.youmi.android.a.a.e.e.b:
-    public void a(java.lang.String,java.lang.String)
-net.youmi.android.a.a.e.f.c
-net.youmi.android.a.a.e.f.d
-net.youmi.android.a.a.e.f.e
-net.youmi.android.a.a.e.f.f
-net.youmi.android.a.a.e.g.a:
-    private int b
-    private java.lang.String h
-    public void a(long)
-    public void a(java.lang.String)
-    public void a(int)
-    public void b(java.lang.String)
-    public void c(java.lang.String)
-    public void d(java.lang.String)
-    public void e(java.lang.String)
-    public void a(boolean)
-    public void a(net.youmi.android.a.a.a.a.a)
-    public void a(net.youmi.android.a.a.e.g.b)
-    public void b(boolean)
-net.youmi.android.a.a.e.g.c:
-    private java.lang.String e
-    public boolean a()
-    public java.lang.String b()
-    public void a(int)
-    public void a(java.lang.String)
-    public int e()
-    public int f()
-    public int g()
-net.youmi.android.a.a.e.g.d
-net.youmi.android.a.a.e.g.e:
-    public void b(java.lang.String)
-    public void c(java.lang.String)
-    public void d(java.lang.String)
-    public void g(java.lang.String)
-net.youmi.android.a.a.e.g.f:
-    public f(java.lang.String,java.lang.String,java.lang.String)
-    public f(java.lang.String,java.lang.String)
-    private void e()
-    private void a(java.lang.String)
-    private void b(java.lang.String)
-net.youmi.android.a.a.e.g.g
-net.youmi.android.a.a.e.g.h
-net.youmi.android.a.a.g.a.m:
-    public static boolean a(android.content.Context,java.lang.String)
-net.youmi.android.a.a.g.b.a:
-    public void a(net.youmi.android.a.a.e.g.a,net.youmi.android.a.a.e.g.f)
-    public boolean a(java.lang.String)
-    public boolean b(java.lang.String,java.lang.String)
-net.youmi.android.a.a.g.c.a.c:
-    public static java.lang.String a(android.content.Context,java.lang.String,org.json.JSONObject,int,java.lang.String,java.lang.String,int,java.lang.String,net.youmi.android.a.b.i.a.b)
-    static java.lang.String a(android.content.Context,java.lang.String,org.json.JSONObject,int,int,int,java.lang.String,java.lang.String,int,java.lang.String,net.youmi.android.a.b.i.a.b)
-    public static java.lang.String b(android.content.Context,java.lang.String,org.json.JSONObject,int,java.lang.String,java.lang.String,int,java.lang.String,net.youmi.android.a.b.i.a.b)
-    static java.lang.String a(android.content.Context,java.lang.String,org.json.JSONObject,java.lang.String,int,int,java.lang.String,java.lang.String,int,java.lang.String,net.youmi.android.a.b.i.a.b)
-    private static byte[] a(int,int,int)
-    private static byte[] a(android.content.Context,java.lang.String,java.lang.String,int,int,int)
-    private static byte[] a(android.content.Context,byte[],java.lang.String)
-    private static java.lang.String b(java.lang.String)
-    protected static org.apache.http.Header a(java.lang.String,java.lang.String)
-net.youmi.android.a.a.g.c.a.d
-net.youmi.android.a.a.g.c.a.e
-net.youmi.android.a.a.g.c.a.f:
-    public static void a(java.lang.String)
-    public static void b(java.lang.String)
-net.youmi.android.a.a.g.d.d:
-    public static void a(android.content.Context,java.util.List)
-net.youmi.android.a.a.g.d.f
-net.youmi.android.a.a.g.f.a:
-    public boolean a(java.util.List)
-    public net.youmi.android.a.a.g.f.c b(java.lang.String)
-net.youmi.android.a.a.g.f.a.a
-net.youmi.android.a.a.g.f.a.b
-net.youmi.android.a.a.g.f.c:
-    public java.lang.String c()
-net.youmi.android.a.a.h.a:
-    private static java.lang.String t
-    private static java.lang.String O
-    public static java.lang.String p()
-    public static java.lang.String K()
-net.youmi.android.a.a.h.b:
-    public static java.lang.String n()
-net.youmi.android.a.a.i.a
-net.youmi.android.a.a.i.a.a
-net.youmi.android.a.a.i.a.a.a
-net.youmi.android.a.a.i.a.a.b
-net.youmi.android.a.a.i.a.a.c:
-    public void a(android.content.Context,net.youmi.android.a.a.i.a.a.a)
-net.youmi.android.a.a.i.a.b:
-    public static boolean a(android.content.Context,java.lang.String,boolean)
-    public static boolean a(android.content.Context,java.lang.String)
-    public static boolean a()
-    public static boolean b(android.content.Context)
-    public static boolean c(android.content.Context)
-    public static void a(android.content.Context,android.content.Intent)
-    public static void a(android.content.Context,java.lang.String,java.lang.Object,java.lang.String,java.lang.String,java.lang.String,byte[],int)
-    public static void a(android.content.Context,java.lang.String,java.lang.Object,java.lang.String,int)
-    public static java.lang.String d(android.content.Context)
-net.youmi.android.a.a.i.b:
-    public void a(android.content.Context)
-    public void a(java.lang.String,net.youmi.android.a.a.i.g)
-    public void a(java.lang.String,int)
-    public void a(android.app.Activity,java.lang.String,java.lang.String)
-    static synthetic android.util.SparseArray a(net.youmi.android.a.a.i.b)
-    static synthetic android.util.SparseArray b(net.youmi.android.a.a.i.b)
-    static synthetic android.util.SparseIntArray c(net.youmi.android.a.a.i.b)
-net.youmi.android.a.a.i.c
-net.youmi.android.a.a.i.d:
-    public static java.lang.Object a(java.lang.String)
-    public static boolean b(java.lang.String)
-    public static boolean c(java.lang.String)
-net.youmi.android.a.a.i.e:
-    public static boolean a(android.content.Context,java.lang.String,net.youmi.android.a.a.e.g.b)
-net.youmi.android.a.a.i.f:
-    public static boolean a(android.app.Activity,int,net.youmi.android.a.a.i.g)
-    static void a(android.content.Context,int,net.youmi.android.a.a.i.g)
-net.youmi.android.a.a.i.g:
-    public java.lang.String b
-    public java.lang.String c
-    public java.lang.String d
-    public java.lang.String e
-    public int i
-    public boolean j
-net.youmi.android.a.a.i.h:
-    public static void a(boolean)
-net.youmi.android.a.a.i.j
-net.youmi.android.a.a.i.k
-net.youmi.android.a.a.i.l
-net.youmi.android.a.a.i.m
-net.youmi.android.a.a.i.n
-net.youmi.android.a.a.j.a.a.a
-net.youmi.android.a.a.j.a.a.b
-net.youmi.android.a.a.j.a.a.d
-net.youmi.android.a.a.j.a.a.e
-net.youmi.android.a.a.j.a.b:
-    public boolean b()
-    public void clearHistory()
-    public net.youmi.android.a.a.e.a a()
-    public boolean a(java.lang.Runnable)
-net.youmi.android.a.a.j.a.b.c:
-    public abstract boolean l()
-    public abstract boolean c(java.lang.String)
-    public abstract boolean a(java.lang.String,byte[])
-    public abstract boolean m()
-    public abstract boolean a(int,int,float)
-net.youmi.android.a.a.j.a.b.e:
-    public abstract void clearHistory()
-net.youmi.android.a.a.j.a.g:
-    public void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
-net.youmi.android.a.a.k.a.a:
-    public abstract void a(java.lang.CharSequence)
-    public abstract void a(int)
-    public abstract void b(java.lang.CharSequence)
-    public abstract void b(int)
-net.youmi.android.a.a.k.a.b:
-    public void a(java.lang.CharSequence)
-    public void a(int)
-    public void b(java.lang.CharSequence)
-    public void b(int)
-net.youmi.android.a.a.k.a.c
-net.youmi.android.a.a.k.a.d
-net.youmi.android.a.a.k.a.f
-net.youmi.android.a.a.k.a.g
-net.youmi.android.a.a.k.b.b
-net.youmi.android.a.b.a:
-    public static java.lang.String a()
-net.youmi.android.a.b.b.b:
-    public static double a(org.json.JSONObject,java.lang.String,double)
-net.youmi.android.a.b.c.a:
-    public boolean a(java.util.List)
-net.youmi.android.a.b.c.b
-net.youmi.android.a.b.c.e:
-    protected java.lang.String a()
-    protected net.youmi.android.a.b.c.g b()
-net.youmi.android.a.b.c.f:
-    public static boolean a(android.content.Context,java.lang.String,boolean)
-net.youmi.android.a.b.c.g:
-    public bridge synthetic boolean a(java.util.List)
-net.youmi.android.a.b.c.h:
-    public h(android.content.Context,java.lang.String,net.youmi.android.a.b.c.g,int)
-    public int a()
-    public net.youmi.android.a.b.c.g b()
-    public java.lang.String c()
-net.youmi.android.a.b.c.i:
-    public i(java.lang.String,net.youmi.android.a.b.c.g,int)
-    public int a()
-    public java.lang.String b()
-    public net.youmi.android.a.b.c.g c()
-net.youmi.android.a.b.g.a:
-    protected boolean b(java.lang.String)
-net.youmi.android.a.b.g.a.a:
-    public a(android.content.Context,java.lang.String,java.io.File)
-net.youmi.android.a.b.g.b:
-    public android.graphics.Bitmap a(java.lang.String)
-    public void b(java.lang.String)
-    public void c(java.lang.String)
-    public android.graphics.Bitmap d(java.lang.String)
-    protected void b(net.youmi.android.a.b.g.e.a)
-net.youmi.android.a.b.g.b.a
-net.youmi.android.a.b.g.b.b
-net.youmi.android.a.b.g.b.c
-net.youmi.android.a.b.g.d:
-    public boolean a(java.lang.String)
-    public boolean b(java.lang.String,java.lang.String)
-    protected java.io.File a(net.youmi.android.a.b.g.e.a,java.lang.String)
-    protected boolean c(java.lang.String)
-    public final void a(net.youmi.android.a.b.g.g.a,net.youmi.android.a.b.g.e.a,java.lang.String,java.lang.String,java.lang.String)
-    public void a(net.youmi.android.a.b.g.g.a,net.youmi.android.a.b.g.e.a)
-    public void a(net.youmi.android.a.b.g.g.a)
-    protected abstract net.youmi.android.a.b.g.c.a a(net.youmi.android.a.b.g.e.a)
-    protected abstract net.youmi.android.a.b.g.b.b a()
-    protected abstract boolean b(java.lang.String)
-net.youmi.android.a.b.g.d.f
-net.youmi.android.a.b.g.e.a:
-    public a(java.lang.String,java.lang.String,long)
-    public a(java.lang.String,java.lang.String)
-    protected void a(java.lang.String)
-    public void b(java.lang.String)
-net.youmi.android.a.b.g.g.a
-net.youmi.android.a.b.g.g.b
-net.youmi.android.a.b.g.g.c
-net.youmi.android.a.b.h.a
-net.youmi.android.a.b.h.b.c:
-    private void a(android.database.Cursor)
-    boolean a()
-    java.util.List b()
-net.youmi.android.a.b.h.b.d:
-    private static java.util.Timer h
-    public static final void a(android.content.Context)
-    public static final java.util.List c(android.content.Context)
-    public static java.util.List d(android.content.Context)
-    public static java.util.List e(android.content.Context)
-    private static java.util.List a(android.content.Context,int)
-    static void f(android.content.Context)
-    static void g(android.content.Context)
-    static void h(android.content.Context)
-    private static void b(android.content.Context,int)
-    private static void i()
-    private static void j(android.content.Context)
-    static synthetic boolean a(boolean)
-    static synthetic int b()
-    static synthetic int c()
-    static synthetic java.util.Timer d()
-    static synthetic java.util.Timer a(java.util.Timer)
-net.youmi.android.a.b.h.b.e
-net.youmi.android.a.b.h.b.f
-net.youmi.android.a.b.h.e:
-    public static int j(android.content.Context)
-net.youmi.android.a.b.j.a:
-    public boolean a(java.lang.Object)
-net.youmi.android.a.b.k.a
-net.youmi.android.a.b.k.e:
-    public static boolean a(android.content.Context,java.lang.Class)
-    public static boolean a(android.content.Context,java.lang.String)
-    public static android.content.pm.ActivityInfo b(android.content.Context,java.lang.String)
-    public static boolean b(android.content.Context,java.lang.Class)
-    public static boolean c(android.content.Context,java.lang.String)
-    public static android.content.pm.ServiceInfo d(android.content.Context,java.lang.String)
-net.youmi.android.a.b.k.f
-net.youmi.android.a.b.k.h:
-    public float e()
-net.youmi.android.a.b.k.j:
-    public static boolean a(android.content.Context,java.lang.String,int,java.lang.String)
-    public static boolean b(android.content.Context,java.lang.String,int)
-    public static boolean c(android.content.Context,java.lang.String,int)
-    public static boolean d(android.content.Context,java.lang.String,int)
-    public static boolean b(android.content.Context,java.lang.String,int,java.lang.String)
-    public static boolean a(android.content.Context,java.lang.String,java.lang.String,java.lang.String)
-net.youmi.android.a.b.k.k:
-    public static android.content.Intent a(android.content.Context,java.lang.String,java.lang.String,java.lang.String)
-net.youmi.android.a.b.k.l:
-    public static android.content.pm.PackageInfo c(android.content.Context,java.lang.String)
-    public static java.lang.String f(android.content.Context,java.lang.String)
-net.youmi.android.a.b.k.m:
-    public static boolean c(android.content.Context)
-    public static boolean j(android.content.Context)
-net.youmi.android.a.b.k.o:
-    public static long b()
-    public static long b(android.content.Context)
-net.youmi.android.a.c.b.a:
-    public static void a(boolean)
-net.youmi.android.a.c.c.a:
-    public static void c(android.content.Context,java.lang.String)
-    public static void d(android.content.Context,java.lang.String)
-net.youmi.android.a.c.d.c:
-    public static java.lang.String a(android.content.Context,java.lang.String,java.util.List,boolean,org.apache.http.Header[],net.youmi.android.a.b.i.a.b)
-    public static java.lang.String a(android.content.Context,java.lang.String,boolean)
-    public static java.lang.String a(android.content.Context,java.lang.String,boolean,net.youmi.android.a.b.i.a.b)
-net.youmi.android.listener.Interface_WebViewDialogListener
-net.youmi.android.offers.EarnPointsOrderInfo:
-    public int getChannelId()
-    public java.lang.String getCustomUserID()
-    public int getStatus()
-    public java.lang.String getAppName()
-    public long getSettlingTime()
-net.youmi.android.offers.EarnPointsOrderList:
-    public java.lang.String getCurrencyName()
-net.youmi.android.offers.OffersBrowserConfig:
-    public OffersBrowserConfig()
-    public static void setBrowserTitleText(java.lang.String)
-    public static void setPointsUnit(java.lang.String)
-    public static void setBrowserTitleBackgroundColor(int)
-    public static void setPointsLayoutVisibility(boolean)
-net.youmi.android.offers.OffersManager:
-    public static final int STYLE_SPOT_CENTER
-    public static final int STYLE_SPOT_TOP_DOWN_REVERSE
-    public boolean registerToWx(java.lang.String)
-    public void setCustomUserId(java.lang.String)
-    public static void setUsingServerCallBack(boolean)
-    public boolean checkOffersAdConfig()
-    public boolean checkOffersAdConfig(boolean)
-    public android.content.Intent getShowOffersWallIntent(int)
-    public void showOffersWall()
-    public void showShareWall()
-    public void showShareWall(net.youmi.android.listener.Interface_ActivityListener)
-    private void a(android.app.Activity,net.youmi.android.offers.OffersWallDialogListener,int)
-    private void a(android.app.Activity,int,int,net.youmi.android.offers.OffersWallDialogListener,int)
-    private void a(android.app.Activity,double,double,net.youmi.android.offers.OffersWallDialogListener,int)
-    public void showOffersWallDialog(android.app.Activity,net.youmi.android.offers.OffersWallDialogListener)
-    public void showOffersWallDialog(android.app.Activity)
-    public void showOffersWallDialog(android.app.Activity,int,int,net.youmi.android.offers.OffersWallDialogListener)
-    public void showOffersWallDialog(android.app.Activity,int,int)
-    public void showOffersWallDialog(android.app.Activity,double,double,net.youmi.android.offers.OffersWallDialogListener)
-    public void showOffersWallDialog(android.app.Activity,double,double)
-    public void showShareWallDialog(android.app.Activity,net.youmi.android.offers.OffersWallDialogListener)
-    public void showShareWallDialog(android.app.Activity)
-    public void showShareWallDialog(android.app.Activity,int,int,net.youmi.android.offers.OffersWallDialogListener)
-    public void showShareWallDialog(android.app.Activity,int,int)
-    public void showShareWallDialog(android.app.Activity,double,double,net.youmi.android.offers.OffersWallDialogListener)
-    public void showShareWallDialog(android.app.Activity,double,double)
-    public void handleIntent(android.content.Intent)
-    public java.lang.String getSignatureMd5String()
-    public static void setShowShareTaskOpenToast(boolean)
-    public static boolean canShowShareTaskOpenToast()
-    static synthetic android.content.Context a(net.youmi.android.offers.OffersManager)
-net.youmi.android.offers.OffersWallDialogListener
-net.youmi.android.offers.PointsManager:
-    public boolean awardPoints(float)
-    public void registerPointsEarnNotify(net.youmi.android.offers.PointsEarnNotify)
-    public void unRegisterPointsEarnNotify(net.youmi.android.offers.PointsEarnNotify)
-    public static void setEnableEarnPointsNotification(boolean)
-    public static void setEnableEarnPointsToastTips(boolean)
-net.youmi.android.offers.a
-net.youmi.android.offers.a.a
-net.youmi.android.offers.b:
-    public void a(java.lang.String,java.lang.String)
-net.youmi.android.offers.b.a:
-    public static java.lang.String d()
-    public static java.lang.String h()
-    public static java.lang.String k()
-    public static java.lang.String p()
-    public static java.lang.String v()
-    public static java.lang.String A()
-    public static java.lang.String G()
-    public static java.lang.String I()
-    public static java.lang.String K()
-    public static java.lang.String M()
-    public static java.lang.String N()
-    public static java.lang.String P()
-    public static java.lang.String R()
-    public static java.lang.String T()
-net.youmi.android.offers.b.b:
-    public static java.lang.String m()
-net.youmi.android.offers.c.a:
-    public boolean a(int)
-    public net.youmi.android.a.a.e.a.b.g a(int,int)
-net.youmi.android.offers.c.a.a
-net.youmi.android.offers.c.a.b
-net.youmi.android.offers.c.a.c
-net.youmi.android.offers.c.a.d
-net.youmi.android.offers.c.a.e
-net.youmi.android.offers.c.a.f
-net.youmi.android.offers.d.b.a:
-    public void a(java.lang.String,java.lang.String)
-net.youmi.android.offers.d.c.a:
-    public static void a()
-net.youmi.android.offers.d.c.b:
-    public boolean m()
-    public boolean l()
-    public boolean c(java.lang.String)
-    public boolean a(java.lang.String,byte[])
-    public net.youmi.android.a.a.e.a a()
-    public boolean a(java.lang.Runnable)
-    public boolean a(int,int,float)
-net.youmi.android.offers.e.a
-net.youmi.android.offers.e.b
-net.youmi.android.offers.e.c:
-    public static boolean a(android.content.Context,net.youmi.android.offers.OffersWallDialogListener,int)
-    public static boolean a(android.content.Context,double,double,net.youmi.android.offers.OffersWallDialogListener,int)
-    public static boolean a(android.content.Context,int,int,net.youmi.android.offers.OffersWallDialogListener,int)
-    private static net.youmi.android.a.a.e.g.g a(android.content.Context,int)
-net.youmi.android.offers.e.d
-net.youmi.android.offers.g.a
-net.youmi.android.offers.g.b:
-    public b()
-    public void a(android.content.Context,net.youmi.android.a.a.i.a.a.a)
-    private void b(android.content.Context,net.youmi.android.a.a.i.a.a.a)
-net.youmi.android.onlineconfig.OnlineConfigCallBack
-net.youmi.android.onlineconfig.a
-net.youmi.android.onlineconfig.b
-net.youmi.android.onlineconfig.c
-net.youmi.android.onlineconfig.d
-net.youmi.android.onlineconfig.e
-net.youmi.android.onlineconfig.ntp.NtpResultListener
-net.youmi.android.onlineconfig.ntp.a
-net.youmi.android.onlineconfig.ntp.b
-net.youmi.android.onlineconfig.ntp.c
-net.youmi.android.onlineconfig.ntp.d
-net.youmi.android.update.AppUpdateInfo
-net.youmi.android.update.CheckAppUpdateCallBack
-net.youmi.android.update.a
-net.youmi.android.update.b
-net.youmi.android.update.c
 org.apache.http.entity.mime.Header:
     68:68:public java.util.List getFields()
     84:92:public java.util.List getFields(java.lang.String)

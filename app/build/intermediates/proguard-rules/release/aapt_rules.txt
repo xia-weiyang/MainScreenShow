@@ -5,19 +5,19 @@
 # view AndroidManifest.xml #generated:41
 -keep class com.jiusg.mainscreenshow.base.BaseApplication { <init>(...); }
 
-# view AndroidManifest.xml #generated:169
+# view AndroidManifest.xml #generated:150
 -keep class com.jiusg.mainscreenshow.receiver.BatteryReceiver { <init>(...); }
 
-# view AndroidManifest.xml #generated:148
+# view AndroidManifest.xml #generated:129
 -keep class com.jiusg.mainscreenshow.receiver.BootReceiver { <init>(...); }
 
-# view AndroidManifest.xml #generated:164
+# view AndroidManifest.xml #generated:145
 -keep class com.jiusg.mainscreenshow.receiver.NetworkReceiver { <init>(...); }
 
-# view AndroidManifest.xml #generated:153
+# view AndroidManifest.xml #generated:134
 -keep class com.jiusg.mainscreenshow.receiver.PhoneReceiver { <init>(...); }
 
-# view AndroidManifest.xml #generated:159
+# view AndroidManifest.xml #generated:140
 -keep class com.jiusg.mainscreenshow.receiver.SMSReceiver { <init>(...); }
 
 # view AndroidManifest.xml #generated:60
@@ -73,16 +73,4 @@
 
 # view AndroidManifest.xml #generated:50
 -keep class com.jiusg.mainscreenshow.ui.Welcome { <init>(...); }
-
-# view AndroidManifest.xml #generated:129
--keep class net.youmi.android.AdBrowser { <init>(...); }
-
-# view AndroidManifest.xml #generated:141
--keep class net.youmi.android.AdReceiver { <init>(...); }
-
-# view AndroidManifest.xml #generated:134
--keep class net.youmi.android.AdService { <init>(...); }
-
-# view AndroidManifest.xml #generated:137
--keep class net.youmi.android.ExpService { <init>(...); }
 

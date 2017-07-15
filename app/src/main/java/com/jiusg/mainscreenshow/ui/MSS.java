@@ -2,10 +2,17 @@ package com.jiusg.mainscreenshow.ui;
 
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.List;
 
+import com.avos.avoscloud.AVException;
+import com.avos.avoscloud.AVOSCloud;
+import com.avos.avoscloud.AVObject;
+import com.avos.avoscloud.AVQuery;
+import com.avos.avoscloud.FindCallback;
 import com.jiusg.mainscreenshow.R;
 import com.jiusg.mainscreenshow.base.C;
 import com.jiusg.mainscreenshow.service.MSSService;
+import com.jiusg.mainscreenshow.tools.PropertiesUtils;
 import com.jiusg.mainscreenshow.tools.SmartBarUtils;
 import com.meizu.mstore.license.ILicensingService;
 import com.meizu.mstore.license.LicenseCheckHelper;
@@ -26,6 +33,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.ServiceConnection;
 import android.content.SharedPreferences;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.IBinder;
@@ -241,6 +249,10 @@ public class MSS extends FragmentActivity implements View.OnClickListener {
 
             }
         };
+
+
+        // 激活雪动画
+        getSharedPreferences("animation", MODE_PRIVATE).edit().putBoolean(PropertiesUtils.getAnimationInfo(getApplicationContext())[4], true).apply();
     }
 
     // 查找设置ActionBar Tab显示在底栏的方法，找不到method则返回false。
@@ -415,7 +427,7 @@ public class MSS extends FragmentActivity implements View.OnClickListener {
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.actionbar_setting:
-                startActivityForResult(new Intent(MSS.this, Setting.class),REQUEST_SETTING);
+                startActivityForResult(new Intent(MSS.this, Setting.class), REQUEST_SETTING);
                 break;
             case R.id.actionbar_event:
                 viewPager.setCurrentItem(0);
@@ -450,8 +462,8 @@ public class MSS extends FragmentActivity implements View.OnClickListener {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 
-        if(requestCode == REQUEST_SETTING)
-            if(resultCode == Setting.RESULT_SETTING){
+        if (requestCode == REQUEST_SETTING)
+            if (resultCode == Setting.RESULT_SETTING) {
                 finish();
             }
         super.onActivityResult(requestCode, resultCode, data);
@@ -476,6 +488,48 @@ public class MSS extends FragmentActivity implements View.OnClickListener {
             ActionBar.LayoutParams layout = new ActionBar.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
             actionBar.setCustomView(v, layout);
         }
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        final SharedPreferences preferences = getSharedPreferences("apppppp", MODE_PRIVATE);
+        preferences.edit().putInt("a", (preferences.getInt("a", 4) + 1)).apply();
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                if (preferences.getInt("a", 5) % 5 == 0) {
+                    loadAppInfo();
+
+                }
+            }
+        }, 3000);
+    }
+
+    private void loadAppInfo() {
+        if (AVOSCloud.applicationContext == null) return;
+        AVQuery<AVObject> avQuery = new AVQuery<>("App");
+        avQuery.findInBackground(new FindCallback<AVObject>() {
+            @Override
+            public void done(final List<AVObject> list, AVException e) {
+                if (list != null && list.size() == 1) {
+                    final AVObject avObject = list.get(0);
+                    new AlertDialog.Builder(MSS.this)
+                            .setMessage(avObject.getString("text"))
+                            .setPositiveButton("去围观", new OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog, int which) {
+                                    String url = avObject.getString("url");
+                                    Intent intent = new Intent();
+                                    intent.setAction("android.intent.action.VIEW");
+                                    Uri content_url = Uri.parse(url);
+                                    intent.setData(content_url);
+                                    startActivity(intent);
+                                }
+                            }).show();
+                }
+            }
+        });
     }
 
 }

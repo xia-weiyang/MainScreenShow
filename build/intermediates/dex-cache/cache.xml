@@ -2,81 +2,94 @@
 <items version="2" >
 
     <item
-        jar="D:\MSS\MainScreenShow\app\libs\MStoreLicensing_1.4.jar"
+        is-multidex="false"
+        jar="D:\Develop\Android\Project\MainScreenShow\app\libs\fastjson.jar"
         jumboMode="false"
-        revision="22.0.1"
-        sha1="e5cd1e8100b50dca37333fd2efbd9382142b07e9">
-        <dex dex="D:\MSS\MainScreenShow\app\build\intermediates\pre-dexed\release\MStoreLicensing_1.4-c8e249277944db3c7b47bd0781aaf773356c8904.jar" />
-    </item>
-    <item
-        jar="D:\MSS\MainScreenShow\app\libs\httpmime-4.2.4.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="dba4d4d224e2ca872af5be8d2992777583145478">
-        <dex dex="D:\MSS\MainScreenShow\app\build\intermediates\pre-dexed\release\httpmime-4.2.4-dc3f479584f92e453ac065905bc96936439a13c0.jar" />
-    </item>
-    <item
-        jar="D:\MSS\MainScreenShow\app\libs\fastjson.jar"
-        jumboMode="false"
-        revision="22.0.1"
+        optimize="true"
+        revision="25.0.0"
         sha1="d449ce9b6023c059db09be5170229162a77e007a">
-        <dex dex="D:\MSS\MainScreenShow\app\build\intermediates\pre-dexed\release\fastjson-f341bcfbeecfcc48a3aae3b1474dddab596c8b6f.jar" />
+        <dex dex="D:\Develop\Android\Project\MainScreenShow\app\build\intermediates\pre-dexed\debug\fastjson_20c7d95e3db6d1ab8671150c2f48770f032da605.jar" />
     </item>
     <item
-        jar="D:\MSS\MainScreenShow\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\jars\classes.jar"
+        is-multidex="false"
+        jar="C:\Users\zkzmz\.android\build-cache\a2f01ebb9ead676aaf6b6fa81e833b712f185c05\output\jars\libs\internal_impl-22.0.0.jar"
         jumboMode="false"
-        revision="22.0.1"
-        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
-        <dex dex="D:\MSS\MainScreenShow\app\build\intermediates\pre-dexed\release\classes-a26b3f0736786f8f2fb380842ad60d8c02006d74.jar" />
-    </item>
-    <item
-        jar="E:\Andriod_Sdk\adt-bundle-windows-x86-20140702\sdk\extras\android\m2repository\com\android\support\support-annotations\22.0.0\support-annotations-22.0.0.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
-        <dex dex="D:\MSS\MainScreenShow\app\build\intermediates\pre-dexed\release\support-annotations-22.0.0-4352e2a8f220b71380f1489d827e4990a28757db.jar" />
-    </item>
-    <item
-        jar="D:\MSS\MainScreenShow\app\libs\YoumiSdk_v5.3.1_2015-08-31.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="fc2756010b0e684fa35aea70a88cb87937a63b1e">
-        <dex dex="D:\MSS\MainScreenShow\app\build\intermediates\pre-dexed\release\YoumiSdk_v5.3.1_2015-08-31-cdd94fbea20852a023e277318c2b1c00fd13bcab.jar" />
-    </item>
-    <item
-        jar="D:\MSS\MainScreenShow\app\libs\android-async-http-1.4.6.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="a845a88238be0b5be9d238652c1bc0605ef91f52">
-        <dex dex="D:\MSS\MainScreenShow\app\build\intermediates\pre-dexed\release\android-async-http-1.4.6-0d6659b47f175074f27306fedf24e32112b0f865.jar" />
-    </item>
-    <item
-        jar="D:\MSS\MainScreenShow\app\libs\avoscloud-statistics-v3.3.2.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="540b42eef9512d18f95246d33a46b3b7669cc17e">
-        <dex dex="D:\MSS\MainScreenShow\app\build\intermediates\pre-dexed\release\avoscloud-statistics-v3.3.2-83bb0b029e0fb72b3b8dc314823455928041d676.jar" />
-    </item>
-    <item
-        jar="D:\MSS\MainScreenShow\app\libs\avoscloud-sdk-v3.3.2.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="c303620ca11e23b68bcd018b3a92155675af5f6b">
-        <dex dex="D:\MSS\MainScreenShow\app\build\intermediates\pre-dexed\release\avoscloud-sdk-v3.3.2-fa60bc3c0c88f6488f3c0a87bea687d853ddccb0.jar" />
-    </item>
-    <item
-        jar="D:\MSS\MainScreenShow\app\libs\bdappunion_2.0_log_enabled.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="17b8a1c61aa29981bd779044521b050f81c3cde8">
-        <dex dex="D:\MSS\MainScreenShow\app\build\intermediates\pre-dexed\release\bdappunion_2.0_log_enabled-da83bd782262c3fefcc697866f7d1eebb0c219ec.jar" />
-    </item>
-    <item
-        jar="D:\MSS\MainScreenShow\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\jars\libs\internal_impl-22.0.0.jar"
-        jumboMode="false"
-        revision="22.0.1"
+        optimize="true"
+        revision="25.0.0"
         sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
-        <dex dex="D:\MSS\MainScreenShow\app\build\intermediates\pre-dexed\release\internal_impl-22.0.0-4c1347710dafdca857939cc1ebd9fd9fceebec61.jar" />
+        <dex dex="D:\Develop\Android\Project\MainScreenShow\app\build\intermediates\pre-dexed\debug\internal_impl-22.0.0_34916d5083dd11ea45e2bb66ae769b24ef7672f5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Develop\Android\Project\MainScreenShow\app\libs\bdappunion_2.0_log_enabled.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="17b8a1c61aa29981bd779044521b050f81c3cde8">
+        <dex dex="D:\Develop\Android\Project\MainScreenShow\app\build\intermediates\pre-dexed\debug\bdappunion_2.0_log_enabled_e4b60aa17adbac80823111123f8f888091f35d66.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\zkzmz\.android\build-cache\a2f01ebb9ead676aaf6b6fa81e833b712f185c05\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="D:\Develop\Android\Project\MainScreenShow\app\build\intermediates\pre-dexed\debug\classes_e6a0637af30fa5aeb7d45a916d1952e9496b3855.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Develop\Android\sdkResource\extras\android\m2repository\com\android\support\support-annotations\22.0.0\support-annotations-22.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
+        <dex dex="D:\Develop\Android\Project\MainScreenShow\app\build\intermediates\pre-dexed\debug\support-annotations-22.0.0_1b37d29a68dd4bbcd0ba9ac50822f9ee1e7be89a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Develop\Android\Project\MainScreenShow\app\libs\MStoreLicensing_1.4.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e5cd1e8100b50dca37333fd2efbd9382142b07e9">
+        <dex dex="D:\Develop\Android\Project\MainScreenShow\app\build\intermediates\pre-dexed\debug\MStoreLicensing_1.4_835e6f3850550c17e7ad01b2c97f22f8033be0b3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Develop\Android\Project\MainScreenShow\app\libs\avoscloud-sdk-v3.3.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c303620ca11e23b68bcd018b3a92155675af5f6b">
+        <dex dex="D:\Develop\Android\Project\MainScreenShow\app\build\intermediates\pre-dexed\debug\avoscloud-sdk-v3.3.2_ddf3a5296d6e9d36db8cd3d1df9f8815bafa9a37.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Develop\Android\Project\MainScreenShow\app\libs\httpmime-4.2.4.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="dba4d4d224e2ca872af5be8d2992777583145478">
+        <dex dex="D:\Develop\Android\Project\MainScreenShow\app\build\intermediates\pre-dexed\debug\httpmime-4.2.4_dd3c00aadcb1060149d1237b9e3fb7e585cfde97.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Develop\Android\Project\MainScreenShow\app\libs\android-async-http-1.4.6.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a845a88238be0b5be9d238652c1bc0605ef91f52">
+        <dex dex="D:\Develop\Android\Project\MainScreenShow\app\build\intermediates\pre-dexed\debug\android-async-http-1.4.6_b95ce318a351bd2e0fb0334796c29db2abe4f61a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Develop\Android\Project\MainScreenShow\app\libs\avoscloud-statistics-v3.3.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="540b42eef9512d18f95246d33a46b3b7669cc17e">
+        <dex dex="D:\Develop\Android\Project\MainScreenShow\app\build\intermediates\pre-dexed\debug\avoscloud-statistics-v3.3.2_57e68eddd089e9527c9168b186652502995508e1.jar" />
     </item>
 
 </items>

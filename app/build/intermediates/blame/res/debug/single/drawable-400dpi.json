@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "D:\\Develop\\Android\\Project\\MainScreenShow\\app\\build\\intermediates\\res\\merged\\debug\\drawable-400dpi\\ic_clear.png",
+        "source": "D:\\Develop\\Android\\Project\\MainScreenShow\\app\\src\\main\\res\\drawable-400dpi\\ic_clear.png"
+    },
+    {
+        "merged": "D:\\Develop\\Android\\Project\\MainScreenShow\\app\\build\\intermediates\\res\\merged\\debug\\drawable-400dpi\\ic_tab_selected_preview.png",
+        "source": "D:\\Develop\\Android\\Project\\MainScreenShow\\app\\src\\main\\res\\drawable-400dpi\\ic_tab_selected_preview.png"
+    },
+    {
+        "merged": "D:\\Develop\\Android\\Project\\MainScreenShow\\app\\build\\intermediates\\res\\merged\\debug\\drawable-400dpi\\ic_help.png",
+        "source": "D:\\Develop\\Android\\Project\\MainScreenShow\\app\\src\\main\\res\\drawable-400dpi\\ic_help.png"
+    },
+    {
+        "merged": "D:\\Develop\\Android\\Project\\MainScreenShow\\app\\build\\intermediates\\res\\merged\\debug\\drawable-400dpi\\ic_menu.png",
+        "source": "D:\\Develop\\Android\\Project\\MainScreenShow\\app\\src\\main\\res\\drawable-400dpi\\ic_menu.png"
+    },
+    {
+        "merged": "D:\\Develop\\Android\\Project\\MainScreenShow\\app\\build\\intermediates\\res\\merged\\debug\\drawable-400dpi\\ic_tab_unselected_event.png",
+        "source": "D:\\Develop\\Android\\Project\\MainScreenShow\\app\\src\\main\\res\\drawable-400dpi\\ic_tab_unselected_event.png"
+    },
+    {
+        "merged": "D:\\Develop\\Android\\Project\\MainScreenShow\\app\\build\\intermediates\\res\\merged\\debug\\drawable-400dpi\\ic_tab_unselected_preview.png",
+        "source": "D:\\Develop\\Android\\Project\\MainScreenShow\\app\\src\\main\\res\\drawable-400dpi\\ic_tab_unselected_preview.png"
+    },
+    {
+        "merged": "D:\\Develop\\Android\\Project\\MainScreenShow\\app\\build\\intermediates\\res\\merged\\debug\\drawable-400dpi\\ic_tab_selected_event.png",
+        "source": "D:\\Develop\\Android\\Project\\MainScreenShow\\app\\src\\main\\res\\drawable-400dpi\\ic_tab_selected_event.png"
+    },
+    {
+        "merged": "D:\\Develop\\Android\\Project\\MainScreenShow\\app\\build\\intermediates\\res\\merged\\debug\\drawable-400dpi\\ic_back.png",
+        "source": "D:\\Develop\\Android\\Project\\MainScreenShow\\app\\src\\main\\res\\drawable-400dpi\\ic_back.png"
+    }
+]

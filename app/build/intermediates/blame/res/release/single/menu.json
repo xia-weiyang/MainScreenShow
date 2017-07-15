@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "D:\\Develop\\Android\\Project\\MainScreenShow\\app\\build\\intermediates\\res\\merged\\release\\menu\\menu_setting_nomeizu.xml",
+        "source": "D:\\Develop\\Android\\Project\\MainScreenShow\\app\\src\\main\\res\\menu\\menu_setting_nomeizu.xml"
+    },
+    {
+        "merged": "D:\\Develop\\Android\\Project\\MainScreenShow\\app\\build\\intermediates\\res\\merged\\release\\menu\\menu_settings.xml",
+        "source": "D:\\Develop\\Android\\Project\\MainScreenShow\\app\\src\\main\\res\\menu\\menu_settings.xml"
+    },
+    {
+        "merged": "D:\\Develop\\Android\\Project\\MainScreenShow\\app\\build\\intermediates\\res\\merged\\release\\menu\\menu_feedback.xml",
+        "source": "D:\\Develop\\Android\\Project\\MainScreenShow\\app\\src\\main\\res\\menu\\menu_feedback.xml"
+    },
+    {
+        "merged": "D:\\Develop\\Android\\Project\\MainScreenShow\\app\\build\\intermediates\\res\\merged\\release\\menu\\action_bar_mssevent_set.xml",
+        "source": "D:\\Develop\\Android\\Project\\MainScreenShow\\app\\src\\main\\res\\menu\\action_bar_mssevent_set.xml"
+    },
+    {
+        "merged": "D:\\Develop\\Android\\Project\\MainScreenShow\\app\\build\\intermediates\\res\\merged\\release\\menu\\action_bar_picturewallchoose.xml",
+        "source": "D:\\Develop\\Android\\Project\\MainScreenShow\\app\\src\\main\\res\\menu\\action_bar_picturewallchoose.xml"
+    }
+]

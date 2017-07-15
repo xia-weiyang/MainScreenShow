@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000" >
+    
+<TextView 
+        android:id="@+id/tv_alpha_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:textSize="13sp"
+        android:paddingTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:paddingBottom="5dp"
+        />
+</RelativeLayout>

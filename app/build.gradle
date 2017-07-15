@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 22
-    buildToolsVersion "22.0.1"
+    buildToolsVersion '25.0.0'
 
     defaultConfig {
         applicationId "com.jiusg.mainscreenshow"
@@ -12,7 +12,7 @@ android {
 
     buildTypes {
         release {
-            minifyEnabled true
+            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
     }
@@ -33,5 +33,4 @@ dependencies {
     compile files('libs/httpmime-4.2.4.jar')
     compile files('libs/MStoreLicensing_1.4.jar')
     compile files('libs/bdappunion_2.0_log_enabled.jar')
-    compile files('libs/YoumiSdk_v5.3.1_2015-08-31.jar')
 }

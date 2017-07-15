@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="#f3f3f3"
+     >
+
+    <ImageView
+        android:id="@+id/qq"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/qq_"/>
+
+    <TextView 
+        android:id="@+id/tv_help"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textSize="15sp"
+        android:layout_below="@+id/qq"
+        android:textColor="#111111"
+        android:background="#00000000"
+        android:text="@string/help_info"/>
+
+
+    
+    <TextView 
+        android:id="@+id/tv_help_"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@+id/tv_help"
+        android:layout_marginTop="5dp"
+        android:text="@string/help_info_"/>
+    
+        <ListView
+        android:id="@+id/list_help"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_help_"
+        android:padding="5dp"
+        android:scrollbars="vertical"
+        android:divider="#00000000"
+        android:overScrollMode="never"
+        android:dividerHeight="1dp"
+        android:scrollbarStyle="outsideOverlay" />
+
+</RelativeLayout>

@@ -4,8 +4,6 @@ import com.jiusg.mainscreenshow.R;
 import com.jiusg.mainscreenshow.base.C;
 import com.jiusg.mainscreenshow.service.MSSService;
 import com.jiusg.mainscreenshow.service.MSSService.MSSSBinder;
-import com.jiusg.mainscreenshow.tools.MyLog;
-import com.jiusg.mainscreenshow.tools.SmartBarUtils;
 import com.jiusg.mainscreenshow.tools.UpdateVersion;
 
 import android.annotation.SuppressLint;
@@ -17,7 +15,6 @@ import android.content.ComponentName;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
-import android.content.pm.ActivityInfo;
 import android.content.Intent;
 import android.content.ServiceConnection;
 import android.content.SharedPreferences;
@@ -39,13 +36,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
-import net.youmi.android.AdManager;
-import net.youmi.android.listener.Interface_ActivityListener;
-import net.youmi.android.offers.OffersManager;
-import net.youmi.android.offers.PointsChangeNotify;
-import net.youmi.android.offers.PointsManager;
-
-public class Setting extends Activity implements PointsChangeNotify {
+public class Setting extends Activity {
     private ServiceConnection mSc;
     private MSSService mssservice;
     private AlertDialog dialogUpdate = null;
@@ -66,11 +57,6 @@ public class Setting extends Activity implements PointsChangeNotify {
         getFragmentManager().beginTransaction()
                 .replace(android.R.id.content, new SettingFragment()).commit();
 
-
-        // 初始化有米广告接口
-        AdManager.getInstance(this).init("cf3c9641dcb8b689", "c8fd1af7ae9d261d");
-        OffersManager.getInstance(this).onAppLaunch();
-        PointsManager.getInstance(this).registerNotify(this);
 
         mSc = new ServiceConnection() {
 
@@ -96,18 +82,13 @@ public class Setting extends Activity implements PointsChangeNotify {
         return super.onOptionsItemSelected(item);
     }
 
-    @Override
-    public void onPointBalanceChange(float v) {
-        MyLog.i(TAG, "point=" + (int) v);
-    }
-
     @SuppressLint("ValidFragment")
     public class SettingFragment extends PreferenceFragment {
 
         private mHandler handler;
         private CheckBoxPreference powerSaving;
         private ListPreference frame;
-//        private ListPreference ramLimit;
+        //        private ListPreference ramLimit;
         private PreferenceScreen welcome;
         private PreferenceScreen version;
         private SharedPreferences sp_userinfo;
@@ -261,24 +242,6 @@ public class Setting extends Activity implements PointsChangeNotify {
                     return true;
                 }
             });
-            app.setOnPreferenceClickListener(new OnPreferenceClickListener() {
-
-                @Override
-                public boolean onPreferenceClick(Preference preference) {
-                    OffersManager.getInstance(getActivity()).showOffersWall(new Interface_ActivityListener() {
-                        @Override
-                        public void onActivityDestroy(Context context) {
-
-                            MyLog.i(TAG, "exit offerswall");
-                        }
-                    });
-
-//					startActivity(new Intent().setClass(getActivity(),
-//									/**		SettingApp.class));
-
-                    return false;
-                }
-            });
             more.setOnPreferenceClickListener(new OnPreferenceClickListener() {
                 @Override
                 public boolean onPreferenceClick(Preference preference) {
@@ -361,18 +324,18 @@ public class Setting extends Activity implements PointsChangeNotify {
                 @Override
                 public boolean onPreferenceClick(Preference preference) {
                     new AlertDialog.Builder(getActivity()).setTitle(R.string.action_warn)
-                        .setMessage(R.string.tip_exit)
-                        .setPositiveButton(R.string.action_ok, new OnClickListener() {
+                            .setMessage(R.string.tip_exit)
+                            .setPositiveButton(R.string.action_ok, new OnClickListener() {
 
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                                MSSService.isExit = true;
-                                stopService(new Intent().setClass(getActivity(),
-                                        MSSService.class));
-                                getActivity().setResult(RESULT_SETTING);
-                                getActivity().finish();
-                            }
-                        }).setNegativeButton(R.string.action_cancel, null).show();
+                                @Override
+                                public void onClick(DialogInterface dialog, int which) {
+                                    MSSService.isExit = true;
+                                    stopService(new Intent().setClass(getActivity(),
+                                            MSSService.class));
+                                    getActivity().setResult(RESULT_SETTING);
+                                    getActivity().finish();
+                                }
+                            }).setNegativeButton(R.string.action_cancel, null).show();
                     return true;
                 }
             });
@@ -424,8 +387,6 @@ public class Setting extends Activity implements PointsChangeNotify {
                         checkUpdate.setSummary(getString(R.string.tip_newVersion) + updateVersion.getNewVersionName());
                     }
                 } else if (msg.obj.toString().equals("point")) {
-                    float pointsBalance = PointsManager.getInstance(Setting.this).queryPoints();
-                    app.setSummary("积分:" + (int) pointsBalance);
                 }
             }
 
@@ -452,13 +413,12 @@ public class Setting extends Activity implements PointsChangeNotify {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        PointsManager.getInstance(this).unRegisterNotify(this);
-        OffersManager.getInstance(this).onAppExit();
     }
 
     public static String getUpdateInfo(Context mContext) {
 
         String update = "";
+        update = update + mContext.getString(R.string.Ver_1_4_9);
         update = update + mContext.getString(R.string.Ver_1_4_8);
         update = update + mContext.getString(R.string.Ver_1_4_5);
         update = update + mContext.getString(R.string.Ver_1_4_0);

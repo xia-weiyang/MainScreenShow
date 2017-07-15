@@ -30,11 +30,6 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.TextView;
-import android.widget.Toast;
-
-import net.youmi.android.offers.PointsManager;
-
 
 public class PreviewAnimation extends Activity {
 
@@ -55,8 +50,6 @@ public class PreviewAnimation extends Activity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         anim = getSharedPreferences("animation", MODE_PRIVATE);
-        pointsBalance = PointsManager.getInstance(PreviewAnimation.this).queryPoints();
-//        PointsManager.getInstance(PreviewAnimation.this).awardPoints(20);
 
         setContentView(R.layout.activity_previewanimation);
         background = (ImageView) findViewById(R.id.img_previewA);
@@ -210,23 +203,23 @@ public class PreviewAnimation extends Activity {
                         }
                     }).show();
         }else{
-            new AlertDialog.Builder(this).setTitle(R.string.tip)
-                    .setMessage("您目前有"+pointsBalance+"积分,可在设置>应用推荐中赚取积分!")
-                    .setPositiveButton("现在激活", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            int point = getPoint(an);
-                            boolean isSuccess = PointsManager.getInstance(PreviewAnimation.this).spendPoints(point);
-                            if(isSuccess){
-                                anim.edit().putBoolean(PropertiesUtils.getAnimationInfo(getApplicationContext())[an],true).apply();
-                                showDialogAnim(an);
-                                button.setText(getIsActivated(an));
-                            }else{
-                                Toast.makeText(getApplicationContext(),"激活失败!",Toast.LENGTH_LONG).show();
-                            }
-                        }
-                    }).setNegativeButton("算了",null)
-                    .show();
+//            new AlertDialog.Builder(this).setTitle(R.string.tip)
+//                    .setMessage("您目前有"+pointsBalance+"积分,可在设置>应用推荐中赚取积分!")
+//                    .setPositiveButton("现在激活", new DialogInterface.OnClickListener() {
+//                        @Override
+//                        public void onClick(DialogInterface dialog, int which) {
+//                            int point = getPoint(an);
+//                            boolean isSuccess = PointsManager.getInstance(PreviewAnimation.this).spendPoints(point);
+//                            if(isSuccess){
+//                                anim.edit().putBoolean(PropertiesUtils.getAnimationInfo(getApplicationContext())[an],true).apply();
+//                                showDialogAnim(an);
+//                                button.setText(getIsActivated(an));
+//                            }else{
+//                                Toast.makeText(getApplicationContext(),"激活失败!",Toast.LENGTH_LONG).show();
+//                            }
+//                        }
+//                    }).setNegativeButton("算了",null)
+//                    .show();
         }
     }
 
